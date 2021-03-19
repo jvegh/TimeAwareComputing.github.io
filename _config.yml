@@ -1,1 +1,7 @@
 theme: jekyll-theme-merlot
+title: Documentation to developing time-aware computing
+description: Classic technological, biological, neuromorphic and artificial intelligence computations are time-unaware: they do not consider data transfer time.
+The material carrier's speed limits the information transfer's speed, so to describe the behavior of the computing system, the mathematics of the limited transfer
+speed must be used. It is a well-established mathematics, and has a successful history in physics. Although it is famous from its role in the special theory
+of relativity, the Minkowski mathematics has not much to to with the light speed of special relativity. It is simply a self-consistent mathematical way
+to describe a world where the information transfer speed is limited (that is, the interactions are NOT instant).
