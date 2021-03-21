@@ -1,0 +1,5 @@
+<map id="scGatesProcessor" name="scGatesProcessor">
+<area shape="rect" id="node1" title="This is a processor class comprising communicating scGridPoint classes. Comprises and handles the scG..." alt="" coords="16,931,189,1199"/>
+<area shape="rect" id="node2" href="$classscProcessor.html" title="Implements a module&#45;name alias facility (i.e., user&#45;provided names. Given that the basic units is scH..." alt="" coords="5,307,200,883"/>
+<area shape="rect" id="node3" href="$classAbstractTopology.html" title=" " alt="" coords="5,5,200,259"/>
+</map>
