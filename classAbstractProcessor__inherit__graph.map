@@ -1,7 +1,0 @@
-<map id="AbstractProcessor" name="AbstractProcessor">
-<area shape="rect" id="node1" title="The AbstractProcessor class." alt="" coords="133,931,327,1243"/>
-<area shape="rect" id="node4" href="$classNeurerProcessor.html" title="The NeurerProcessor class." alt="" coords="5,1291,225,1588"/>
-<area shape="rect" id="node5" href="$classY86Processor.html" title="The Y86Processor class." alt="" coords="250,1320,442,1559"/>
-<area shape="rect" id="node2" href="$classscProcessor.html" title="Implements a module&#45;name alias facility (i.e., user&#45;provided names. Given that the basic units is scH..." alt="" coords="133,307,327,883"/>
-<area shape="rect" id="node3" href="$classAbstractTopology.html" title=" " alt="" coords="133,5,327,259"/>
-</map>

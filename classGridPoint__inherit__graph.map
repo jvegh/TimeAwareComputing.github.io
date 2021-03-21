@@ -1,7 +1,0 @@
-<map id="GridPoint" name="GridPoint">
-<area shape="rect" id="node1" title="This class handles the topological information for the modules. Provides a lot of math&#45;only utility f..." alt="" coords="111,5,377,303"/>
-<area shape="rect" id="node2" href="$classscGridPoint.html" title="This class implements the autonomous grid point functionality: it is a communicating GridPoint...." alt="" coords="131,351,357,1029"/>
-<area shape="rect" id="node3" href="$classAbstractCore.html" title="The abstract base class (i.e. must not be instantiated) of concrete processors, implementing their ge..." alt="" coords="5,1077,253,1624"/>
-<area shape="rect" id="node5" href="$classscGate2Input.html" title="This class implements a 2&#45;input gate object, mainly to demonstrate how tho use the system for electro..." alt="" coords="277,1283,443,1419"/>
-<area shape="rect" id="node4" href="$classNeurerCore.html" title="The base class (i.e. must not be instantiated) of neurer cores, implementing their general behavior." alt="" coords="47,1672,212,1808"/>
-</map>
