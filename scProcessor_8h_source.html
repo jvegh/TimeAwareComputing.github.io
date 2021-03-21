@@ -373,40 +373,41 @@ $(document).ready(function(){initNavTree('scProcessor_8h_source.html',''); initR
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;       ReadTheThreeLevels(QString MyGroup);</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;           <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;       HandleAliasesPass(<span class="keywordtype">string</span> FileName, <span class="keywordtype">bool</span> Pass2);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    SignalMaskBit_Set(SC_GRIDPOINT_MASK_TYPE &amp;Signal, SC_GRIDPOINT_MASK_TYPE GPMask,</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                      <span class="keywordtype">bool</span> State, <span class="keywordtype">string</span> S);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    START_thread(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    HALT_thread(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    SUSPEND_thread(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    RESUME_thread(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;         <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    SetMasks_method(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;         <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    QTERM_method(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;         std::map&lt;string,scHThread*&gt;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;     mAliases;      </div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        TopologyMask_t</div>
-<div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="classscProcessor.html#a2948817979c2b1333a1ef3dc902750f5">  397</a></span>&#160;    msMask[MAX_HTHREADS];</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">//        SC_GRIDPOINT_MASK_TYPE</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">//    msChildrenMask[MAX_HTHREADS];</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        vector&lt;scHThread*&gt;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    mChildren;  <span class="comment">// HThreads are allocated for directly to processor</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    msSuspended;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    msHalted;  </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        uint16_t</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    mInstanceCount; <span class="comment">// How many time was instantiated immediate QT</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;};<span class="comment">// of class scProcessor</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor">#endif // SCPROCESSOR_H</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;           <span class="keywordtype">void</span> AliasesClear(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;           {mAliases.clear();}</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    SignalMaskBit_Set(SC_GRIDPOINT_MASK_TYPE &amp;Signal, SC_GRIDPOINT_MASK_TYPE GPMask,</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                      <span class="keywordtype">bool</span> State, <span class="keywordtype">string</span> S);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    START_thread(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    HALT_thread(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    SUSPEND_thread(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    RESUME_thread(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;         <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    SetMasks_method(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;         <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    QTERM_method(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;         std::map&lt;string,scHThread*&gt;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;     mAliases;      </div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        TopologyMask_t</div>
+<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="classscProcessor.html#a2948817979c2b1333a1ef3dc902750f5">  398</a></span>&#160;    msMask[MAX_HTHREADS];</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">//        SC_GRIDPOINT_MASK_TYPE</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">//    msChildrenMask[MAX_HTHREADS];</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        vector&lt;scHThread*&gt;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    mChildren;  <span class="comment">// HThreads are allocated for directly to processor</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    msSuspended;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    msHalted;  </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        uint16_t</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    mInstanceCount; <span class="comment">// How many time was instantiated immediate QT</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;};<span class="comment">// of class scProcessor</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#endif // SCPROCESSOR_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscProcessor_html_a27e7672e4078d869ec8d7dd65aed56c5"><div class="ttname"><a href="classscProcessor.html#a27e7672e4078d869ec8d7dd65aed56c5">scProcessor::mClusterBus</a></div><div class="ttdeci">scClusterBus * mClusterBus</div><div class="ttdoc">The of processor inter-cluster bus-related signals.</div><div class="ttdef"><b>Definition:</b> scProcessor.h:142</div></div>
@@ -449,7 +450,7 @@ $(document).ready(function(){initNavTree('scProcessor_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e05d7e2b1ecd646af5bb94391405f3b5.html">modules</a></li><li class="navelem"><a class="el" href="dir_245247ea24478951905c43d9abcfc398.html">BASIC</a></li><li class="navelem"><a class="el" href="dir_1d1d4084525b8db6f67fc3a8c723c59b.html">include</a></li><li class="navelem"><a class="el" href="scProcessor_8h.html">scProcessor.h</a></li>
-    <li class="footer">Generated on Fri Mar 19 2021 20:23:46 for TAC  V0.0.4 @ 2021.03.19 by
+    <li class="footer">Generated on Sun Mar 21 2021 10:30:07 for TAC  V0.0.4 @ 2021.03.19 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

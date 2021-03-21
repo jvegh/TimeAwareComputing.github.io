@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classscSynapticConnect.html#a75bcd6731a6d33a9ce5beea5af6b1fd3":[3,39,5],
 "classscSynapticConnect.html#a7c9460f738c15c6ddfc298a286f1dc19":[3,39,4],
 "classscSynapticConnect.html#a9e373ad9f37b4058bcccb46e6eae2096":[3,39,8],
 "classscSynapticConnect.html#ab7f3b4c45654ee6165df1003008133bd":[3,39,9],

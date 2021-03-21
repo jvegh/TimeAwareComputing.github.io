@@ -1,6 +1,7 @@
 var classscGridPoint =
 [
     [ "scGridPoint", "classscGridPoint.html#a19e41777e5a1c9d1dc6a21862975c90d", null ],
+    [ "AddDefaultAliasNames", "classscGridPoint.html#a9d209430916e51f07199555ce8111789", null ],
     [ "AddHThread", "classscGridPoint.html#a3a8916d7e350e40860c7c087e497a055", null ],
     [ "CooperationMode_Get", "classscGridPoint.html#a0040443faca6c644a749a16223977055", null ],
     [ "CreateMessageTo", "classscGridPoint.html#ac08741d121bc23d737a74147ae5540de", null ],
