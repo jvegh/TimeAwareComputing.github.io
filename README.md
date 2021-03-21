@@ -1,2 +1,4 @@
 # TimeAwareComputing.github.io
-Documentition related to time-aware computing
+Documentation related to time-aware computing: the computing theory and practice when the information
+transfer time cannot be neglected aside from its processing time.
+
