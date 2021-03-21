@@ -1,0 +1,6 @@
+<map id="scGate2Input" name="scGate2Input">
+<area shape="rect" id="node1" title="This class implements a 2&#45;input gate object, mainly to demonstrate how tho use the system for electro..." alt="" coords="192,1151,357,1287"/>
+<area shape="rect" id="node2" href="$classscGridPoint.html" title="This class implements the autonomous grid point functionality: it is a communicating GridPoint...." alt="" coords="161,424,388,1103"/>
+<area shape="rect" id="node3" href="$classGridPoint.html" title="This class handles the topological information for the modules. Provides a lot of math&#45;only utility f..." alt="" coords="5,42,272,339"/>
+<area shape="rect" id="node4" href="$classscIGPMessage__if.html" title="This class communication interface for scIGPMessage communication for the autonous communication func..." alt="" coords="297,5,525,376"/>
+</map>

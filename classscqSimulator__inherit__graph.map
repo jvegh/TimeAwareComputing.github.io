@@ -1,0 +1,5 @@
+<map id="scqSimulator" name="scqSimulator">
+<area shape="rect" id="node1" title="The anchestor of all ScQt&#45;based simulators The simulator manipulates scModules etc...." alt="" coords="86,5,295,435"/>
+<area shape="rect" id="node2" href="$classscGatesSimulator.html" title="The anchestor of all ScQt&#45;based simulators, using EMPA bus The simulator manipulates scGridPoints,..." alt="" coords="5,629,179,780"/>
+<area shape="rect" id="node3" href="$classscSimulator.html" title="The anchestor of all ScQt&#45;based simulators, using EMPA bus The simulator manipulates scGridPoints,..." alt="" coords="203,483,375,927"/>
+</map>

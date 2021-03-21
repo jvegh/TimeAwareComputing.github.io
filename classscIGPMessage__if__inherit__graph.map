@@ -1,0 +1,7 @@
+<map id="scIGPMessage_if" name="scIGPMessage_if">
+<area shape="rect" id="node1" title="This class communication interface for scIGPMessage communication for the autonous communication func..." alt="" coords="130,5,358,376"/>
+<area shape="rect" id="node2" href="$classscGridPoint.html" title="This class implements the autonomous grid point functionality: it is a communicating GridPoint...." alt="" coords="131,424,357,1103"/>
+<area shape="rect" id="node3" href="$classAbstractCore.html" title="The abstract base class (i.e. must not be instantiated) of concrete processors, implementing their ge..." alt="" coords="5,1151,253,1697"/>
+<area shape="rect" id="node5" href="$classscGate2Input.html" title="This class implements a 2&#45;input gate object, mainly to demonstrate how tho use the system for electro..." alt="" coords="277,1356,443,1492"/>
+<area shape="rect" id="node4" href="$classNeurerCore.html" title="The base class (i.e. must not be instantiated) of neurer cores, implementing their general behavior." alt="" coords="47,1745,212,1881"/>
+</map>
