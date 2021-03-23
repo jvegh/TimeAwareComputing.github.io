@@ -43,12 +43,13 @@ var searchData=
   ['mssignal_240',['msSignal',['../classscGridPoint.html#a078660798affd86d5fba1c6b1729af05',1,'scGridPoint']]],
   ['msstepwisemode_241',['msStepwiseMode',['../classscqSimulator.html#a7c3f3e79c15358b44caa54156ad54c58',1,'scqSimulator']]],
   ['mssuspended_242',['msSuspended',['../classscqSimulator.html#aee0df90340da4de369cdda928882a6aa',1,'scqSimulator']]],
-  ['mswaitbegin_243',['msWaitBegin',['../classscGridPoint.html#a48aee613d6eac34805f947938cab7c11',1,'scGridPoint']]],
-  ['msynchronfrequency_244',['mSynchronFrequency',['../classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc',1,'AbstractNeurer']]],
-  ['msynchronoffset_245',['mSynchronOffset',['../classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828',1,'AbstractNeurer']]],
-  ['mtimedout_246',['mTimedOut',['../classscHThread.html#ac58ef59a2d4092b9b6f77ecfc739ae49',1,'scHThread']]],
-  ['mtimefactor_247',['mTimeFactor',['../classSpike.html#a1cb11b45898dcf4f0b1108b67580eb81',1,'Spike']]],
-  ['mtotalbytes_248',['mTotalBytes',['../classAbstractProcessor.html#a1e93480129dc1e855341e4ff725daa61',1,'AbstractProcessor']]],
-  ['mtotallines_249',['mTotalLines',['../classAbstractProcessor.html#ad6cad4b1d0654e4b49c1ca1514d834e6',1,'AbstractProcessor']]],
-  ['mweight_250',['mWeight',['../classscSynapticConnect.html#a15eb1e15bedd047cdffaf63234d56715',1,'scSynapticConnect']]]
+  ['mstate_243',['mState',['../classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576',1,'AbstractNeurer']]],
+  ['mswaitbegin_244',['msWaitBegin',['../classscGridPoint.html#a48aee613d6eac34805f947938cab7c11',1,'scGridPoint']]],
+  ['msynchronfrequency_245',['mSynchronFrequency',['../classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc',1,'AbstractNeurer']]],
+  ['msynchronoffset_246',['mSynchronOffset',['../classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828',1,'AbstractNeurer']]],
+  ['mtimedout_247',['mTimedOut',['../classscHThread.html#ac58ef59a2d4092b9b6f77ecfc739ae49',1,'scHThread']]],
+  ['mtimefactor_248',['mTimeFactor',['../classSpike.html#a1cb11b45898dcf4f0b1108b67580eb81',1,'Spike']]],
+  ['mtotalbytes_249',['mTotalBytes',['../classAbstractProcessor.html#a1e93480129dc1e855341e4ff725daa61',1,'AbstractProcessor']]],
+  ['mtotallines_250',['mTotalLines',['../classAbstractProcessor.html#ad6cad4b1d0654e4b49c1ca1514d834e6',1,'AbstractProcessor']]],
+  ['mweight_251',['mWeight',['../classscSynapticConnect.html#a15eb1e15bedd047cdffaf63234d56715',1,'scSynapticConnect']]]
 ];

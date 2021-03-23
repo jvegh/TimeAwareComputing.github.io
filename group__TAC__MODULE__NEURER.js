@@ -17,6 +17,7 @@ var group__TAC__MODULE__NEURER =
       [ "mSpikeAmplitude", "classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2", null ],
       [ "mSpikeIndex", "classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779", null ],
       [ "mSpikeTime", "classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3", null ],
+      [ "mState", "classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576", null ],
       [ "mSynchronFrequency", "classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc", null ],
       [ "mSynchronOffset", "classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828", null ],
       [ "Recalculate", "classAbstractNeurer.html#a5d618d49f6911f7fd73f7ffaeca9205f", null ],

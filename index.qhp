@@ -9,25 +9,25 @@
         <section title="Overview" ref="index.html" />
         <section title="Getting started" ref="GettingStarted.html" />
         <section title="Chapters" ref="modules.html">
-          <section title="GENERAL: The non-packet specific docs" ref="group__TAC__GENERAL.html">
-            <section title="User&apos;s guide" ref="group__TAC__GENERAL__USER.html" />
-            <section title="Technical guide &amp; programming" ref="group__TAC__GENERAL__TECHNICAL.html" />
-            <section title="Theory guide &amp; background" ref="group__TAC__GENERAL__THEORY.html" />
-          </section>
-          <section title="BASIC The electronic modules" ref="group__TAC__BASIC.html">
-            <section title="User&apos;s guide" ref="group__TAC__BASIC__USER.html" />
-            <section title="Technical guide &amp; programming" ref="group__TAC__BASIC__TECHNICAL.html" />
-            <section title="Theory guide &amp; background" ref="group__TAC__BASIC__THEORY.html" />
+          <section title="NEURER Neural-related modules" ref="group__TAC__NEURER.html">
+            <section title="NEURER: User&apos;s guide" ref="group__TAC__NEURER__USER.html" />
+            <section title="Technical guide &amp; programming" ref="group__TAC__NEURER__TECHNICAL.html" />
+            <section title="Theory guide &amp; background" ref="group__TAC__NEURER__THEORY.html" />
           </section>
           <section title="PROC Processor-related modules" ref="group__TAC__PROC.html">
             <section title="User&apos;s guide" ref="group__TAC__PROC__USER.html" />
             <section title="Technical guide &amp; programming" ref="group__TAC__PROC__TECHNICAL.html" />
             <section title="Theory guide &amp; background" ref="group__TAC__PROC__THEORY.html" />
           </section>
-          <section title="NEURER Neural-related modules" ref="group__TAC__NEURER.html">
-            <section title="NEURER: User&apos;s guide" ref="group__TAC__NEURER__USER.html" />
-            <section title="Technical guide &amp; programming" ref="group__TAC__NEURER__TECHNICAL.html" />
-            <section title="Theory guide &amp; background" ref="group__TAC__NEURER__THEORY.html" />
+          <section title="BASIC The electronic modules" ref="group__TAC__BASIC.html">
+            <section title="User&apos;s guide" ref="group__TAC__BASIC__USER.html" />
+            <section title="Technical guide &amp; programming" ref="group__TAC__BASIC__TECHNICAL.html" />
+            <section title="Theory guide &amp; background" ref="group__TAC__BASIC__THEORY.html" />
+          </section>
+          <section title="GENERAL: The non-packet specific docs" ref="group__TAC__GENERAL.html">
+            <section title="User&apos;s guide" ref="group__TAC__GENERAL__USER.html" />
+            <section title="Technical guide &amp; programming" ref="group__TAC__GENERAL__TECHNICAL.html" />
+            <section title="Theory guide &amp; background" ref="group__TAC__GENERAL__THEORY.html" />
           </section>
           <section title="The simulation source files" ref="group__TAC__MODULE__SOURCES.html">
             <section title="Source of package BASIC" ref="group__TAC__MODULE__BASIC.html">
@@ -103,6 +103,7 @@
                 <section title="mSpikeAmplitude" ref="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2" />
                 <section title="mSpikeIndex" ref="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779" />
                 <section title="mSpikeTime" ref="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3" />
+                <section title="mState" ref="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576" />
                 <section title="mSynchronFrequency" ref="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc" />
                 <section title="mSynchronOffset" ref="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828" />
                 <section title="Recalculate" ref="classAbstractNeurer.html#a5d618d49f6911f7fd73f7ffaeca9205f" />
@@ -148,6 +149,7 @@
             <section title="mSpikeAmplitude" ref="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2" />
             <section title="mSpikeIndex" ref="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779" />
             <section title="mSpikeTime" ref="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3" />
+            <section title="mState" ref="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576" />
             <section title="mSynchronFrequency" ref="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc" />
             <section title="mSynchronOffset" ref="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828" />
             <section title="Recalculate" ref="classAbstractNeurer.html#a5d618d49f6911f7fd73f7ffaeca9205f" />
@@ -580,6 +582,8 @@
       <keyword name="How to work with TAC simulators" id="How to work with TAC simulators" ref="TAC_GEN_WORKING_PAGE.html" />
       <keyword name="Neural operation related stuff" id="Neural operation related stuff" ref="NEURER_MAIN_PAGE.html" />
       <keyword name="How to configure ScQtSimNeurer through its settings files" id="How to configure ScQtSimNeurer through its settings files" ref="NEURER_USER_GUIDE_SETTINGS_PAGE.html" />
+      <keyword name="NEURER Theory Guide" id="NEURER Theory Guide" ref="TAC_NEURER_THEORY_PAGE.html" />
+      <keyword name="Potential in the neuronal communication" id="Potential in the neuronal communication" ref="TAC_NEURER_THEORY_POTENTIAL_PAGE.html" />
       <keyword name="NEURER User&apos;s Guide" id="NEURER User&apos;s Guide" ref="TAC_NEURER_USER_PAGE.html" />
       <keyword name="NEURER User&apos;s Guide: how to work with neurer" id="NEURER User&apos;s Guide: how to work with neurer" ref="TAC_NEURER_USER_WORKING_PAGE.html" />
       <keyword name="Time-aware computing" id="Time-aware computing" ref="TimeAwareComputing.html" />
@@ -587,22 +591,22 @@
       <keyword name="Getting started" id="Getting started" ref="GettingStarted.html" />
       <keyword name="Release notes and porting" id="Release notes and porting" ref="ReleaseNotes.html" />
       <keyword name="Bibliography" id="Bibliography" ref="citelist.html" />
-      <keyword name="GENERAL: The non-packet specific docs" id="GENERAL: The non-packet specific docs" ref="group__TAC__GENERAL.html" />
-      <keyword name="User&apos;s guide" id="User&apos;s guide" ref="group__TAC__GENERAL__USER.html" />
-      <keyword name="Technical guide &amp; programming" id="Technical guide &amp; programming" ref="group__TAC__GENERAL__TECHNICAL.html" />
-      <keyword name="Theory guide &amp; background" id="Theory guide &amp; background" ref="group__TAC__GENERAL__THEORY.html" />
-      <keyword name="BASIC The electronic modules" id="BASIC The electronic modules" ref="group__TAC__BASIC.html" />
-      <keyword name="User&apos;s guide" id="User&apos;s guide" ref="group__TAC__BASIC__USER.html" />
-      <keyword name="Technical guide &amp; programming" id="Technical guide &amp; programming" ref="group__TAC__BASIC__TECHNICAL.html" />
-      <keyword name="Theory guide &amp; background" id="Theory guide &amp; background" ref="group__TAC__BASIC__THEORY.html" />
-      <keyword name="PROC Processor-related modules" id="PROC Processor-related modules" ref="group__TAC__PROC.html" />
-      <keyword name="User&apos;s guide" id="User&apos;s guide" ref="group__TAC__PROC__USER.html" />
-      <keyword name="Technical guide &amp; programming" id="Technical guide &amp; programming" ref="group__TAC__PROC__TECHNICAL.html" />
-      <keyword name="Theory guide &amp; background" id="Theory guide &amp; background" ref="group__TAC__PROC__THEORY.html" />
       <keyword name="NEURER Neural-related modules" id="NEURER Neural-related modules" ref="group__TAC__NEURER.html" />
       <keyword name="NEURER: User&apos;s guide" id="NEURER: User&apos;s guide" ref="group__TAC__NEURER__USER.html" />
       <keyword name="Technical guide &amp; programming" id="Technical guide &amp; programming" ref="group__TAC__NEURER__TECHNICAL.html" />
       <keyword name="Theory guide &amp; background" id="Theory guide &amp; background" ref="group__TAC__NEURER__THEORY.html" />
+      <keyword name="PROC Processor-related modules" id="PROC Processor-related modules" ref="group__TAC__PROC.html" />
+      <keyword name="User&apos;s guide" id="User&apos;s guide" ref="group__TAC__PROC__USER.html" />
+      <keyword name="Technical guide &amp; programming" id="Technical guide &amp; programming" ref="group__TAC__PROC__TECHNICAL.html" />
+      <keyword name="Theory guide &amp; background" id="Theory guide &amp; background" ref="group__TAC__PROC__THEORY.html" />
+      <keyword name="BASIC The electronic modules" id="BASIC The electronic modules" ref="group__TAC__BASIC.html" />
+      <keyword name="User&apos;s guide" id="User&apos;s guide" ref="group__TAC__BASIC__USER.html" />
+      <keyword name="Technical guide &amp; programming" id="Technical guide &amp; programming" ref="group__TAC__BASIC__TECHNICAL.html" />
+      <keyword name="Theory guide &amp; background" id="Theory guide &amp; background" ref="group__TAC__BASIC__THEORY.html" />
+      <keyword name="GENERAL: The non-packet specific docs" id="GENERAL: The non-packet specific docs" ref="group__TAC__GENERAL.html" />
+      <keyword name="User&apos;s guide" id="User&apos;s guide" ref="group__TAC__GENERAL__USER.html" />
+      <keyword name="Technical guide &amp; programming" id="Technical guide &amp; programming" ref="group__TAC__GENERAL__TECHNICAL.html" />
+      <keyword name="Theory guide &amp; background" id="Theory guide &amp; background" ref="group__TAC__GENERAL__THEORY.html" />
       <keyword name="The simulation source files" id="The simulation source files" ref="group__TAC__MODULE__SOURCES.html" />
       <keyword name="Source of package BASIC" id="Source of package BASIC" ref="group__TAC__MODULE__BASIC.html" />
       <keyword name="Source of package PROC" id="Source of package PROC" ref="group__TAC__MODULE__PROC.html" />
@@ -724,6 +728,7 @@
       <keyword name="mSpikeAmplitude" id="AbstractNeurer::mSpikeAmplitude" ref="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2" />
       <keyword name="mSpikeIndex" id="AbstractNeurer::mSpikeIndex" ref="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779" />
       <keyword name="mSpikeTime" id="AbstractNeurer::mSpikeTime" ref="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3" />
+      <keyword name="mState" id="AbstractNeurer::mState" ref="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576" />
       <keyword name="mSynchronFrequency" id="AbstractNeurer::mSynchronFrequency" ref="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc" />
       <keyword name="mSynchronOffset" id="AbstractNeurer::mSynchronOffset" ref="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828" />
       <keyword name="exec" id="scHThread::exec" ref="classscHThread.html#ad10eb6ce848f6df06fe145b14cd1c21f" />
@@ -942,6 +947,7 @@
       <keyword name="mSpikeAmplitude" id="AbstractNeurer::mSpikeAmplitude" ref="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2" />
       <keyword name="mSpikeIndex" id="AbstractNeurer::mSpikeIndex" ref="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779" />
       <keyword name="mSpikeTime" id="AbstractNeurer::mSpikeTime" ref="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3" />
+      <keyword name="mState" id="AbstractNeurer::mState" ref="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576" />
       <keyword name="mSynchronFrequency" id="AbstractNeurer::mSynchronFrequency" ref="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc" />
       <keyword name="mSynchronOffset" id="AbstractNeurer::mSynchronOffset" ref="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828" />
       <keyword name="exec" id="scHThread::exec" ref="classscHThread.html#ad10eb6ce848f6df06fe145b14cd1c21f" />
@@ -1586,6 +1592,14 @@
       <file>TAC_GEN_WORKING_PAGE.html</file>
       <file>NEURER_MAIN_PAGE.html</file>
       <file>NEURER_USER_GUIDE_SETTINGS_PAGE.html</file>
+      <file>TAC_NEURER_THEORY_PAGE.html</file>
+      <file>TAC_NEURER_THEORY_POTENTIAL_PAGE.html</file>
+      <file>EquipotentialSurfacesElectric.jpg</file>
+      <file>two_compartments_separated_by_membrane_w.jpg</file>
+      <file>electric-charge-and-electric-field.jpg</file>
+      <file>neuronal_action_potential_phases_w.jpg</file>
+      <file>ChemicalSynapticTransfer.jpg</file>
+      <file>ElectricSynapticTransfer.jpg</file>
       <file>TAC_NEURER_USER_PAGE.html</file>
       <file>TAC_NEURER_USER_WORKING_PAGE.html</file>
       <file>TimeAwareComputing.html</file>
@@ -1593,22 +1607,22 @@
       <file>GettingStarted.html</file>
       <file>ReleaseNotes.html</file>
       <file>citelist.html</file>
-      <file>group__TAC__GENERAL.html</file>
-      <file>group__TAC__GENERAL__USER.html</file>
-      <file>group__TAC__GENERAL__TECHNICAL.html</file>
-      <file>group__TAC__GENERAL__THEORY.html</file>
-      <file>group__TAC__BASIC.html</file>
-      <file>group__TAC__BASIC__USER.html</file>
-      <file>group__TAC__BASIC__TECHNICAL.html</file>
-      <file>group__TAC__BASIC__THEORY.html</file>
-      <file>group__TAC__PROC.html</file>
-      <file>group__TAC__PROC__USER.html</file>
-      <file>group__TAC__PROC__TECHNICAL.html</file>
-      <file>group__TAC__PROC__THEORY.html</file>
       <file>group__TAC__NEURER.html</file>
       <file>group__TAC__NEURER__USER.html</file>
       <file>group__TAC__NEURER__TECHNICAL.html</file>
       <file>group__TAC__NEURER__THEORY.html</file>
+      <file>group__TAC__PROC.html</file>
+      <file>group__TAC__PROC__USER.html</file>
+      <file>group__TAC__PROC__TECHNICAL.html</file>
+      <file>group__TAC__PROC__THEORY.html</file>
+      <file>group__TAC__BASIC.html</file>
+      <file>group__TAC__BASIC__USER.html</file>
+      <file>group__TAC__BASIC__TECHNICAL.html</file>
+      <file>group__TAC__BASIC__THEORY.html</file>
+      <file>group__TAC__GENERAL.html</file>
+      <file>group__TAC__GENERAL__USER.html</file>
+      <file>group__TAC__GENERAL__TECHNICAL.html</file>
+      <file>group__TAC__GENERAL__THEORY.html</file>
       <file>group__TAC__MODULE__SOURCES.html</file>
       <file>group__TAC__MODULE__BASIC.html</file>
       <file>group__TAC__MODULE__PROC.html</file>
@@ -1746,9 +1760,9 @@
       <file>dir_245247ea24478951905c43d9abcfc398.html</file>
       <file>dir_e68e8157741866f444e17edd764ebbae.html</file>
       <file>dir_87dd991bed2b905bcd3565ad013d861f.html</file>
-      <file>dir_1f1f812f35fcbc75a32af3eac0b92e65.html</file>
       <file>dir_1d1d4084525b8db6f67fc3a8c723c59b.html</file>
       <file>dir_cd7d3c726fae4b99831c9b0778739a0a.html</file>
+      <file>dir_1f1f812f35fcbc75a32af3eac0b92e65.html</file>
       <file>dir_e05d7e2b1ecd646af5bb94391405f3b5.html</file>
       <file>dir_7be0a3fe48fd35cfcc1704e6e19161b4.html</file>
       <file>dir_a49912a4de1fb3c4b533c4f1e26ca899.html</file>

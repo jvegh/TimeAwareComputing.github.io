@@ -1,5 +1,5 @@
 <map id="AbstractNeurer" name="AbstractNeurer">
-<area shape="rect" id="node1" title="The AbstractNeurer class The base class is the scHThread, i.e. HW thread functionality...." alt="" coords="9,659,225,1220"/>
-<area shape="rect" id="node3" href="$classNeurer.html" title="The Neurer class. The class implements the neurer functionality, closer to the neurons...." alt="" coords="35,1268,200,1404"/>
+<area shape="rect" id="node1" title="The AbstractNeurer class The base class is the scHThread, i.e. HW thread functionality...." alt="" coords="9,659,225,1249"/>
+<area shape="rect" id="node3" href="$classNeurer.html" title="The Neurer class. The class implements the neurer functionality, closer to the neurons...." alt="" coords="35,1297,200,1433"/>
 <area shape="rect" id="node2" href="$classscHThread.html" title="The scHThread class." alt="" coords="5,5,229,611"/>
 </map>

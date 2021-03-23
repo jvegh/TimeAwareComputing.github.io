@@ -33,7 +33,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "GettingStarted.html",
-"classscSynapticConnect.html#a75bcd6731a6d33a9ce5beea5af6b1fd3"
+"classscSynapticConnect.html#a6163b78ec2c4be37b220a05c3da4759b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
