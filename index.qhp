@@ -94,6 +94,8 @@
                 <section title="LeakingPeriod_Set" ref="classAbstractNeurer.html#ae1dc44dcf013c9ba654ac16811a506de" />
                 <section title="NeurerCondensatorCapacity_Get" ref="classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143" />
                 <section title="Spiking_method" ref="classAbstractNeurer.html#a0e65a3450f24d1de0a32b0d7bf0787c3" />
+                <section title="Charge" ref="classAbstractNeurer.html#afe80eda06810364976905420e278c0b7" />
+                <section title="Discharge" ref="classAbstractNeurer.html#ab5dcf8352310b61c9ad5501c64d3e1d2" />
                 <section title="EVENT_NEURER" ref="classAbstractNeurer.html#aa89507175ea1327a1ad0ce8ec90ddc46" />
                 <section title="Leaking" ref="classAbstractNeurer.html#aaa39cbb4edf5f4ddabe0b43e1a852e9b" />
                 <section title="m_Axons" ref="classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e" />
@@ -107,7 +109,9 @@
                 <section title="mSynchronFrequency" ref="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc" />
                 <section title="mSynchronOffset" ref="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828" />
                 <section title="Recalculate" ref="classAbstractNeurer.html#a5d618d49f6911f7fd73f7ffaeca9205f" />
+                <section title="Reset" ref="classAbstractNeurer.html#ae30941b38cfa40c7aca308e7a6957946" />
                 <section title="Spiking" ref="classAbstractNeurer.html#a951cf756fb7e2851e83d7c50bdd674c1" />
+                <section title="Trigger" ref="classAbstractNeurer.html#a31ea19a6f020ec2b1fac3bf5adc3e094" />
               </section>
             </section>
           </section>
@@ -140,6 +144,8 @@
             <section title="LeakingPeriod_Set" ref="classAbstractNeurer.html#ae1dc44dcf013c9ba654ac16811a506de" />
             <section title="NeurerCondensatorCapacity_Get" ref="classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143" />
             <section title="Spiking_method" ref="classAbstractNeurer.html#a0e65a3450f24d1de0a32b0d7bf0787c3" />
+            <section title="Charge" ref="classAbstractNeurer.html#afe80eda06810364976905420e278c0b7" />
+            <section title="Discharge" ref="classAbstractNeurer.html#ab5dcf8352310b61c9ad5501c64d3e1d2" />
             <section title="EVENT_NEURER" ref="classAbstractNeurer.html#aa89507175ea1327a1ad0ce8ec90ddc46" />
             <section title="Leaking" ref="classAbstractNeurer.html#aaa39cbb4edf5f4ddabe0b43e1a852e9b" />
             <section title="m_Axons" ref="classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e" />
@@ -153,7 +159,9 @@
             <section title="mSynchronFrequency" ref="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc" />
             <section title="mSynchronOffset" ref="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828" />
             <section title="Recalculate" ref="classAbstractNeurer.html#a5d618d49f6911f7fd73f7ffaeca9205f" />
+            <section title="Reset" ref="classAbstractNeurer.html#ae30941b38cfa40c7aca308e7a6957946" />
             <section title="Spiking" ref="classAbstractNeurer.html#a951cf756fb7e2851e83d7c50bdd674c1" />
+            <section title="Trigger" ref="classAbstractNeurer.html#a31ea19a6f020ec2b1fac3bf5adc3e094" />
           </section>
           <section title="AbstractProcessor" ref="classAbstractProcessor.html">
             <section title="ByIDMask_Get" ref="classAbstractProcessor.html#a33567135d9d7bf7fd6388c3fe37f8190" />
@@ -310,6 +318,7 @@
             <section title="BASIC" ref="classNeurerProcessor.html#a30a6deaa2b297b4e1c67a24dca8074d7" />
             <section title="EVENT_NEURERPROCESSOR" ref="classNeurerProcessor.html#a50c82c34eda0095c7f009374f15ccb0d" />
           </section>
+          <section title="NeurerResting" ref="classNeurerResting.html" />
           <section title="QTattributes_t" ref="structQTattributes__t.html">
             <section title="ID" ref="structQTattributes__t.html#af681d8df3836129426809eeffcf43482" />
             <section title="Length" ref="structQTattributes__t.html#aa8b5212c51e7f5a0f954996623b77924" />
@@ -712,9 +721,13 @@
       <keyword name="StringOfClusterAddress_Get" id="scHThread::StringOfClusterAddress_Get" ref="classscHThread.html#adf11bf937a23896a7a5c1a58e2575cd0" />
       <keyword name="StringOfName_Get" id="scHThread::StringOfName_Get" ref="classscHThread.html#a9c5df7cd8a2889ae154c550e73f4c4a8" />
       <keyword name="Timeout_Set" id="scHThread::Timeout_Set" ref="classscHThread.html#a379ac68fc8435aa3df3490baa15b9f02" />
+      <keyword name="Charge" id="AbstractNeurer::@7::Charge" ref="structAbstractNeurer_1_1_0d7.html#a18039701e5338543d2bc65fd4cdef5fc" />
+      <keyword name="Discharge" id="AbstractNeurer::@7::Discharge" ref="structAbstractNeurer_1_1_0d7.html#a31749f0f765a29790676f94024fd2391" />
       <keyword name="Leaking" id="AbstractNeurer::@7::Leaking" ref="structAbstractNeurer_1_1_0d7.html#a573a8d6d84d5b0dfebbb759dad2a09d9" />
       <keyword name="Recalculate" id="AbstractNeurer::@7::Recalculate" ref="structAbstractNeurer_1_1_0d7.html#a97854112583ac4c7c1b95b233103b298" />
+      <keyword name="Reset" id="AbstractNeurer::@7::Reset" ref="structAbstractNeurer_1_1_0d7.html#a42fee15991d6a3eb6681f4538f795e5c" />
       <keyword name="Spiking" id="AbstractNeurer::@7::Spiking" ref="structAbstractNeurer_1_1_0d7.html#a1fdd0589ce5fa06a504b3b1c6118ba8f" />
+      <keyword name="Trigger" id="AbstractNeurer::@7::Trigger" ref="structAbstractNeurer_1_1_0d7.html#afba8eca6bc9f722a99cf0052e729268e" />
       <keyword name="EVENT_NEURER" id="AbstractNeurer::EVENT_NEURER" ref="classAbstractNeurer.html#aa89507175ea1327a1ad0ce8ec90ddc46" />
       <keyword name="EXEC" id="scHThread::@3::EXEC" ref="structscHThread_1_1_0d3.html#a6f08aa710e8ab9dd58534ae090ff1d19" />
       <keyword name="EXECUTED" id="scHThread::@3::EXECUTED" ref="structscHThread_1_1_0d3.html#a8a23f6efa74ca09d37e5f0f488214527" />
@@ -928,9 +941,13 @@
       <keyword name="StringOfClusterAddress_Get" id="scHThread::StringOfClusterAddress_Get" ref="classscHThread.html#adf11bf937a23896a7a5c1a58e2575cd0" />
       <keyword name="StringOfName_Get" id="scHThread::StringOfName_Get" ref="classscHThread.html#a9c5df7cd8a2889ae154c550e73f4c4a8" />
       <keyword name="Timeout_Set" id="scHThread::Timeout_Set" ref="classscHThread.html#a379ac68fc8435aa3df3490baa15b9f02" />
+      <keyword name="Charge" id="AbstractNeurer::@7::Charge" ref="structAbstractNeurer_1_1_0d7.html#a18039701e5338543d2bc65fd4cdef5fc" />
+      <keyword name="Discharge" id="AbstractNeurer::@7::Discharge" ref="structAbstractNeurer_1_1_0d7.html#a31749f0f765a29790676f94024fd2391" />
       <keyword name="Leaking" id="AbstractNeurer::@7::Leaking" ref="structAbstractNeurer_1_1_0d7.html#a573a8d6d84d5b0dfebbb759dad2a09d9" />
       <keyword name="Recalculate" id="AbstractNeurer::@7::Recalculate" ref="structAbstractNeurer_1_1_0d7.html#a97854112583ac4c7c1b95b233103b298" />
+      <keyword name="Reset" id="AbstractNeurer::@7::Reset" ref="structAbstractNeurer_1_1_0d7.html#a42fee15991d6a3eb6681f4538f795e5c" />
       <keyword name="Spiking" id="AbstractNeurer::@7::Spiking" ref="structAbstractNeurer_1_1_0d7.html#a1fdd0589ce5fa06a504b3b1c6118ba8f" />
+      <keyword name="Trigger" id="AbstractNeurer::@7::Trigger" ref="structAbstractNeurer_1_1_0d7.html#afba8eca6bc9f722a99cf0052e729268e" />
       <keyword name="EVENT_NEURER" id="AbstractNeurer::EVENT_NEURER" ref="classAbstractNeurer.html#aa89507175ea1327a1ad0ce8ec90ddc46" />
       <keyword name="EXEC" id="scHThread::@3::EXEC" ref="structscHThread_1_1_0d3.html#a6f08aa710e8ab9dd58534ae090ff1d19" />
       <keyword name="EXECUTED" id="scHThread::@3::EXECUTED" ref="structscHThread_1_1_0d3.html#a8a23f6efa74ca09d37e5f0f488214527" />
@@ -1084,6 +1101,7 @@
       <keyword name="mClusters" id="AbstractTopology::mClusters" ref="classAbstractTopology.html#a2d0e8aa846d14f3f9f7fba17d429fc4f" />
       <keyword name="mGrid" id="AbstractTopology::mGrid" ref="classAbstractTopology.html#a1d4d9c3e32e6fe9de7563977054cdfe1" />
       <keyword name="mProgramCounter" id="AbstractTopology::mProgramCounter" ref="classAbstractTopology.html#ab81e8188f8bcd16de4f11a0ad73860d4" />
+      <keyword name="NeurerResting" id="NeurerResting" ref="classNeurerResting.html" />
       <keyword name="QTattributes_t" id="QTattributes_t" ref="structQTattributes__t.html" />
       <keyword name="ID" id="QTattributes_t::ID" ref="structQTattributes__t.html#af681d8df3836129426809eeffcf43482" />
       <keyword name="Length" id="QTattributes_t::Length" ref="structQTattributes__t.html#aa8b5212c51e7f5a0f954996623b77924" />
@@ -1597,9 +1615,11 @@
       <file>EquipotentialSurfacesElectric.jpg</file>
       <file>two_compartments_separated_by_membrane_w.jpg</file>
       <file>electric-charge-and-electric-field.jpg</file>
+      <file>Figure_21_07_02a.jpg</file>
       <file>neuronal_action_potential_phases_w.jpg</file>
-      <file>ChemicalSynapticTransfer.jpg</file>
-      <file>ElectricSynapticTransfer.jpg</file>
+      <file>Figure_21_07_01a.jpg</file>
+      <file>Figure_21_07_03a.jpg</file>
+      <file>Figure_21_07_04a.jpg</file>
       <file>TAC_NEURER_USER_PAGE.html</file>
       <file>TAC_NEURER_USER_WORKING_PAGE.html</file>
       <file>TimeAwareComputing.html</file>
@@ -1685,6 +1705,8 @@
       <file>classNeurerProcessor__inherit__graph.png</file>
       <file>classNeurerProcessor__inherit__graph.eps</file>
       <file>classNeurerProcessor-members.html</file>
+      <file>classNeurerResting.html</file>
+      <file>classNeurerResting-members.html</file>
       <file>structQTattributes__t.html</file>
       <file>structQTattributes__t-members.html</file>
       <file>structRegisterLatch__Type.html</file>
@@ -1760,9 +1782,9 @@
       <file>dir_245247ea24478951905c43d9abcfc398.html</file>
       <file>dir_e68e8157741866f444e17edd764ebbae.html</file>
       <file>dir_87dd991bed2b905bcd3565ad013d861f.html</file>
+      <file>dir_1f1f812f35fcbc75a32af3eac0b92e65.html</file>
       <file>dir_1d1d4084525b8db6f67fc3a8c723c59b.html</file>
       <file>dir_cd7d3c726fae4b99831c9b0778739a0a.html</file>
-      <file>dir_1f1f812f35fcbc75a32af3eac0b92e65.html</file>
       <file>dir_e05d7e2b1ecd646af5bb94391405f3b5.html</file>
       <file>dir_7be0a3fe48fd35cfcc1704e6e19161b4.html</file>
       <file>dir_a49912a4de1fb3c4b533c4f1e26ca899.html</file>

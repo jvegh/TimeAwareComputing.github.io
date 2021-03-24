@@ -199,136 +199,148 @@ $(document).ready(function(){initNavTree('AbstractNeurer_8h_source.html',''); in
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;       <span class="keyword">struct</span>{</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        sc_core::sc_event</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;              Leaking        </div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#aaa39cbb4edf5f4ddabe0b43e1a852e9b">  130</a></span>&#160;            ,Spiking        </div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a951cf756fb7e2851e83d7c50bdd674c1">  131</a></span>&#160;            ,Recalculate    </div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a5d618d49f6911f7fd73f7ffaeca9205f">  132</a></span>&#160;        ;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }EVENT_NEURER;  </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;       <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    Integrate_method(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordtype">void</span>    </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    LeakingPeriod_Set(<span class="keywordtype">short</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> P);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordtype">short</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    LeakingPeriod_Get(<span class="keywordtype">void</span>){ <span class="keywordflow">return</span> mLeakingPeriod;}</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    SynchronFrequency_Set(sc_core::sc_event* F){ mSynchronFrequency = F;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                                                 mSynchronFrequency-&gt;notify();</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                               }</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a639009654cd733d7c578a44033281608">  154</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a639009654cd733d7c578a44033281608">IntegratedCurrentInPeriod</a>(<span class="keywordtype">int</span> FromTime, <span class="keywordtype">int</span> ToTime,</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                                  <span class="keywordtype">int</span> FromValue, <span class="keywordtype">int</span> ToValue)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        {   assert(FromTime&lt;ToTime);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordtype">int</span> Average = (FromValue + ToValue)/2;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordtype">float</span> TimeDiff = ToTime - FromTime;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">return</span> TimeDiff*Average;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143">  169</a></span>&#160;        <a class="code" href="classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143">NeurerCondensatorCapacity_Get</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">return</span> mNoOfSynapticPoints<span class="comment">// The number of synaptic points</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                    * 10 <span class="comment">// Synaptic area, u^2</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                    * .01 <span class="comment">// The capacity of a single synapsis, a neuronal condensator</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                    * THOUSAND; <span class="comment">//The result is in  pF</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        }</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;         <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57">  182</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57">IncreaseActionPotentialWithCharge</a>(<span class="keywordtype">int</span> C)</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            mRunningCharge += C</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="comment">//                   /NeurerCondensatorCapacity_Get()</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                    ;    <span class="comment">// Add the actual contribution</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;             <span class="comment">// it is in uV*usec == 10^{-12}F == 10^{-3}pC</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;         int64_t</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    RunningCharge_Get(){ <span class="keywordflow">return</span> mRunningCharge;}</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    AddChargeContribution(int32_t C);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordtype">void</span> Spiking_method(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        int32_t AxonsNo_Get(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    {<span class="keywordflow">return</span> m_Axons.size();} </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        int32_t SynapsesNo_Get(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    { <span class="keywordflow">return</span> m_Synapses.size();} </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    ReadSettings(<span class="keywordtype">string</span> Group, QSettings* settings);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576">  205</a></span>&#160;        AbstractNeurerState *<a class="code" href="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576">mState</a>;   </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        State_Set();</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">/*        void    /// Make the actual inspection; overwritten in subclasses</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">    doInspect(vector&lt;int32_t&gt;&amp; in, vector&lt;int32_t&gt;&amp; out);*/</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordtype">void</span> Leaking_method(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordtype">void</span> Recalculate_method(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        scAxonalConnects_t</div>
-<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e">  214</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e">m_Axons</a>; </div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">//        vector &lt;SynapticConnect_t&gt;</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        scSynapticConnects_t</div>
-<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb">  217</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb">m_Synapses</a>; </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;       <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    AxonalConnectionAdd_To(<a class="code" href="classAbstractNeurer.html">AbstractNeurer</a>* AC);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;       <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    Fire(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordtype">short</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    mLeakingPeriod;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    Resynchronize_method(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        sc_core::sc_time</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    LocalTime_Get(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        sc_core::sc_event*</div>
-<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc">  229</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc">mSynchronFrequency</a>; </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        sc_core::sc_time</div>
-<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828">  231</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828">mSynchronOffset</a>;    </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08">  233</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08">mNoOfSynapticPoints</a>; </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        int64_t     <span class="comment">// Where the calculation of charge contributions is summed</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    mRunningCharge;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="comment">// Floating points have a default -1 … 1 range, but can take any integral limits</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">//        typedef saturating::type&lt;float, -10, 200&gt; ActionPotential_t;</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; <span class="comment">//       saturating::type&lt;float, -10, 200&gt;</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;          <span class="keywordtype">float</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    mActionPotential;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="classSpike.html">Spike</a>*</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    mSpike;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3">  244</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3">mSpikeTime</a>; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2">  246</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2">mSpikeAmplitude</a>; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779">  248</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779">mSpikeIndex</a>;    </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        uint16_t</div>
-<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084">  250</a></span>&#160;    mTimeFactor, <a class="code" href="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084">mAmplitudeFactor</a>; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;}; <span class="comment">// of AbstractNeurer</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment"></span><span class="preprocessor">#endif // AbstractNeurer_h</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            Reset       </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#ae30941b38cfa40c7aca308e7a6957946">  130</a></span>&#160;            ,Trigger </div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a31ea19a6f020ec2b1fac3bf5adc3e094">  131</a></span>&#160;            ,Charge  </div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#afe80eda06810364976905420e278c0b7">  132</a></span>&#160;            ,Discharge </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#ab5dcf8352310b61c9ad5501c64d3e1d2">  133</a></span>&#160;            , Leaking        </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#aaa39cbb4edf5f4ddabe0b43e1a852e9b">  134</a></span>&#160;            ,Spiking        </div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a951cf756fb7e2851e83d7c50bdd674c1">  135</a></span>&#160;            ,Recalculate    </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a5d618d49f6911f7fd73f7ffaeca9205f">  136</a></span>&#160;        ;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }EVENT_NEURER;  </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    Integrate_method(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordtype">void</span>    </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    LeakingPeriod_Set(<span class="keywordtype">short</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> P);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordtype">short</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    LeakingPeriod_Get(<span class="keywordtype">void</span>){ <span class="keywordflow">return</span> mLeakingPeriod;}</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    SynchronFrequency_Set(sc_core::sc_event* F){ mSynchronFrequency = F;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                                 mSynchronFrequency-&gt;notify();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                                               }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    Reset_method(<span class="keywordtype">void</span>);       <span class="comment">//Puts the neurer in its initial state</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    Trigger_method(<span class="keywordtype">void</span>);  <span class="comment">// Puts the neurer in synaptic-aware more</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    Charge_method(<span class="keywordtype">void</span>);  <span class="comment">// Accumulates charge on the membrane, synaptic-unaware</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    Discharge_method(<span class="keywordtype">void</span>); <span class="comment">// Sends the spike to the axon</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment"></span>        <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a639009654cd733d7c578a44033281608">  166</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a639009654cd733d7c578a44033281608">IntegratedCurrentInPeriod</a>(<span class="keywordtype">int</span> FromTime, <span class="keywordtype">int</span> ToTime,</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                  <span class="keywordtype">int</span> FromValue, <span class="keywordtype">int</span> ToValue)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        {   assert(FromTime&lt;ToTime);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordtype">int</span> Average = (FromValue + ToValue)/2;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordtype">float</span> TimeDiff = ToTime - FromTime;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">return</span> TimeDiff*Average;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143">  181</a></span>&#160;        <a class="code" href="classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143">NeurerCondensatorCapacity_Get</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="keywordflow">return</span> mNoOfSynapticPoints<span class="comment">// The number of synaptic points</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                    * 10 <span class="comment">// Synaptic area, u^2</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                    * .01 <span class="comment">// The capacity of a single synapsis, a neuronal condensator</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                    * THOUSAND; <span class="comment">//The result is in  pF</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;         <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57">  194</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57">IncreaseActionPotentialWithCharge</a>(<span class="keywordtype">int</span> C)</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            mRunningCharge += C</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="comment">//                   /NeurerCondensatorCapacity_Get()</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                    ;    <span class="comment">// Add the actual contribution</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;             <span class="comment">// it is in uV*usec == 10^{-12}F == 10^{-3}pC</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;         int64_t</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    RunningCharge_Get(){ <span class="keywordflow">return</span> mRunningCharge;}</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    AddChargeContribution(int32_t C);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordtype">void</span> Spiking_method(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        int32_t AxonsNo_Get(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    {<span class="keywordflow">return</span> m_Axons.size();} </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        int32_t SynapsesNo_Get(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    { <span class="keywordflow">return</span> m_Synapses.size();} </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    ReadSettings(<span class="keywordtype">string</span> Group, QSettings* settings);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576">  217</a></span>&#160;        AbstractNeurerState *<a class="code" href="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576">mState</a>;   </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        State_Set();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">/*        void    /// Make the actual inspection; overwritten in subclasses</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">    doInspect(vector&lt;int32_t&gt;&amp; in, vector&lt;int32_t&gt;&amp; out);*/</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordtype">void</span> Leaking_method(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordtype">void</span> Recalculate_method(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        scAxonalConnects_t</div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e">  226</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e">m_Axons</a>; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">//        vector &lt;SynapticConnect_t&gt;</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        scSynapticConnects_t</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb">  229</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb">m_Synapses</a>; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;       <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    AxonalConnectionAdd_To(<a class="code" href="classAbstractNeurer.html">AbstractNeurer</a>* AC);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;       <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    Fire(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordtype">short</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    mLeakingPeriod;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    Resynchronize_method(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        sc_core::sc_time</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    LocalTime_Get(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        sc_core::sc_event*</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc">  241</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc">mSynchronFrequency</a>; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        sc_core::sc_time</div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828">  243</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828">mSynchronOffset</a>;    </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08">  245</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08">mNoOfSynapticPoints</a>; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        int64_t     <span class="comment">// Where the calculation of charge contributions is summed</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    mRunningCharge;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="comment">// Floating points have a default -1 … 1 range, but can take any integral limits</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment">//        typedef saturating::type&lt;float, -10, 200&gt; ActionPotential_t;</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; <span class="comment">//       saturating::type&lt;float, -10, 200&gt;</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;          <span class="keywordtype">float</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    mActionPotential;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="classSpike.html">Spike</a>*</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    mSpike;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3">  256</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3">mSpikeTime</a>; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2">  258</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2">mSpikeAmplitude</a>; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779">  260</a></span>&#160;    <a class="code" href="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779">mSpikeIndex</a>;    </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        uint16_t</div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084">  262</a></span>&#160;    mTimeFactor, <a class="code" href="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084">mAmplitudeFactor</a>; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}; <span class="comment">// of AbstractNeurer</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment"></span><span class="preprocessor">#endif // AbstractNeurer_h</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassAbstractNeurer_html_a72af19d1cfd13c0bfe4630aca37653cb"><div class="ttname"><a href="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb">AbstractNeurer::m_Synapses</a></div><div class="ttdeci">scSynapticConnects_t m_Synapses</div><div class="ttdoc">List of neurons where our synapses receive input.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:217</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_a72af19d1cfd13c0bfe4630aca37653cb"><div class="ttname"><a href="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb">AbstractNeurer::m_Synapses</a></div><div class="ttdeci">scSynapticConnects_t m_Synapses</div><div class="ttdoc">List of neurons where our synapses receive input.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:229</div></div>
 <div class="ttc" id="aclassscAxonalConnect_html"><div class="ttname"><a href="classscAxonalConnect.html">scAxonalConnect</a></div><div class="ttdoc">Handles the axonal output to a synapsis of a remote neuron. Handles the output broken-line spike.</div><div class="ttdef"><b>Definition:</b> AbstractNeurerConnection.h:88</div></div>
-<div class="ttc" id="aclassAbstractNeurer_html_a6e9ea265c7ea4a1d001d04fb442f89d2"><div class="ttname"><a href="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2">AbstractNeurer::mSpikeAmplitude</a></div><div class="ttdeci">int mSpikeAmplitude</div><div class="ttdoc">Our shadow amplitude about spiking.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:246</div></div>
-<div class="ttc" id="aclassAbstractNeurer_html_a7f77bf1f0b47d89418c0c9725b89d93e"><div class="ttname"><a href="classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e">AbstractNeurer::m_Axons</a></div><div class="ttdeci">scAxonalConnects_t m_Axons</div><div class="ttdoc">List of neurons where our axons lead to.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:214</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_a6e9ea265c7ea4a1d001d04fb442f89d2"><div class="ttname"><a href="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2">AbstractNeurer::mSpikeAmplitude</a></div><div class="ttdeci">int mSpikeAmplitude</div><div class="ttdoc">Our shadow amplitude about spiking.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:258</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_a7f77bf1f0b47d89418c0c9725b89d93e"><div class="ttname"><a href="classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e">AbstractNeurer::m_Axons</a></div><div class="ttdeci">scAxonalConnects_t m_Axons</div><div class="ttdoc">List of neurons where our axons lead to.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:226</div></div>
 <div class="ttc" id="ascGridPoint_8h_html"><div class="ttname"><a href="scGridPoint_8h.html">scGridPoint.h</a></div><div class="ttdoc">Function prototypes for the scEMPA simulator, Core.</div></div>
 <div class="ttc" id="aclassscHThread_html"><div class="ttname"><a href="classscHThread.html">scHThread</a></div><div class="ttdoc">The scHThread class.</div><div class="ttdef"><b>Definition:</b> scHThread.h:134</div></div>
-<div class="ttc" id="aclassAbstractNeurer_html_ac4707cfeef6f8b17a61a1c769791b084"><div class="ttname"><a href="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084">AbstractNeurer::mAmplitudeFactor</a></div><div class="ttdeci">uint16_t mAmplitudeFactor</div><div class="ttdoc">Scale factors for the spike table.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:250</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_ac4707cfeef6f8b17a61a1c769791b084"><div class="ttname"><a href="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084">AbstractNeurer::mAmplitudeFactor</a></div><div class="ttdeci">uint16_t mAmplitudeFactor</div><div class="ttdoc">Scale factors for the spike table.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:262</div></div>
 <div class="ttc" id="aclassscGridPoint_html"><div class="ttname"><a href="classscGridPoint.html">scGridPoint</a></div><div class="ttdoc">This class implements the autonomous grid point functionality: it is a communicating GridPoint....</div><div class="ttdef"><b>Definition:</b> scGridPoint.h:127</div></div>
-<div class="ttc" id="aclassAbstractNeurer_html_a90c552c5d760c1855492bcf033aca779"><div class="ttname"><a href="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779">AbstractNeurer::mSpikeIndex</a></div><div class="ttdeci">int mSpikeIndex</div><div class="ttdoc">The running index of the broken line.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:248</div></div>
-<div class="ttc" id="aclassAbstractNeurer_html_a9b5ccbe806c53f0cf2274b600874a828"><div class="ttname"><a href="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828">AbstractNeurer::mSynchronOffset</a></div><div class="ttdeci">sc_core::sc_time mSynchronOffset</div><div class="ttdoc">Contains the time of the last synchronization event.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:231</div></div>
-<div class="ttc" id="aclassAbstractNeurer_html_a96115fc9b9dfdec4bb98831e9bc90143"><div class="ttname"><a href="classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143">AbstractNeurer::NeurerCondensatorCapacity_Get</a></div><div class="ttdeci">int NeurerCondensatorCapacity_Get(void)</div><div class="ttdoc">NeurerCondensatorCapacity_Get.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:169</div></div>
-<div class="ttc" id="aclassAbstractNeurer_html_a1362da7adafefd58ce445ddda24e79a3"><div class="ttname"><a href="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3">AbstractNeurer::mSpikeTime</a></div><div class="ttdeci">int mSpikeTime</div><div class="ttdoc">Our shadow time about spiking.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:244</div></div>
-<div class="ttc" id="aclassAbstractNeurer_html_a639009654cd733d7c578a44033281608"><div class="ttname"><a href="classAbstractNeurer.html#a639009654cd733d7c578a44033281608">AbstractNeurer::IntegratedCurrentInPeriod</a></div><div class="ttdeci">int IntegratedCurrentInPeriod(int FromTime, int ToTime, int FromValue, int ToValue)</div><div class="ttdoc">IntegratedCurrentInPeriod A simple trapezoidal area (for short period, where the function is nearly l...</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:154</div></div>
-<div class="ttc" id="aclassAbstractNeurer_html_ac0db7695ed1b3ac912813650bb15ba57"><div class="ttname"><a href="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57">AbstractNeurer::IncreaseActionPotentialWithCharge</a></div><div class="ttdeci">void IncreaseActionPotentialWithCharge(int C)</div><div class="ttdoc">IncreaseActionPotentialWithCharge.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:182</div></div>
-<div class="ttc" id="aclassAbstractNeurer_html_aa947d93ab095d2a9fc5b7498c39a2a08"><div class="ttname"><a href="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08">AbstractNeurer::mNoOfSynapticPoints</a></div><div class="ttdeci">int mNoOfSynapticPoints</div><div class="ttdoc">Calculated runtime, actually as m_Synapses.size()</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:233</div></div>
-<div class="ttc" id="aclassAbstractNeurer_html_a8d1d169560ccbe9c50764dffd0a61fcc"><div class="ttname"><a href="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc">AbstractNeurer::mSynchronFrequency</a></div><div class="ttdeci">sc_core::sc_event * mSynchronFrequency</div><div class="ttdoc">Contains which event resets the phase timing.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:229</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_a90c552c5d760c1855492bcf033aca779"><div class="ttname"><a href="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779">AbstractNeurer::mSpikeIndex</a></div><div class="ttdeci">int mSpikeIndex</div><div class="ttdoc">The running index of the broken line.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:260</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_a9b5ccbe806c53f0cf2274b600874a828"><div class="ttname"><a href="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828">AbstractNeurer::mSynchronOffset</a></div><div class="ttdeci">sc_core::sc_time mSynchronOffset</div><div class="ttdoc">Contains the time of the last synchronization event.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:243</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_a96115fc9b9dfdec4bb98831e9bc90143"><div class="ttname"><a href="classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143">AbstractNeurer::NeurerCondensatorCapacity_Get</a></div><div class="ttdeci">int NeurerCondensatorCapacity_Get(void)</div><div class="ttdoc">NeurerCondensatorCapacity_Get.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:181</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_a1362da7adafefd58ce445ddda24e79a3"><div class="ttname"><a href="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3">AbstractNeurer::mSpikeTime</a></div><div class="ttdeci">int mSpikeTime</div><div class="ttdoc">Our shadow time about spiking.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:256</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_a639009654cd733d7c578a44033281608"><div class="ttname"><a href="classAbstractNeurer.html#a639009654cd733d7c578a44033281608">AbstractNeurer::IntegratedCurrentInPeriod</a></div><div class="ttdeci">int IntegratedCurrentInPeriod(int FromTime, int ToTime, int FromValue, int ToValue)</div><div class="ttdoc">IntegratedCurrentInPeriod A simple trapezoidal area (for short period, where the function is nearly l...</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:166</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_ac0db7695ed1b3ac912813650bb15ba57"><div class="ttname"><a href="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57">AbstractNeurer::IncreaseActionPotentialWithCharge</a></div><div class="ttdeci">void IncreaseActionPotentialWithCharge(int C)</div><div class="ttdoc">IncreaseActionPotentialWithCharge.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:194</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_aa947d93ab095d2a9fc5b7498c39a2a08"><div class="ttname"><a href="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08">AbstractNeurer::mNoOfSynapticPoints</a></div><div class="ttdeci">int mNoOfSynapticPoints</div><div class="ttdoc">Calculated runtime, actually as m_Synapses.size()</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:245</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_a8d1d169560ccbe9c50764dffd0a61fcc"><div class="ttname"><a href="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc">AbstractNeurer::mSynchronFrequency</a></div><div class="ttdeci">sc_core::sc_event * mSynchronFrequency</div><div class="ttdoc">Contains which event resets the phase timing.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:241</div></div>
 <div class="ttc" id="aclassscSynapticConnect_html"><div class="ttname"><a href="classscSynapticConnect.html">scSynapticConnect</a></div><div class="ttdoc">Handles input from an axon of a remote neuron, firing to this synapsis. Handles the input broken-line...</div><div class="ttdef"><b>Definition:</b> AbstractNeurerConnection.h:37</div></div>
 <div class="ttc" id="aNeurerConfig_8h_html"><div class="ttname"><a href="NeurerConfig_8h.html">NeurerConfig.h</a></div><div class="ttdoc">Topology information for the Neurer simulator.</div></div>
 <div class="ttc" id="aclassSpike_html"><div class="ttname"><a href="classSpike.html">Spike</a></div><div class="ttdoc">Handles spike tables for the neurons.</div><div class="ttdef"><b>Definition:</b> Spike.h:66</div></div>
-<div class="ttc" id="aclassAbstractNeurer_html_af3101d6f0b60501cd2afe38da7f9f576"><div class="ttname"><a href="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576">AbstractNeurer::mState</a></div><div class="ttdeci">AbstractNeurerState * mState</div><div class="ttdoc">Stores the actual working state.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:205</div></div>
+<div class="ttc" id="aclassAbstractNeurer_html_af3101d6f0b60501cd2afe38da7f9f576"><div class="ttname"><a href="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576">AbstractNeurer::mState</a></div><div class="ttdeci">AbstractNeurerState * mState</div><div class="ttdoc">Stores the actual working state.</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:217</div></div>
 <div class="ttc" id="aclassAbstractNeurer_html"><div class="ttname"><a href="classAbstractNeurer.html">AbstractNeurer</a></div><div class="ttdoc">The AbstractNeurer class The base class is the scHThread, i.e. HW thread functionality....</div><div class="ttdef"><b>Definition:</b> AbstractNeurer.h:57</div></div>
 <div class="ttc" id="aclassNeurerProcessor_html"><div class="ttname"><a href="classNeurerProcessor.html">NeurerProcessor</a></div><div class="ttdoc">The NeurerProcessor class.</div><div class="ttdef"><b>Definition:</b> NeurerProcessor.h:33</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e05d7e2b1ecd646af5bb94391405f3b5.html">modules</a></li><li class="navelem"><a class="el" href="dir_7be0a3fe48fd35cfcc1704e6e19161b4.html">NEURER</a></li><li class="navelem"><a class="el" href="dir_1f1f812f35fcbc75a32af3eac0b92e65.html">include</a></li><li class="navelem"><a class="el" href="AbstractNeurer_8h.html">AbstractNeurer.h</a></li>
-    <li class="footer">Generated on Tue Mar 23 2021 21:24:32 for TAC  V0.0.4 @ 2021.03.19 by
+    <li class="footer">Generated on Wed Mar 24 2021 21:21:26 for TAC  V0.0.4 @ 2021.03.19 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

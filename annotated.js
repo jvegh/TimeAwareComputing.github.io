@@ -21,6 +21,7 @@ var annotated =
     [ "Neurer", "classNeurer.html", null ],
     [ "NeurerCore", "classNeurerCore.html", "classNeurerCore" ],
     [ "NeurerProcessor", "classNeurerProcessor.html", "classNeurerProcessor" ],
+    [ "NeurerResting", "classNeurerResting.html", null ],
     [ "QTattributes_t", "structQTattributes__t.html", "structQTattributes__t" ],
     [ "RegisterLatch_Type", "structRegisterLatch__Type.html", "structRegisterLatch__Type" ],
     [ "scAxonalConnect", "classscAxonalConnect.html", "classscAxonalConnect" ],

@@ -6,6 +6,8 @@ var classAbstractNeurer =
     [ "LeakingPeriod_Set", "classAbstractNeurer.html#ae1dc44dcf013c9ba654ac16811a506de", null ],
     [ "NeurerCondensatorCapacity_Get", "classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143", null ],
     [ "Spiking_method", "classAbstractNeurer.html#a0e65a3450f24d1de0a32b0d7bf0787c3", null ],
+    [ "Charge", "classAbstractNeurer.html#afe80eda06810364976905420e278c0b7", null ],
+    [ "Discharge", "classAbstractNeurer.html#ab5dcf8352310b61c9ad5501c64d3e1d2", null ],
     [ "EVENT_NEURER", "classAbstractNeurer.html#aa89507175ea1327a1ad0ce8ec90ddc46", null ],
     [ "Leaking", "classAbstractNeurer.html#aaa39cbb4edf5f4ddabe0b43e1a852e9b", null ],
     [ "m_Axons", "classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e", null ],
@@ -19,5 +21,7 @@ var classAbstractNeurer =
     [ "mSynchronFrequency", "classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc", null ],
     [ "mSynchronOffset", "classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828", null ],
     [ "Recalculate", "classAbstractNeurer.html#a5d618d49f6911f7fd73f7ffaeca9205f", null ],
-    [ "Spiking", "classAbstractNeurer.html#a951cf756fb7e2851e83d7c50bdd674c1", null ]
+    [ "Reset", "classAbstractNeurer.html#ae30941b38cfa40c7aca308e7a6957946", null ],
+    [ "Spiking", "classAbstractNeurer.html#a951cf756fb7e2851e83d7c50bdd674c1", null ],
+    [ "Trigger", "classAbstractNeurer.html#a31ea19a6f020ec2b1fac3bf5adc3e094", null ]
 ];

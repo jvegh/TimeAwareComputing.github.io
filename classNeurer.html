@@ -124,8 +124,8 @@ $(document).ready(function(){initNavTree('classNeurer.html',''); initResizable()
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classNeurer__inherit__graph.png" border="0" usemap="#Neurer_inherit__map" alt="Inheritance graph"/></div>
 <map name="Neurer_inherit__map" id="Neurer_inherit__map">
-<area shape="rect" title="The Neurer class. The class implements the neurer functionality, closer to the neurons...." alt="" coords="35,1297,200,1433"/>
-<area shape="rect" href="classAbstractNeurer.html" title="The AbstractNeurer class The base class is the scHThread, i.e. HW thread functionality...." alt="" coords="9,659,225,1249"/>
+<area shape="rect" title="The Neurer class. The class implements the neurer functionality, closer to the neurons...." alt="" coords="35,1356,200,1492"/>
+<area shape="rect" href="classAbstractNeurer.html" title="The AbstractNeurer class The base class is the scHThread, i.e. HW thread functionality...." alt="" coords="9,659,225,1308"/>
 <area shape="rect" href="classscHThread.html" title="The scHThread class." alt="" coords="5,5,229,611"/>
 </map>
 </div>
@@ -222,6 +222,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="inherit_header pub_attribs_classAbstractNeurer"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classAbstractNeurer')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classAbstractNeurer.html">AbstractNeurer</a></td></tr>
 <tr class="memitem:aa89507175ea1327a1ad0ce8ec90ddc46 inherit pub_attribs_classAbstractNeurer"><td class="memItemLeft" ><a id="aa89507175ea1327a1ad0ce8ec90ddc46"></a>
 struct {</td></tr>
+<tr class="memitem:a18039701e5338543d2bc65fd4cdef5fc inherit pub_attribs_classAbstractNeurer"><td class="memItemLeft" >
+&#160;&#160;&#160;sc_core::sc_event&#160;&#160;&#160;<a class="el" href="classAbstractNeurer.html#afe80eda06810364976905420e278c0b7">Charge</a></td></tr>
+<tr class="memdesc:a18039701e5338543d2bc65fd4cdef5fc inherit pub_attribs_classAbstractNeurer"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Accumulates charge on the membrane, synaptic-unaware <br /></td></tr>
+<tr class="separator:a18039701e5338543d2bc65fd4cdef5fc inherit pub_attribs_classAbstractNeurer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31749f0f765a29790676f94024fd2391 inherit pub_attribs_classAbstractNeurer"><td class="memItemLeft" >
+&#160;&#160;&#160;sc_core::sc_event&#160;&#160;&#160;<a class="el" href="classAbstractNeurer.html#ab5dcf8352310b61c9ad5501c64d3e1d2">Discharge</a></td></tr>
+<tr class="memdesc:a31749f0f765a29790676f94024fd2391 inherit pub_attribs_classAbstractNeurer"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Sends the spike to the axon <br /></td></tr>
+<tr class="separator:a31749f0f765a29790676f94024fd2391 inherit pub_attribs_classAbstractNeurer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a573a8d6d84d5b0dfebbb759dad2a09d9 inherit pub_attribs_classAbstractNeurer"><td class="memItemLeft" >
 &#160;&#160;&#160;sc_core::sc_event&#160;&#160;&#160;<a class="el" href="classAbstractNeurer.html#aaa39cbb4edf5f4ddabe0b43e1a852e9b">Leaking</a></td></tr>
 <tr class="memdesc:a573a8d6d84d5b0dfebbb759dad2a09d9 inherit pub_attribs_classAbstractNeurer"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; The neuron permanently loses its charge, periodically decreasing the charge <br /></td></tr>
@@ -230,10 +238,18 @@ struct {</td></tr>
 &#160;&#160;&#160;sc_core::sc_event&#160;&#160;&#160;<a class="el" href="classAbstractNeurer.html#a5d618d49f6911f7fd73f7ffaeca9205f">Recalculate</a></td></tr>
 <tr class="memdesc:a97854112583ac4c7c1b95b233103b298 inherit pub_attribs_classAbstractNeurer"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; In the case of prospective change of behavior, the new potential is calculated <br /></td></tr>
 <tr class="separator:a97854112583ac4c7c1b95b233103b298 inherit pub_attribs_classAbstractNeurer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42fee15991d6a3eb6681f4538f795e5c inherit pub_attribs_classAbstractNeurer"><td class="memItemLeft" >
+&#160;&#160;&#160;sc_core::sc_event&#160;&#160;&#160;<a class="el" href="classAbstractNeurer.html#ae30941b38cfa40c7aca308e7a6957946">Reset</a></td></tr>
+<tr class="memdesc:a42fee15991d6a3eb6681f4538f795e5c inherit pub_attribs_classAbstractNeurer"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Puts the neurer in its initial state <br /></td></tr>
+<tr class="separator:a42fee15991d6a3eb6681f4538f795e5c inherit pub_attribs_classAbstractNeurer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fdd0589ce5fa06a504b3b1c6118ba8f inherit pub_attribs_classAbstractNeurer"><td class="memItemLeft" >
 &#160;&#160;&#160;sc_core::sc_event&#160;&#160;&#160;<a class="el" href="classAbstractNeurer.html#a951cf756fb7e2851e83d7c50bdd674c1">Spiking</a></td></tr>
 <tr class="memdesc:a1fdd0589ce5fa06a504b3b1c6118ba8f inherit pub_attribs_classAbstractNeurer"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; The neuron takes the next current value and processes it <br /></td></tr>
 <tr class="separator:a1fdd0589ce5fa06a504b3b1c6118ba8f inherit pub_attribs_classAbstractNeurer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba8eca6bc9f722a99cf0052e729268e inherit pub_attribs_classAbstractNeurer"><td class="memItemLeft" >
+&#160;&#160;&#160;sc_core::sc_event&#160;&#160;&#160;<a class="el" href="classAbstractNeurer.html#a31ea19a6f020ec2b1fac3bf5adc3e094">Trigger</a></td></tr>
+<tr class="memdesc:afba8eca6bc9f722a99cf0052e729268e inherit pub_attribs_classAbstractNeurer"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Puts the neurer in synaptic-aware more <br /></td></tr>
+<tr class="separator:afba8eca6bc9f722a99cf0052e729268e inherit pub_attribs_classAbstractNeurer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa89507175ea1327a1ad0ce8ec90ddc46 inherit pub_attribs_classAbstractNeurer"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractNeurer.html#aa89507175ea1327a1ad0ce8ec90ddc46">EVENT_NEURER</a></td></tr>
 <tr class="memdesc:aa89507175ea1327a1ad0ce8ec90ddc46 inherit pub_attribs_classAbstractNeurer"><td class="mdescLeft">&#160;</td><td class="mdescRight">These events are handled at abstract processor level. <br /></td></tr>
 <tr class="separator:aa89507175ea1327a1ad0ce8ec90ddc46 inherit pub_attribs_classAbstractNeurer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -341,7 +357,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classNeurer.html">Neurer</a></li>
-    <li class="footer">Generated on Tue Mar 23 2021 21:24:32 for TAC  V0.0.4 @ 2021.03.19 by
+    <li class="footer">Generated on Wed Mar 24 2021 21:21:26 for TAC  V0.0.4 @ 2021.03.19 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

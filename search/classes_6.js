@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['neurer_466',['Neurer',['../classNeurer.html',1,'']]],
-  ['neurercore_467',['NeurerCore',['../classNeurerCore.html',1,'']]],
-  ['neurerprocessor_468',['NeurerProcessor',['../classNeurerProcessor.html',1,'']]]
+  ['neurer_470',['Neurer',['../classNeurer.html',1,'']]],
+  ['neurercore_471',['NeurerCore',['../classNeurerCore.html',1,'']]],
+  ['neurerprocessor_472',['NeurerProcessor',['../classNeurerProcessor.html',1,'']]],
+  ['neurerresting_473',['NeurerResting',['../classNeurerResting.html',1,'']]]
 ];
