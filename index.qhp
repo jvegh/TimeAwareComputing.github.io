@@ -5,7 +5,7 @@
   <filterSection>
     <filterAttribute>doxygen</filterAttribute>
     <toc>
-      <section title="TAC  V0.0.4 @ 2021.03.19" ref="index.html">
+      <section title="TAC  V0.0.4 @ 2021.03.25" ref="index.html">
         <section title="Overview" ref="index.html" />
         <section title="Getting started" ref="GettingStarted.html" />
         <section title="Chapters" ref="modules.html">
@@ -102,16 +102,23 @@
                 <section title="m_Synapses" ref="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb" />
                 <section title="mAmplitudeFactor" ref="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084" />
                 <section title="mNoOfSynapticPoints" ref="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08" />
+                <section title="mOperatingState" ref="classAbstractNeurer.html#af1dc8a4cfee4e96d6724768ca11763ab" />
                 <section title="mSpikeAmplitude" ref="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2" />
                 <section title="mSpikeIndex" ref="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779" />
                 <section title="mSpikeTime" ref="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3" />
-                <section title="mState" ref="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576" />
                 <section title="mSynchronFrequency" ref="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc" />
                 <section title="mSynchronOffset" ref="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828" />
                 <section title="Recalculate" ref="classAbstractNeurer.html#a5d618d49f6911f7fd73f7ffaeca9205f" />
                 <section title="Reset" ref="classAbstractNeurer.html#ae30941b38cfa40c7aca308e7a6957946" />
                 <section title="Spiking" ref="classAbstractNeurer.html#a951cf756fb7e2851e83d7c50bdd674c1" />
                 <section title="Trigger" ref="classAbstractNeurer.html#a31ea19a6f020ec2b1fac3bf5adc3e094" />
+              </section>
+              <section title="NeurerOperatingBit_t" ref="group__TAC__MODULE__NEURER.html#gac364bf045e76c4cdcf747de0a1a5c5b4">
+                <section title="nos_Resting" ref="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a3edc835cd5f4f8e86da0e42ed1e81fbc" />
+                <section title="nos_Triggering" ref="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4ab72ef3b2c8b4de41c9a6fdedb8026e1a" />
+                <section title="nos_Charging" ref="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a718d6b65c4d9b2a76657f264efc7e0d8" />
+                <section title="nos_Refracting" ref="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4afb649e30c5f5e5ee426289a70ae2699b" />
+                <section title="nos_Max" ref="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a88e2029a36a63e3af2dc95ff16d98090" />
               </section>
             </section>
           </section>
@@ -152,10 +159,10 @@
             <section title="m_Synapses" ref="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb" />
             <section title="mAmplitudeFactor" ref="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084" />
             <section title="mNoOfSynapticPoints" ref="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08" />
+            <section title="mOperatingState" ref="classAbstractNeurer.html#af1dc8a4cfee4e96d6724768ca11763ab" />
             <section title="mSpikeAmplitude" ref="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2" />
             <section title="mSpikeIndex" ref="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779" />
             <section title="mSpikeTime" ref="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3" />
-            <section title="mState" ref="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576" />
             <section title="mSynchronFrequency" ref="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc" />
             <section title="mSynchronOffset" ref="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828" />
             <section title="Recalculate" ref="classAbstractNeurer.html#a5d618d49f6911f7fd73f7ffaeca9205f" />
@@ -318,7 +325,6 @@
             <section title="BASIC" ref="classNeurerProcessor.html#a30a6deaa2b297b4e1c67a24dca8074d7" />
             <section title="EVENT_NEURERPROCESSOR" ref="classNeurerProcessor.html#a50c82c34eda0095c7f009374f15ccb0d" />
           </section>
-          <section title="NeurerResting" ref="classNeurerResting.html" />
           <section title="QTattributes_t" ref="structQTattributes__t.html">
             <section title="ID" ref="structQTattributes__t.html#af681d8df3836129426809eeffcf43482" />
             <section title="Length" ref="structQTattributes__t.html#aa8b5212c51e7f5a0f954996623b77924" />
@@ -588,6 +594,8 @@
       <keyword name="Packet-independent, general information" id="Packet-independent, general information" ref="TAC_GENERAL_MAIN_PAGE.html" />
       <keyword name="The user projects" id="The user projects" ref="TAC_GENERAL_PROJECTS_PAGE.html" />
       <keyword name="How to configure TAC simulators through its settings files" id="How to configure TAC simulators through its settings files" ref="TAC_GEN_USER_SETTINGS_PAGE.html" />
+      <keyword name="GEN Theory Guide" id="GEN Theory Guide" ref="TAC_GEN_THEORY_PAGE.html" />
+      <keyword name="Phases of computing" id="Phases of computing" ref="TAC_GEN_THEORY_COMPUTATIONAL_PAGE.html" />
       <keyword name="How to work with TAC simulators" id="How to work with TAC simulators" ref="TAC_GEN_WORKING_PAGE.html" />
       <keyword name="Neural operation related stuff" id="Neural operation related stuff" ref="NEURER_MAIN_PAGE.html" />
       <keyword name="How to configure ScQtSimNeurer through its settings files" id="How to configure ScQtSimNeurer through its settings files" ref="NEURER_USER_GUIDE_SETTINGS_PAGE.html" />
@@ -620,6 +628,11 @@
       <keyword name="Source of package BASIC" id="Source of package BASIC" ref="group__TAC__MODULE__BASIC.html" />
       <keyword name="Source of package PROC" id="Source of package PROC" ref="group__TAC__MODULE__PROC.html" />
       <keyword name="Source of package NEURER" id="Source of package NEURER" ref="group__TAC__MODULE__NEURER.html" />
+      <keyword name="nos_Resting" id="AbstractNeurer.h::nos_Resting" ref="AbstractNeurer_8h.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a3edc835cd5f4f8e86da0e42ed1e81fbc" />
+      <keyword name="nos_Triggering" id="AbstractNeurer.h::nos_Triggering" ref="AbstractNeurer_8h.html#ggac364bf045e76c4cdcf747de0a1a5c5b4ab72ef3b2c8b4de41c9a6fdedb8026e1a" />
+      <keyword name="nos_Charging" id="AbstractNeurer.h::nos_Charging" ref="AbstractNeurer_8h.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a718d6b65c4d9b2a76657f264efc7e0d8" />
+      <keyword name="nos_Refracting" id="AbstractNeurer.h::nos_Refracting" ref="AbstractNeurer_8h.html#ggac364bf045e76c4cdcf747de0a1a5c5b4afb649e30c5f5e5ee426289a70ae2699b" />
+      <keyword name="nos_Max" id="AbstractNeurer.h::nos_Max" ref="AbstractNeurer_8h.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a88e2029a36a63e3af2dc95ff16d98090" />
       <keyword name="The other source files (GUI, main, test)" id="The other source files (GUI, main, test)" ref="group__TAC__OTHER__SOURCES.html" />
       <keyword name="AbstractCore" id="AbstractCore" ref="classAbstractCore.html" />
       <keyword name="AbstractCore" id="AbstractCore::AbstractCore" ref="classAbstractCore.html#a95cc05d8943c5020d9c9dcc18a940756" />
@@ -738,10 +751,10 @@
       <keyword name="m_Synapses" id="AbstractNeurer::m_Synapses" ref="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb" />
       <keyword name="mAmplitudeFactor" id="AbstractNeurer::mAmplitudeFactor" ref="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084" />
       <keyword name="mNoOfSynapticPoints" id="AbstractNeurer::mNoOfSynapticPoints" ref="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08" />
+      <keyword name="mOperatingState" id="AbstractNeurer::mOperatingState" ref="classAbstractNeurer.html#af1dc8a4cfee4e96d6724768ca11763ab" />
       <keyword name="mSpikeAmplitude" id="AbstractNeurer::mSpikeAmplitude" ref="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2" />
       <keyword name="mSpikeIndex" id="AbstractNeurer::mSpikeIndex" ref="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779" />
       <keyword name="mSpikeTime" id="AbstractNeurer::mSpikeTime" ref="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3" />
-      <keyword name="mState" id="AbstractNeurer::mState" ref="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576" />
       <keyword name="mSynchronFrequency" id="AbstractNeurer::mSynchronFrequency" ref="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc" />
       <keyword name="mSynchronOffset" id="AbstractNeurer::mSynchronOffset" ref="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828" />
       <keyword name="exec" id="scHThread::exec" ref="classscHThread.html#ad10eb6ce848f6df06fe145b14cd1c21f" />
@@ -961,10 +974,10 @@
       <keyword name="m_Synapses" id="AbstractNeurer::m_Synapses" ref="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb" />
       <keyword name="mAmplitudeFactor" id="AbstractNeurer::mAmplitudeFactor" ref="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084" />
       <keyword name="mNoOfSynapticPoints" id="AbstractNeurer::mNoOfSynapticPoints" ref="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08" />
+      <keyword name="mOperatingState" id="AbstractNeurer::mOperatingState" ref="classAbstractNeurer.html#af1dc8a4cfee4e96d6724768ca11763ab" />
       <keyword name="mSpikeAmplitude" id="AbstractNeurer::mSpikeAmplitude" ref="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2" />
       <keyword name="mSpikeIndex" id="AbstractNeurer::mSpikeIndex" ref="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779" />
       <keyword name="mSpikeTime" id="AbstractNeurer::mSpikeTime" ref="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3" />
-      <keyword name="mState" id="AbstractNeurer::mState" ref="classAbstractNeurer.html#af3101d6f0b60501cd2afe38da7f9f576" />
       <keyword name="mSynchronFrequency" id="AbstractNeurer::mSynchronFrequency" ref="classAbstractNeurer.html#a8d1d169560ccbe9c50764dffd0a61fcc" />
       <keyword name="mSynchronOffset" id="AbstractNeurer::mSynchronOffset" ref="classAbstractNeurer.html#a9b5ccbe806c53f0cf2274b600874a828" />
       <keyword name="exec" id="scHThread::exec" ref="classscHThread.html#ad10eb6ce848f6df06fe145b14cd1c21f" />
@@ -1101,7 +1114,6 @@
       <keyword name="mClusters" id="AbstractTopology::mClusters" ref="classAbstractTopology.html#a2d0e8aa846d14f3f9f7fba17d429fc4f" />
       <keyword name="mGrid" id="AbstractTopology::mGrid" ref="classAbstractTopology.html#a1d4d9c3e32e6fe9de7563977054cdfe1" />
       <keyword name="mProgramCounter" id="AbstractTopology::mProgramCounter" ref="classAbstractTopology.html#ab81e8188f8bcd16de4f11a0ad73860d4" />
-      <keyword name="NeurerResting" id="NeurerResting" ref="classNeurerResting.html" />
       <keyword name="QTattributes_t" id="QTattributes_t" ref="structQTattributes__t.html" />
       <keyword name="ID" id="QTattributes_t::ID" ref="structQTattributes__t.html#af681d8df3836129426809eeffcf43482" />
       <keyword name="Length" id="QTattributes_t::Length" ref="structQTattributes__t.html#aa8b5212c51e7f5a0f954996623b77924" />
@@ -1514,7 +1526,6 @@
       <file>NeurerCore_8h_source.html</file>
       <file>NeurerProcessor_8h_source.html</file>
       <file>NeurerSimulator_8h_source.html</file>
-      <file>NeurerStates_8h_source.html</file>
       <file>ProcConfig_8h_source.html</file>
       <file>ProcessorSimulator_8h_source.html</file>
       <file>scClusterBus_8h_source.html</file>
@@ -1564,7 +1575,6 @@
       <file>NeurerCore_8h.html</file>
       <file>NeurerProcessor_8h.html</file>
       <file>NeurerSimulator_8h.html</file>
-      <file>NeurerStates_8h.html</file>
       <file>ProcConfig_8h.html</file>
       <file>ProcessorSimulator_8h.html</file>
       <file>scClusterBus_8h.html</file>
@@ -1607,6 +1617,8 @@
       <file>TAC_GENERAL_MAIN_PAGE.html</file>
       <file>TAC_GENERAL_PROJECTS_PAGE.html</file>
       <file>TAC_GEN_USER_SETTINGS_PAGE.html</file>
+      <file>TAC_GEN_THEORY_PAGE.html</file>
+      <file>TAC_GEN_THEORY_COMPUTATIONAL_PAGE.html</file>
       <file>TAC_GEN_WORKING_PAGE.html</file>
       <file>NEURER_MAIN_PAGE.html</file>
       <file>NEURER_USER_GUIDE_SETTINGS_PAGE.html</file>
@@ -1705,8 +1717,6 @@
       <file>classNeurerProcessor__inherit__graph.png</file>
       <file>classNeurerProcessor__inherit__graph.eps</file>
       <file>classNeurerProcessor-members.html</file>
-      <file>classNeurerResting.html</file>
-      <file>classNeurerResting-members.html</file>
       <file>structQTattributes__t.html</file>
       <file>structQTattributes__t-members.html</file>
       <file>structRegisterLatch__Type.html</file>

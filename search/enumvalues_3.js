@@ -1,21 +1,8 @@
 var searchData=
 [
-  ['tob_5fallocated_856',['tob_Allocated',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57aad2b6177afcde2ee1bf3638b3c37e863',1,'scHThread.h']]],
-  ['tob_5fblocked_857',['tob_Blocked',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57a24a903f2c0dbc2297977294daf5c2bbe',1,'scHThread.h']]],
-  ['tob_5fdataexpected_858',['tob_DataExpected',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57a644510e7bd47e93c28c6c3ab61cd1d1d',1,'scHThread.h']]],
-  ['tob_5fexecpending_859',['tob_ExecPending',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57a436579d79a17e40990d1dcb9ab7a8f6c',1,'scHThread.h']]],
-  ['tob_5ffetchpending_860',['tob_FetchPending',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57a808d686e1b20760fc2970cb5975fe953',1,'scHThread.h']]],
-  ['tob_5ffetchvalid_861',['tob_FetchValid',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57af452e0fccef016bd36ee9d7059347934',1,'scHThread.h']]],
-  ['tob_5fmemoryexpected_862',['tob_MemoryExpected',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57a2acd6435b8e892d53df0fd87169ced63',1,'scHThread.h']]],
-  ['tob_5fmorphfetched_863',['tob_MorphFetched',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57aefa733b6689d6f87887aaf012cd3f903',1,'scHThread.h']]],
-  ['tob_5fmorphing_864',['tob_Morphing',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57ae6771689292d257a0f2cfbe452edcf25',1,'scHThread.h']]],
-  ['tob_5fobserved_865',['tob_Observed',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57a315d97e751ce5ef14a798cd94a87f5ee',1,'scHThread.h']]],
-  ['tob_5fpcaffected_866',['tob_PCAffected',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57aa94f14cc90077271eafec62fff5ebc87',1,'scHThread.h']]],
-  ['tob_5fpreallocated_867',['tob_PreAllocated',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57ab1287d504ae1e1039334b2cd0ea472c6',1,'scHThread.h']]],
-  ['tob_5fregime_868',['tob_Regime',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57a6a0a10e04a1b0e58ccb0f7ce7892a0d1',1,'scHThread.h']]],
-  ['tpt_5fallocated_869',['tpt_Allocated',['../scProcessor_8h.html#a7b86ea08afc41f821e4ed8631c4c9750a1105f7a7933703cbfec4f38ae2b5ab89',1,'scProcessor.h']]],
-  ['tpt_5fanother_870',['tpt_Another',['../scProcessor_8h.html#a7b86ea08afc41f821e4ed8631c4c9750a4fae17a8dd4b863a480321f9213c3abe',1,'scProcessor.h']]],
-  ['tpt_5fcore_871',['tpt_Core',['../scProcessor_8h.html#a7b86ea08afc41f821e4ed8631c4c9750ac7ea6a3d8e2a2ec949f260e9ab150164',1,'scProcessor.h']]],
-  ['tpt_5fneighbor_872',['tpt_Neighbor',['../scProcessor_8h.html#a7b86ea08afc41f821e4ed8631c4c9750a43527611cc7a1291e2b200436b119a13',1,'scProcessor.h']]],
-  ['tpt_5fpreallocated_873',['tpt_Preallocated',['../scProcessor_8h.html#a7b86ea08afc41f821e4ed8631c4c9750ae9916c3c4b10689127b939aa52d265a4',1,'scProcessor.h']]]
+  ['nos_5fcharging_861',['nos_Charging',['../group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a718d6b65c4d9b2a76657f264efc7e0d8',1,'AbstractNeurer.h']]],
+  ['nos_5fmax_862',['nos_Max',['../group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a88e2029a36a63e3af2dc95ff16d98090',1,'AbstractNeurer.h']]],
+  ['nos_5frefracting_863',['nos_Refracting',['../group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4afb649e30c5f5e5ee426289a70ae2699b',1,'AbstractNeurer.h']]],
+  ['nos_5fresting_864',['nos_Resting',['../group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a3edc835cd5f4f8e86da0e42ed1e81fbc',1,'AbstractNeurer.h']]],
+  ['nos_5ftriggering_865',['nos_Triggering',['../group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4ab72ef3b2c8b4de41c9a6fdedb8026e1a',1,'AbstractNeurer.h']]]
 ];

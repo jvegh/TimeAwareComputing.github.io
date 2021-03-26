@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['threadoperatingbits_5ft_817',['ThreadOperatingBits_t',['../scHThread_8h.html#a21789b94a569e1adb04363e146301e57',1,'scHThread.h']]],
-  ['threadpreference_5ft_818',['ThreadPreference_t',['../scProcessor_8h.html#a7b86ea08afc41f821e4ed8631c4c9750',1,'scProcessor.h']]]
+  ['neureroperatingbit_5ft_821',['NeurerOperatingBit_t',['../group__TAC__MODULE__NEURER.html#gac364bf045e76c4cdcf747de0a1a5c5b4',1,'AbstractNeurer.h']]]
 ];

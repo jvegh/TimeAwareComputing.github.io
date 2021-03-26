@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['registerlatch_5ftype_475',['RegisterLatch_Type',['../structRegisterLatch__Type.html',1,'']]]
+  ['registerlatch_5ftype_480',['RegisterLatch_Type',['../structRegisterLatch__Type.html',1,'']]]
 ];
