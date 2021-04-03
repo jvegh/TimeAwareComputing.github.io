@@ -5,32 +5,32 @@
   <filterSection>
     <filterAttribute>doxygen</filterAttribute>
     <toc>
-      <section title="TAC  V0.0.4 @ 2021.03.25" ref="index.html">
+      <section title="TAC  V0.0.4 @ 2021.04.03" ref="index.html">
         <section title="Overview" ref="index.html" />
-        <section title="Getting started" ref="GettingStarted.html" />
+        <section title="Getting started" ref="@ref GettingStarted" />
         <section title="Chapters" ref="modules.html">
           <section title="NEURER Neural-related modules" ref="group__TAC__NEURER.html">
             <section title="NEURER: User&apos;s guide" ref="group__TAC__NEURER__USER.html" />
-            <section title="Technical guide &amp; programming" ref="group__TAC__NEURER__TECHNICAL.html" />
-            <section title="Theory guide &amp; background" ref="group__TAC__NEURER__THEORY.html" />
+            <section title="NEURER: Technical guide &amp; programming" ref="group__TAC__NEURER__TECHNICAL.html" />
+            <section title="NEURER: Theory guide &amp; background" ref="group__TAC__NEURER__THEORY.html" />
           </section>
           <section title="PROC Processor-related modules" ref="group__TAC__PROC.html">
-            <section title="User&apos;s guide" ref="group__TAC__PROC__USER.html" />
-            <section title="Technical guide &amp; programming" ref="group__TAC__PROC__TECHNICAL.html" />
-            <section title="Theory guide &amp; background" ref="group__TAC__PROC__THEORY.html" />
+            <section title="PROC: User&apos;s guide" ref="group__TAC__PROC__USER.html" />
+            <section title="PROC: Technical guide &amp; programming" ref="group__TAC__PROC__TECHNICAL.html" />
+            <section title="PROC: Theory guide &amp; background" ref="group__TAC__PROC__THEORY.html" />
           </section>
           <section title="BASIC The electronic modules" ref="group__TAC__BASIC.html">
-            <section title="User&apos;s guide" ref="group__TAC__BASIC__USER.html" />
-            <section title="Technical guide &amp; programming" ref="group__TAC__BASIC__TECHNICAL.html" />
-            <section title="Theory guide &amp; background" ref="group__TAC__BASIC__THEORY.html" />
+            <section title="BASIC: User&apos;s guide" ref="group__TAC__BASIC__USER.html" />
+            <section title="BASIC: Technical guide &amp; programming" ref="group__TAC__BASIC__TECHNICAL.html" />
+            <section title="BASIC: Theory guide &amp; background" ref="group__TAC__BASIC__THEORY.html" />
           </section>
           <section title="GENERAL: The non-packet specific docs" ref="group__TAC__GENERAL.html">
-            <section title="User&apos;s guide" ref="group__TAC__GENERAL__USER.html" />
-            <section title="Technical guide &amp; programming" ref="group__TAC__GENERAL__TECHNICAL.html" />
-            <section title="Theory guide &amp; background" ref="group__TAC__GENERAL__THEORY.html" />
+            <section title="GENERAL: User&apos;s guide" ref="group__TAC__GENERAL__USER.html" />
+            <section title="GENERAL: Technical guide &amp; programming" ref="group__TAC__GENERAL__TECHNICAL.html" />
+            <section title="GENERAL: Theory guide &amp; background" ref="group__TAC__GENERAL__THEORY.html" />
           </section>
-          <section title="The simulation source files" ref="group__TAC__MODULE__SOURCES.html">
-            <section title="Source of package BASIC" ref="group__TAC__MODULE__BASIC.html">
+          <section title="SOURCES: The simulation source files" ref="group__TAC__MODULE__SOURCES.html">
+            <section title="SOURCES: package BASIC" ref="group__TAC__MODULE__BASIC.html">
               <section title="AbstractTopology.h" ref="AbstractTopology_8h.html" />
               <section title="ClusterBusRequest.h" ref="ClusterBusRequest_8h.html" />
               <section title="ClusterBusTypes.h" ref="ClusterBusTypes_8h.html" />
@@ -83,16 +83,117 @@
                 <section title="mProgramCounter" ref="classAbstractTopology.html#ab81e8188f8bcd16de4f11a0ad73860d4" />
               </section>
               <section title="ClusterBusRequest" ref="structClusterBusRequest.html" />
+              <section title="CoreExecute_t" ref="structCoreExecute__t.html">
+                <section title="ExecutionTime" ref="structCoreExecute__t.html#a49bf842fea56d7a8a1fb91ba563097ad" />
+                <section title="PC" ref="structCoreExecute__t.html#af1b4764575ecd5f3bd51daef2e023384" />
+                <section title="Stage" ref="structCoreExecute__t.html#aabb37fd1e3fee478a68032beb88d8256" />
+              </section>
+              <section title="CoreFetch_t" ref="structCoreFetch__t.html">
+                <section title="DataBufferPosition" ref="structCoreFetch__t.html#ae0c39f3f5736ac8d1e13ebd08020dc86" />
+                <section title="ExecutionTime" ref="structCoreFetch__t.html#a6e5e2ece26199ded1e010ac3c257de11" />
+                <section title="InstBufferPosition" ref="structCoreFetch__t.html#a22cb44e714e00bee67c510dcc51e64c3" />
+                <section title="NewPC" ref="structCoreFetch__t.html#ac087d6844375fc946c57f6c05a496b01" />
+                <section title="PC" ref="structCoreFetch__t.html#ac677424e3d9330e300d8265b4de569f8" />
+                <section title="Stage" ref="structCoreFetch__t.html#a37e1adad00319083bed609ebcd93d27f" />
+                <section title="WaitTimeBegin" ref="structCoreFetch__t.html#af3856ecaff8ea7fb27fda5aab73e4cd0" />
+              </section>
+              <section title="CoreStage_t" ref="structCoreStage__t.html">
+                <section title="FunctCode" ref="structCoreStage__t.html#a799360e122fa3daf26e7806f16448c6b" />
+                <section title="FunctCode7" ref="structCoreStage__t.html#a562f45407c4ae4bf55ba96dc464a04fb" />
+                <section title="OpCode" ref="structCoreStage__t.html#a19eb0d25772193a370ab8e3fea2168a3" />
+                <section title="RDest" ref="structCoreStage__t.html#aff2f8c607fd4af036ca5786c87f92e78" />
+                <section title="RSource1" ref="structCoreStage__t.html#ac8e057b5a4cf9043f5d36b0944384526" />
+                <section title="RSource2" ref="structCoreStage__t.html#ac10cf7ef94ac67ffad5cd8ce99fb5126" />
+              </section>
+              <section title="QTattributes_t" ref="structQTattributes__t.html">
+                <section title="ID" ref="structQTattributes__t.html#af681d8df3836129426809eeffcf43482" />
+                <section title="Length" ref="structQTattributes__t.html#aa8b5212c51e7f5a0f954996623b77924" />
+                <section title="Offset" ref="structQTattributes__t.html#a1dc1f77c1ab79a44dd130bf26a03cb49" />
+              </section>
+              <section title="scHThread" ref="classscHThread.html">
+                <section title="scHThread" ref="classscHThread.html#a89bc15c8264f102d765ae7533652cc82" />
+                <section title="AllocatedBit_Get" ref="classscHThread.html#a968ed0ba7b3cd0325e0674b61dc0cd9d" />
+                <section title="AllocatedBit_Set" ref="classscHThread.html#aea88babc97c0e87af8a4f6a75dd340f4" />
+                <section title="AllocateFor" ref="classscHThread.html#aa43be3b2d08762ce7f2ca94406691d4a" />
+                <section title="ClusterAddress_Get" ref="classscHThread.html#a81135eea598ba813d117427125dda9cf" />
+                <section title="DataPositionInBuffer" ref="classscHThread.html#a60caf17622a9345b0b3a39a8d447bea5" />
+                <section title="EXEC_method" ref="classscHThread.html#a3c2060e51419de3e48d15dc4449081ef" />
+                <section title="FETCH_method" ref="classscHThread.html#aaaaf865dab0cdd40e5be8faec71f3c59" />
+                <section title="FinishPrefetching" ref="classscHThread.html#a9cc1e87686887326c11ab689a1cf8d1d" />
+                <section title="InstPositionInBuffer" ref="classscHThread.html#a1ba1052f4a3b67a6f8e8372874f1b45e" />
+                <section title="IsTimedOut" ref="classscHThread.html#ac48f6cb0d99df9b328412d7c827db017" />
+                <section title="NEXT_method" ref="classscHThread.html#a6d00bcbade6817681286a567de9e2969" />
+                <section title="ObservedBit_Set" ref="classscHThread.html#a1b4a05d4d1b869e568c3447ca098f904" />
+                <section title="PC_Affected_Set" ref="classscHThread.html#a8c2e0a964a6f28e46a44fce23f1a9643" />
+                <section title="PreAllocatedBit_Get" ref="classscHThread.html#adbcf7c5ec89356a227dbfe89f5410bcd" />
+                <section title="PreAllocatedBit_Set" ref="classscHThread.html#ad364e9cbce3dfd70fa8e6f2a881d0e72" />
+                <section title="PreAllocateFor" ref="classscHThread.html#acab4326fa0e5e78305c33f923edbfd7a" />
+                <section title="Reset" ref="classscHThread.html#a2069a58b21b874aacacb60d37607ac08" />
+                <section title="StringOfClusterAddress_Get" ref="classscHThread.html#adf11bf937a23896a7a5c1a58e2575cd0" />
+                <section title="StringOfName_Get" ref="classscHThread.html#a9c5df7cd8a2889ae154c550e73f4c4a8" />
+                <section title="Timeout_Set" ref="classscHThread.html#a379ac68fc8435aa3df3490baa15b9f02" />
+                <section title="EVENT_HTHREAD" ref="classscHThread.html#a8387442c16b1039cda920476cb1724fc" />
+                <section title="EXEC" ref="classscHThread.html#a4fce7cd35f49f962dc0789aa236f5e64" />
+                <section title="exec" ref="classscHThread.html#ad10eb6ce848f6df06fe145b14cd1c21f" />
+                <section title="EXECUTED" ref="classscHThread.html#a0b7bfef26462fa1727622823f581b587" />
+                <section title="FETCH" ref="classscHThread.html#a6d5caf9a8f47be54b3f46e69ec1f4b68" />
+                <section title="fetch" ref="classscHThread.html#a8634bc77e0842bd4cb6eae8cacf2c084" />
+                <section title="mInstrMemoryAddressEnd" ref="classscHThread.html#adc459464edc7d365b8eb7eb6d6df4019" />
+                <section title="mInstrMemoryBuffer" ref="classscHThread.html#ab7c9b9bf134e5d20b6d29f8412680f8c" />
+                <section title="mTimedOut" ref="classscHThread.html#ac58ef59a2d4092b9b6f77ecfc739ae49" />
+                <section title="NEXT" ref="classscHThread.html#a7d1708631ea91b9df0e057683b2b0ab9" />
+              </section>
+              <section title="HThreadPreference_t" ref="group__TAC__MODULE__BASIC.html#ga04176e71c4344b3a7f3e8979ba4303a8" />
+              <section title="ThreadOperatingBits_t" ref="group__TAC__MODULE__BASIC.html#ga21789b94a569e1adb04363e146301e57">
+                <section title="tob_Regime" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a6a0a10e04a1b0e58ccb0f7ce7892a0d1" />
+                <section title="tob_Allocated" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57aad2b6177afcde2ee1bf3638b3c37e863" />
+                <section title="tob_PreAllocated" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57ab1287d504ae1e1039334b2cd0ea472c6" />
+                <section title="tob_Blocked" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a24a903f2c0dbc2297977294daf5c2bbe" />
+                <section title="tob_MemoryExpected" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a2acd6435b8e892d53df0fd87169ced63" />
+                <section title="tob_DataExpected" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a644510e7bd47e93c28c6c3ab61cd1d1d" />
+                <section title="tob_FetchPending" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a808d686e1b20760fc2970cb5975fe953" />
+                <section title="tob_FetchValid" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57af452e0fccef016bd36ee9d7059347934" />
+                <section title="tob_ExecPending" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a436579d79a17e40990d1dcb9ab7a8f6c" />
+                <section title="tob_MorphFetched" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57aefa733b6689d6f87887aaf012cd3f903" />
+                <section title="tob_Morphing" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57ae6771689292d257a0f2cfbe452edcf25" />
+                <section title="tob_PCAffected" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57aa94f14cc90077271eafec62fff5ebc87" />
+                <section title="tob_Observed" ref="group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a315d97e751ce5ef14a798cd94a87f5ee" />
+              </section>
             </section>
-            <section title="Source of package PROC" ref="group__TAC__MODULE__PROC.html" />
-            <section title="Source of package NEURER" ref="group__TAC__MODULE__NEURER.html">
+            <section title="SOURCES: package PROC" ref="group__TAC__MODULE__PROC.html">
+              <section title="AbstractCore" ref="classAbstractCore.html">
+                <section title="AbstractCore" ref="classAbstractCore.html#a95cc05d8943c5020d9c9dcc18a940756" />
+                <section title="~AbstractCore" ref="classAbstractCore.html#ad8556cc77b404cf79dcbacc969a2dca7" />
+                <section title="CoreText_Get" ref="classAbstractCore.html#a8618ccdd9aa6b83bd385486c2e16a3af" />
+                <section title="doCanTerminate" ref="classAbstractCore.html#aa258dd3ba2599eb8bac3351c771086d7" />
+                <section title="doExecuteInstruction" ref="classAbstractCore.html#aa979e7f24d4ed6d91aa17b41dc330f16" />
+                <section title="doFetchInstruction" ref="classAbstractCore.html#a860df29020b389ff2df1c8362c10d979" />
+                <section title="doQTERM" ref="classAbstractCore.html#ad2ecb0bca8427f67ea75e77f95896039" />
+                <section title="HandleConventionalInstruction" ref="classAbstractCore.html#a32e3f3e52c7c923d08e5e64c0197dd78" />
+                <section title="HandleEndOfWaiting" ref="classAbstractCore.html#a0901316796b52d27b4938f659aa26cda" />
+                <section title="Parent_Get" ref="classAbstractCore.html#a54d78ea4358ed461e113ad55335703c3" />
+                <section title="PrepareNextInstruction" ref="classAbstractCore.html#af14d35c0fdc501abddf1cdc668afc8dc" />
+                <section title="RegisterValue_Get" ref="classAbstractCore.html#abc163603e81de2decd07ebf7a6297c76" />
+                <section title="RegisterValue_Set" ref="classAbstractCore.html#a2f3651d30701b35845d4fc360c53e11d" />
+                <section title="Reset" ref="classAbstractCore.html#a3f9b7afc4d42c1299fb1ccf1bc1629ef" />
+                <section title="StringOfTime_Get" ref="classAbstractCore.html#a4a4d7e3b9e680d6ba9bf1e8eb2fa2671" />
+                <section title="TerminateExecution" ref="classAbstractCore.html#a06c9dfad50463a6073fb7118cabd9923" />
+                <section title="EVENT_CORE" ref="classAbstractCore.html#a050c039b12e2e6691f8b1ab5d2fa1edb" />
+              </section>
+            </section>
+            <section title="SOURCES: package NEURER" ref="group__TAC__MODULE__NEURER.html">
               <section title="AbstractNeurer.h" ref="AbstractNeurer_8h.html" />
               <section title="AbstractNeurer" ref="classAbstractNeurer.html">
                 <section title="FindSynapseFrom" ref="classAbstractNeurer.html#aa75a1e9168a30f53a20424f26256bf23" />
                 <section title="IncreaseActionPotentialWithCharge" ref="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57" />
                 <section title="IntegratedCurrentInPeriod" ref="classAbstractNeurer.html#a639009654cd733d7c578a44033281608" />
                 <section title="LeakingPeriod_Set" ref="classAbstractNeurer.html#ae1dc44dcf013c9ba654ac16811a506de" />
+                <section title="MembranePotentialContribution_Add" ref="classAbstractNeurer.html#a1860a5c56e3ba7846501c8126137c139" />
+                <section title="MembraneSynapticContribution_Add" ref="classAbstractNeurer.html#ad013ed948f3b3fc8a3b50dc3e4f726ba" />
                 <section title="NeurerCondensatorCapacity_Get" ref="classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143" />
+                <section title="NeurerStateBit_Get" ref="classAbstractNeurer.html#a3b2e3413fc96cc99f5254c6c647dc58f" />
+                <section title="NeurerStateBit_Set" ref="classAbstractNeurer.html#ac6c620eb0bba9d86a9ff9bd6e79c81ff" />
+                <section title="Reset_method" ref="classAbstractNeurer.html#a481ae50b444297144a39a6b02a310a3b" />
                 <section title="Spiking_method" ref="classAbstractNeurer.html#a0e65a3450f24d1de0a32b0d7bf0787c3" />
                 <section title="Charge" ref="classAbstractNeurer.html#afe80eda06810364976905420e278c0b7" />
                 <section title="Discharge" ref="classAbstractNeurer.html#ab5dcf8352310b61c9ad5501c64d3e1d2" />
@@ -100,9 +201,12 @@
                 <section title="Leaking" ref="classAbstractNeurer.html#aaa39cbb4edf5f4ddabe0b43e1a852e9b" />
                 <section title="m_Axons" ref="classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e" />
                 <section title="m_Synapses" ref="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb" />
+                <section title="mActionPotentialBegin" ref="classAbstractNeurer.html#a251dd0db0afc36703d98fed745a28328" />
                 <section title="mAmplitudeFactor" ref="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084" />
+                <section title="mMembranePotential" ref="classAbstractNeurer.html#aab436dfb5835d1c08c47f2c575a050a3" />
+                <section title="mMembranePotentialOffset" ref="classAbstractNeurer.html#a6a11a12591221b3883aeb94f43dd3740" />
                 <section title="mNoOfSynapticPoints" ref="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08" />
-                <section title="mOperatingState" ref="classAbstractNeurer.html#af1dc8a4cfee4e96d6724768ca11763ab" />
+                <section title="mOperatingState" ref="classAbstractNeurer.html#a4db9ae463d65f12ff551850130b5b8f1" />
                 <section title="mSpikeAmplitude" ref="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2" />
                 <section title="mSpikeIndex" ref="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779" />
                 <section title="mSpikeTime" ref="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3" />
@@ -113,12 +217,12 @@
                 <section title="Spiking" ref="classAbstractNeurer.html#a951cf756fb7e2851e83d7c50bdd674c1" />
                 <section title="Trigger" ref="classAbstractNeurer.html#a31ea19a6f020ec2b1fac3bf5adc3e094" />
               </section>
-              <section title="NeurerOperatingBit_t" ref="group__TAC__MODULE__NEURER.html#gac364bf045e76c4cdcf747de0a1a5c5b4">
-                <section title="nos_Resting" ref="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a3edc835cd5f4f8e86da0e42ed1e81fbc" />
-                <section title="nos_Triggering" ref="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4ab72ef3b2c8b4de41c9a6fdedb8026e1a" />
-                <section title="nos_Charging" ref="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a718d6b65c4d9b2a76657f264efc7e0d8" />
-                <section title="nos_Refracting" ref="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4afb649e30c5f5e5ee426289a70ae2699b" />
-                <section title="nos_Max" ref="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a88e2029a36a63e3af2dc95ff16d98090" />
+              <section title="NeurerOperatingBit_t" ref="group__TAC__MODULE__NEURER.html#gaaebd9daf17b8a980819e7fa4d0b3dac7">
+                <section title="nsb_Resting" ref="group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7a50872beb694daecd0484a93338ed671a" />
+                <section title="nsb_Triggering" ref="group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7af0142354f33caf703091e9fd1f228855" />
+                <section title="nsb_Charging" ref="group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7ac05c354f16ed760eab63e8c6b37dc633" />
+                <section title="nsb_Firing" ref="group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7ab505833e10fd33cde7416b5f4dd7d82b" />
+                <section title="nsb_Max" ref="group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7a0328d05f0fbd2a61688cf103aeb2bb6b" />
               </section>
             </section>
           </section>
@@ -149,7 +253,12 @@
             <section title="IncreaseActionPotentialWithCharge" ref="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57" />
             <section title="IntegratedCurrentInPeriod" ref="classAbstractNeurer.html#a639009654cd733d7c578a44033281608" />
             <section title="LeakingPeriod_Set" ref="classAbstractNeurer.html#ae1dc44dcf013c9ba654ac16811a506de" />
+            <section title="MembranePotentialContribution_Add" ref="classAbstractNeurer.html#a1860a5c56e3ba7846501c8126137c139" />
+            <section title="MembraneSynapticContribution_Add" ref="classAbstractNeurer.html#ad013ed948f3b3fc8a3b50dc3e4f726ba" />
             <section title="NeurerCondensatorCapacity_Get" ref="classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143" />
+            <section title="NeurerStateBit_Get" ref="classAbstractNeurer.html#a3b2e3413fc96cc99f5254c6c647dc58f" />
+            <section title="NeurerStateBit_Set" ref="classAbstractNeurer.html#ac6c620eb0bba9d86a9ff9bd6e79c81ff" />
+            <section title="Reset_method" ref="classAbstractNeurer.html#a481ae50b444297144a39a6b02a310a3b" />
             <section title="Spiking_method" ref="classAbstractNeurer.html#a0e65a3450f24d1de0a32b0d7bf0787c3" />
             <section title="Charge" ref="classAbstractNeurer.html#afe80eda06810364976905420e278c0b7" />
             <section title="Discharge" ref="classAbstractNeurer.html#ab5dcf8352310b61c9ad5501c64d3e1d2" />
@@ -157,9 +266,12 @@
             <section title="Leaking" ref="classAbstractNeurer.html#aaa39cbb4edf5f4ddabe0b43e1a852e9b" />
             <section title="m_Axons" ref="classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e" />
             <section title="m_Synapses" ref="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb" />
+            <section title="mActionPotentialBegin" ref="classAbstractNeurer.html#a251dd0db0afc36703d98fed745a28328" />
             <section title="mAmplitudeFactor" ref="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084" />
+            <section title="mMembranePotential" ref="classAbstractNeurer.html#aab436dfb5835d1c08c47f2c575a050a3" />
+            <section title="mMembranePotentialOffset" ref="classAbstractNeurer.html#a6a11a12591221b3883aeb94f43dd3740" />
             <section title="mNoOfSynapticPoints" ref="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08" />
-            <section title="mOperatingState" ref="classAbstractNeurer.html#af1dc8a4cfee4e96d6724768ca11763ab" />
+            <section title="mOperatingState" ref="classAbstractNeurer.html#a4db9ae463d65f12ff551850130b5b8f1" />
             <section title="mSpikeAmplitude" ref="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2" />
             <section title="mSpikeIndex" ref="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779" />
             <section title="mSpikeTime" ref="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3" />
@@ -246,7 +358,6 @@
             <section title="IsNeighborOf" ref="classGridPoint.html#a9539267de255431eb03e6557c8facb56" />
             <section title="IsTheSameAs" ref="classGridPoint.html#a9fd08b588865c71768bf4dad745c425e" />
             <section title="StringOfClusterAddressName_Get" ref="classGridPoint.html#a0c6f9a6f7f665051311a977b5bf5a866" />
-            <section title="StringOfProxy_Get" ref="classGridPoint.html#a105be972d6e08be65c0f195bb23cc29d" />
             <section title="StringOfThread_Get" ref="classGridPoint.html#a7c6b79ffa1a5a1296ca65bfcc3920669" />
             <section title="mClusterAddress" ref="classGridPoint.html#a84a8fa5156fe7bc7291f0e5595fc8496" />
             <section title="X" ref="classGridPoint.html#aec208dc2466c9317733b5f7878f4e5bc" />
@@ -522,6 +633,9 @@
             <section title="RegisterName_Get" ref="classY86Processor.html#ab49bdc289a2071670c886f37a832be03" />
           </section>
         </section>
+        <section title="Cited references" ref="citelist.html" />
+        <section title="Glossary" ref="GLOSSARY.html" />
+        <section title="Visitor Statistic" ref="VisitorStatistics.html" />
       </section>
     </toc>
     <keywords>
@@ -562,19 +676,6 @@
       <keyword name="IsMemory1" id="scGridPoint.h::IsMemory1" ref="scGridPoint_8h.html#a86371db225310539c8c1daa1bb5cbfce" />
       <keyword name="IsMemory2" id="scGridPoint.h::IsMemory2" ref="scGridPoint_8h.html#a77d04c2922b945879d906fcb08694dd7" />
       <keyword name="IsMemory3" id="scGridPoint.h::IsMemory3" ref="scGridPoint_8h.html#a57124895613aa253f98aa574071f302d" />
-      <keyword name="tob_Regime" id="scHThread.h::tob_Regime" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57a6a0a10e04a1b0e58ccb0f7ce7892a0d1" />
-      <keyword name="tob_Allocated" id="scHThread.h::tob_Allocated" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57aad2b6177afcde2ee1bf3638b3c37e863" />
-      <keyword name="tob_PreAllocated" id="scHThread.h::tob_PreAllocated" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57ab1287d504ae1e1039334b2cd0ea472c6" />
-      <keyword name="tob_Blocked" id="scHThread.h::tob_Blocked" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57a24a903f2c0dbc2297977294daf5c2bbe" />
-      <keyword name="tob_MemoryExpected" id="scHThread.h::tob_MemoryExpected" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57a2acd6435b8e892d53df0fd87169ced63" />
-      <keyword name="tob_DataExpected" id="scHThread.h::tob_DataExpected" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57a644510e7bd47e93c28c6c3ab61cd1d1d" />
-      <keyword name="tob_FetchPending" id="scHThread.h::tob_FetchPending" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57a808d686e1b20760fc2970cb5975fe953" />
-      <keyword name="tob_FetchValid" id="scHThread.h::tob_FetchValid" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57af452e0fccef016bd36ee9d7059347934" />
-      <keyword name="tob_ExecPending" id="scHThread.h::tob_ExecPending" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57a436579d79a17e40990d1dcb9ab7a8f6c" />
-      <keyword name="tob_MorphFetched" id="scHThread.h::tob_MorphFetched" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57aefa733b6689d6f87887aaf012cd3f903" />
-      <keyword name="tob_Morphing" id="scHThread.h::tob_Morphing" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57ae6771689292d257a0f2cfbe452edcf25" />
-      <keyword name="tob_PCAffected" id="scHThread.h::tob_PCAffected" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57aa94f14cc90077271eafec62fff5ebc87" />
-      <keyword name="tob_Observed" id="scHThread.h::tob_Observed" ref="scHThread_8h.html#a21789b94a569e1adb04363e146301e57a315d97e751ce5ef14a798cd94a87f5ee" />
       <keyword name="msg_Reg" id="scIGPMessage.h::msg_Reg" ref="scIGPMessage_8h.html#a7bfe36cbbaf0d8b3d04a5a709a6812b1a8e34e067198693108ffc0a28e7b444a7" />
       <keyword name="msg_Qt" id="scIGPMessage.h::msg_Qt" ref="scIGPMessage_8h.html#a7bfe36cbbaf0d8b3d04a5a709a6812b1aae4bfb8556bff8a4b4eda81e01ad8d85" />
       <keyword name="msg_Mem" id="scIGPMessage.h::msg_Mem" ref="scIGPMessage_8h.html#a7bfe36cbbaf0d8b3d04a5a709a6812b1aa689b46b3a1b8df6f47f8d05779bd178" />
@@ -586,53 +687,70 @@
       <keyword name="tpt_Neighbor" id="scProcessor.h::tpt_Neighbor" ref="scProcessor_8h.html#a7b86ea08afc41f821e4ed8631c4c9750a43527611cc7a1291e2b200436b119a13" />
       <keyword name="tpt_Another" id="scProcessor.h::tpt_Another" ref="scProcessor_8h.html#a7b86ea08afc41f821e4ed8631c4c9750a4fae17a8dd4b863a480321f9213c3abe" />
       <keyword name="BASIC electronic modules and their communication" id="BASIC electronic modules and their communication" ref="TAC_BASIC_MAIN_PAGE.html" />
-      <keyword name="BASIC technical guide" id="BASIC technical guide" ref="TAC_BASIC_TECHNICAL_PAGE.html" />
-      <keyword name="BASIC module placing and addressing" id="BASIC module placing and addressing" ref="TAC_BASIC_TECHNICAL_Addressing_PAGE.html" />
+      <keyword name="The cooperation" id="The cooperation" ref="TAC_BASIC_TECHNICAL_Cooperation_Page.html" />
+      <keyword name="Technical operation of the message-based system" id="Technical operation of the message-based system" ref="TAC_BASIC_TECHNICAL_Operation_PAGE.html" />
+      <keyword name="Technical breakdown of the modules" id="Technical breakdown of the modules" ref="TAC_BASIC_TECHNICAL_Beakdown_PAGE.html" />
       <keyword name="Application directories on your system" id="Application directories on your system" ref="TAC_GEN_USER_DIR_PAGE.html" />
       <keyword name="How to install TAC simulators on your system" id="How to install TAC simulators on your system" ref="TAC_GEN_USER_INSTALL_PAGE.html" />
       <keyword name="User interfaces" id="User interfaces" ref="TAC_GEN_USER_INTERFACE_PAGE.html" />
       <keyword name="Packet-independent, general information" id="Packet-independent, general information" ref="TAC_GENERAL_MAIN_PAGE.html" />
       <keyword name="The user projects" id="The user projects" ref="TAC_GENERAL_PROJECTS_PAGE.html" />
       <keyword name="How to configure TAC simulators through its settings files" id="How to configure TAC simulators through its settings files" ref="TAC_GEN_USER_SETTINGS_PAGE.html" />
+      <keyword name="How time-aware simulation works" id="How time-aware simulation works" ref="TAC_GEN_TECHNICAL_OPERATION_PAGE.html" />
       <keyword name="GEN Theory Guide" id="GEN Theory Guide" ref="TAC_GEN_THEORY_PAGE.html" />
       <keyword name="Phases of computing" id="Phases of computing" ref="TAC_GEN_THEORY_COMPUTATIONAL_PAGE.html" />
+      <keyword name="Time-aware computing" id="Time-aware computing" ref="TAC_GEN_THEORY_PARADIGM_PAGE.html" />
       <keyword name="How to work with TAC simulators" id="How to work with TAC simulators" ref="TAC_GEN_WORKING_PAGE.html" />
       <keyword name="Neural operation related stuff" id="Neural operation related stuff" ref="NEURER_MAIN_PAGE.html" />
       <keyword name="How to configure ScQtSimNeurer through its settings files" id="How to configure ScQtSimNeurer through its settings files" ref="NEURER_USER_GUIDE_SETTINGS_PAGE.html" />
+      <keyword name="NEURER Technical Guide" id="NEURER Technical Guide" ref="TAC_NEURER_TECHNICAL_PAGE.html" />
+      <keyword name="How time-aware neuronal simulation works" id="How time-aware neuronal simulation works" ref="TAC_NEURER_TECHNICAL_OPERATION_PAGE.html" />
       <keyword name="NEURER Theory Guide" id="NEURER Theory Guide" ref="TAC_NEURER_THEORY_PAGE.html" />
       <keyword name="Potential in the neuronal communication" id="Potential in the neuronal communication" ref="TAC_NEURER_THEORY_POTENTIAL_PAGE.html" />
       <keyword name="NEURER User&apos;s Guide" id="NEURER User&apos;s Guide" ref="TAC_NEURER_USER_PAGE.html" />
       <keyword name="NEURER User&apos;s Guide: how to work with neurer" id="NEURER User&apos;s Guide: how to work with neurer" ref="TAC_NEURER_USER_WORKING_PAGE.html" />
-      <keyword name="Time-aware computing" id="Time-aware computing" ref="TimeAwareComputing.html" />
       <keyword name="GLOSSARY" id="GLOSSARY" ref="GLOSSARY.html" />
-      <keyword name="Getting started" id="Getting started" ref="GettingStarted.html" />
+      <keyword name="Visitor statistics" id="Visitor statistics" ref="VisitorStatistics.html" />
       <keyword name="Release notes and porting" id="Release notes and porting" ref="ReleaseNotes.html" />
       <keyword name="Bibliography" id="Bibliography" ref="citelist.html" />
       <keyword name="NEURER Neural-related modules" id="NEURER Neural-related modules" ref="group__TAC__NEURER.html" />
       <keyword name="NEURER: User&apos;s guide" id="NEURER: User&apos;s guide" ref="group__TAC__NEURER__USER.html" />
-      <keyword name="Technical guide &amp; programming" id="Technical guide &amp; programming" ref="group__TAC__NEURER__TECHNICAL.html" />
-      <keyword name="Theory guide &amp; background" id="Theory guide &amp; background" ref="group__TAC__NEURER__THEORY.html" />
+      <keyword name="NEURER: Technical guide &amp; programming" id="NEURER: Technical guide &amp; programming" ref="group__TAC__NEURER__TECHNICAL.html" />
+      <keyword name="NEURER: Theory guide &amp; background" id="NEURER: Theory guide &amp; background" ref="group__TAC__NEURER__THEORY.html" />
       <keyword name="PROC Processor-related modules" id="PROC Processor-related modules" ref="group__TAC__PROC.html" />
-      <keyword name="User&apos;s guide" id="User&apos;s guide" ref="group__TAC__PROC__USER.html" />
-      <keyword name="Technical guide &amp; programming" id="Technical guide &amp; programming" ref="group__TAC__PROC__TECHNICAL.html" />
-      <keyword name="Theory guide &amp; background" id="Theory guide &amp; background" ref="group__TAC__PROC__THEORY.html" />
+      <keyword name="PROC: User&apos;s guide" id="PROC: User&apos;s guide" ref="group__TAC__PROC__USER.html" />
+      <keyword name="PROC: Technical guide &amp; programming" id="PROC: Technical guide &amp; programming" ref="group__TAC__PROC__TECHNICAL.html" />
+      <keyword name="PROC: Theory guide &amp; background" id="PROC: Theory guide &amp; background" ref="group__TAC__PROC__THEORY.html" />
       <keyword name="BASIC The electronic modules" id="BASIC The electronic modules" ref="group__TAC__BASIC.html" />
-      <keyword name="User&apos;s guide" id="User&apos;s guide" ref="group__TAC__BASIC__USER.html" />
-      <keyword name="Technical guide &amp; programming" id="Technical guide &amp; programming" ref="group__TAC__BASIC__TECHNICAL.html" />
-      <keyword name="Theory guide &amp; background" id="Theory guide &amp; background" ref="group__TAC__BASIC__THEORY.html" />
+      <keyword name="BASIC: User&apos;s guide" id="BASIC: User&apos;s guide" ref="group__TAC__BASIC__USER.html" />
+      <keyword name="BASIC: Technical guide &amp; programming" id="BASIC: Technical guide &amp; programming" ref="group__TAC__BASIC__TECHNICAL.html" />
+      <keyword name="BASIC: Theory guide &amp; background" id="BASIC: Theory guide &amp; background" ref="group__TAC__BASIC__THEORY.html" />
       <keyword name="GENERAL: The non-packet specific docs" id="GENERAL: The non-packet specific docs" ref="group__TAC__GENERAL.html" />
-      <keyword name="User&apos;s guide" id="User&apos;s guide" ref="group__TAC__GENERAL__USER.html" />
-      <keyword name="Technical guide &amp; programming" id="Technical guide &amp; programming" ref="group__TAC__GENERAL__TECHNICAL.html" />
-      <keyword name="Theory guide &amp; background" id="Theory guide &amp; background" ref="group__TAC__GENERAL__THEORY.html" />
-      <keyword name="The simulation source files" id="The simulation source files" ref="group__TAC__MODULE__SOURCES.html" />
-      <keyword name="Source of package BASIC" id="Source of package BASIC" ref="group__TAC__MODULE__BASIC.html" />
-      <keyword name="Source of package PROC" id="Source of package PROC" ref="group__TAC__MODULE__PROC.html" />
-      <keyword name="Source of package NEURER" id="Source of package NEURER" ref="group__TAC__MODULE__NEURER.html" />
-      <keyword name="nos_Resting" id="AbstractNeurer.h::nos_Resting" ref="AbstractNeurer_8h.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a3edc835cd5f4f8e86da0e42ed1e81fbc" />
-      <keyword name="nos_Triggering" id="AbstractNeurer.h::nos_Triggering" ref="AbstractNeurer_8h.html#ggac364bf045e76c4cdcf747de0a1a5c5b4ab72ef3b2c8b4de41c9a6fdedb8026e1a" />
-      <keyword name="nos_Charging" id="AbstractNeurer.h::nos_Charging" ref="AbstractNeurer_8h.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a718d6b65c4d9b2a76657f264efc7e0d8" />
-      <keyword name="nos_Refracting" id="AbstractNeurer.h::nos_Refracting" ref="AbstractNeurer_8h.html#ggac364bf045e76c4cdcf747de0a1a5c5b4afb649e30c5f5e5ee426289a70ae2699b" />
-      <keyword name="nos_Max" id="AbstractNeurer.h::nos_Max" ref="AbstractNeurer_8h.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a88e2029a36a63e3af2dc95ff16d98090" />
+      <keyword name="GENERAL: User&apos;s guide" id="GENERAL: User&apos;s guide" ref="group__TAC__GENERAL__USER.html" />
+      <keyword name="GENERAL: Technical guide &amp; programming" id="GENERAL: Technical guide &amp; programming" ref="group__TAC__GENERAL__TECHNICAL.html" />
+      <keyword name="GENERAL: Theory guide &amp; background" id="GENERAL: Theory guide &amp; background" ref="group__TAC__GENERAL__THEORY.html" />
+      <keyword name="SOURCES: The simulation source files" id="SOURCES: The simulation source files" ref="group__TAC__MODULE__SOURCES.html" />
+      <keyword name="SOURCES: package BASIC" id="SOURCES: package BASIC" ref="group__TAC__MODULE__BASIC.html" />
+      <keyword name="tob_Regime" id="scHThread.h::tob_Regime" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57a6a0a10e04a1b0e58ccb0f7ce7892a0d1" />
+      <keyword name="tob_Allocated" id="scHThread.h::tob_Allocated" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57aad2b6177afcde2ee1bf3638b3c37e863" />
+      <keyword name="tob_PreAllocated" id="scHThread.h::tob_PreAllocated" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57ab1287d504ae1e1039334b2cd0ea472c6" />
+      <keyword name="tob_Blocked" id="scHThread.h::tob_Blocked" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57a24a903f2c0dbc2297977294daf5c2bbe" />
+      <keyword name="tob_MemoryExpected" id="scHThread.h::tob_MemoryExpected" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57a2acd6435b8e892d53df0fd87169ced63" />
+      <keyword name="tob_DataExpected" id="scHThread.h::tob_DataExpected" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57a644510e7bd47e93c28c6c3ab61cd1d1d" />
+      <keyword name="tob_FetchPending" id="scHThread.h::tob_FetchPending" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57a808d686e1b20760fc2970cb5975fe953" />
+      <keyword name="tob_FetchValid" id="scHThread.h::tob_FetchValid" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57af452e0fccef016bd36ee9d7059347934" />
+      <keyword name="tob_ExecPending" id="scHThread.h::tob_ExecPending" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57a436579d79a17e40990d1dcb9ab7a8f6c" />
+      <keyword name="tob_MorphFetched" id="scHThread.h::tob_MorphFetched" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57aefa733b6689d6f87887aaf012cd3f903" />
+      <keyword name="tob_Morphing" id="scHThread.h::tob_Morphing" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57ae6771689292d257a0f2cfbe452edcf25" />
+      <keyword name="tob_PCAffected" id="scHThread.h::tob_PCAffected" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57aa94f14cc90077271eafec62fff5ebc87" />
+      <keyword name="tob_Observed" id="scHThread.h::tob_Observed" ref="scHThread_8h.html#gga21789b94a569e1adb04363e146301e57a315d97e751ce5ef14a798cd94a87f5ee" />
+      <keyword name="SOURCES: package PROC" id="SOURCES: package PROC" ref="group__TAC__MODULE__PROC.html" />
+      <keyword name="SOURCES: package NEURER" id="SOURCES: package NEURER" ref="group__TAC__MODULE__NEURER.html" />
+      <keyword name="nsb_Resting" id="AbstractNeurer.h::nsb_Resting" ref="AbstractNeurer_8h.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7a50872beb694daecd0484a93338ed671a" />
+      <keyword name="nsb_Triggering" id="AbstractNeurer.h::nsb_Triggering" ref="AbstractNeurer_8h.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7af0142354f33caf703091e9fd1f228855" />
+      <keyword name="nsb_Charging" id="AbstractNeurer.h::nsb_Charging" ref="AbstractNeurer_8h.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7ac05c354f16ed760eab63e8c6b37dc633" />
+      <keyword name="nsb_Firing" id="AbstractNeurer.h::nsb_Firing" ref="AbstractNeurer_8h.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7ab505833e10fd33cde7416b5f4dd7d82b" />
+      <keyword name="nsb_Max" id="AbstractNeurer.h::nsb_Max" ref="AbstractNeurer_8h.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7a0328d05f0fbd2a61688cf103aeb2bb6b" />
       <keyword name="The other source files (GUI, main, test)" id="The other source files (GUI, main, test)" ref="group__TAC__OTHER__SOURCES.html" />
       <keyword name="AbstractCore" id="AbstractCore" ref="classAbstractCore.html" />
       <keyword name="AbstractCore" id="AbstractCore::AbstractCore" ref="classAbstractCore.html#a95cc05d8943c5020d9c9dcc18a940756" />
@@ -685,7 +803,6 @@
       <keyword name="IsNeighborOf" id="GridPoint::IsNeighborOf" ref="classGridPoint.html#a9539267de255431eb03e6557c8facb56" />
       <keyword name="IsTheSameAs" id="GridPoint::IsTheSameAs" ref="classGridPoint.html#a9fd08b588865c71768bf4dad745c425e" />
       <keyword name="StringOfClusterAddressName_Get" id="GridPoint::StringOfClusterAddressName_Get" ref="classGridPoint.html#a0c6f9a6f7f665051311a977b5bf5a866" />
-      <keyword name="StringOfProxy_Get" id="GridPoint::StringOfProxy_Get" ref="classGridPoint.html#a105be972d6e08be65c0f195bb23cc29d" />
       <keyword name="StringOfThread_Get" id="GridPoint::StringOfThread_Get" ref="classGridPoint.html#a7c6b79ffa1a5a1296ca65bfcc3920669" />
       <keyword name="EVENT_CORE" id="AbstractCore::EVENT_CORE" ref="classAbstractCore.html#a050c039b12e2e6691f8b1ab5d2fa1edb" />
       <keyword name="mClusterAddress" id="GridPoint::mClusterAddress" ref="classGridPoint.html#a84a8fa5156fe7bc7291f0e5595fc8496" />
@@ -714,7 +831,12 @@
       <keyword name="IncreaseActionPotentialWithCharge" id="AbstractNeurer::IncreaseActionPotentialWithCharge" ref="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57" />
       <keyword name="IntegratedCurrentInPeriod" id="AbstractNeurer::IntegratedCurrentInPeriod" ref="classAbstractNeurer.html#a639009654cd733d7c578a44033281608" />
       <keyword name="LeakingPeriod_Set" id="AbstractNeurer::LeakingPeriod_Set" ref="classAbstractNeurer.html#ae1dc44dcf013c9ba654ac16811a506de" />
+      <keyword name="MembranePotentialContribution_Add" id="AbstractNeurer::MembranePotentialContribution_Add" ref="classAbstractNeurer.html#a1860a5c56e3ba7846501c8126137c139" />
+      <keyword name="MembraneSynapticContribution_Add" id="AbstractNeurer::MembraneSynapticContribution_Add" ref="classAbstractNeurer.html#ad013ed948f3b3fc8a3b50dc3e4f726ba" />
       <keyword name="NeurerCondensatorCapacity_Get" id="AbstractNeurer::NeurerCondensatorCapacity_Get" ref="classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143" />
+      <keyword name="NeurerStateBit_Get" id="AbstractNeurer::NeurerStateBit_Get" ref="classAbstractNeurer.html#a3b2e3413fc96cc99f5254c6c647dc58f" />
+      <keyword name="NeurerStateBit_Set" id="AbstractNeurer::NeurerStateBit_Set" ref="classAbstractNeurer.html#ac6c620eb0bba9d86a9ff9bd6e79c81ff" />
+      <keyword name="Reset_method" id="AbstractNeurer::Reset_method" ref="classAbstractNeurer.html#a481ae50b444297144a39a6b02a310a3b" />
       <keyword name="Spiking_method" id="AbstractNeurer::Spiking_method" ref="classAbstractNeurer.html#a0e65a3450f24d1de0a32b0d7bf0787c3" />
       <keyword name="AllocatedBit_Get" id="scHThread::AllocatedBit_Get" ref="classscHThread.html#a968ed0ba7b3cd0325e0674b61dc0cd9d" />
       <keyword name="AllocatedBit_Set" id="scHThread::AllocatedBit_Set" ref="classscHThread.html#aea88babc97c0e87af8a4f6a75dd340f4" />
@@ -749,9 +871,12 @@
       <keyword name="EVENT_HTHREAD" id="scHThread::EVENT_HTHREAD" ref="classscHThread.html#a8387442c16b1039cda920476cb1724fc" />
       <keyword name="m_Axons" id="AbstractNeurer::m_Axons" ref="classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e" />
       <keyword name="m_Synapses" id="AbstractNeurer::m_Synapses" ref="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb" />
+      <keyword name="mActionPotentialBegin" id="AbstractNeurer::mActionPotentialBegin" ref="classAbstractNeurer.html#a251dd0db0afc36703d98fed745a28328" />
       <keyword name="mAmplitudeFactor" id="AbstractNeurer::mAmplitudeFactor" ref="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084" />
+      <keyword name="mMembranePotential" id="AbstractNeurer::mMembranePotential" ref="classAbstractNeurer.html#aab436dfb5835d1c08c47f2c575a050a3" />
+      <keyword name="mMembranePotentialOffset" id="AbstractNeurer::mMembranePotentialOffset" ref="classAbstractNeurer.html#a6a11a12591221b3883aeb94f43dd3740" />
       <keyword name="mNoOfSynapticPoints" id="AbstractNeurer::mNoOfSynapticPoints" ref="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08" />
-      <keyword name="mOperatingState" id="AbstractNeurer::mOperatingState" ref="classAbstractNeurer.html#af1dc8a4cfee4e96d6724768ca11763ab" />
+      <keyword name="mOperatingState" id="AbstractNeurer::mOperatingState" ref="classAbstractNeurer.html#a4db9ae463d65f12ff551850130b5b8f1" />
       <keyword name="mSpikeAmplitude" id="AbstractNeurer::mSpikeAmplitude" ref="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2" />
       <keyword name="mSpikeIndex" id="AbstractNeurer::mSpikeIndex" ref="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779" />
       <keyword name="mSpikeTime" id="AbstractNeurer::mSpikeTime" ref="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3" />
@@ -872,7 +997,6 @@
       <keyword name="IsNeighborOf" id="GridPoint::IsNeighborOf" ref="classGridPoint.html#a9539267de255431eb03e6557c8facb56" />
       <keyword name="IsTheSameAs" id="GridPoint::IsTheSameAs" ref="classGridPoint.html#a9fd08b588865c71768bf4dad745c425e" />
       <keyword name="StringOfClusterAddressName_Get" id="GridPoint::StringOfClusterAddressName_Get" ref="classGridPoint.html#a0c6f9a6f7f665051311a977b5bf5a866" />
-      <keyword name="StringOfProxy_Get" id="GridPoint::StringOfProxy_Get" ref="classGridPoint.html#a105be972d6e08be65c0f195bb23cc29d" />
       <keyword name="StringOfThread_Get" id="GridPoint::StringOfThread_Get" ref="classGridPoint.html#a7c6b79ffa1a5a1296ca65bfcc3920669" />
       <keyword name="mClusterAddress" id="GridPoint::mClusterAddress" ref="classGridPoint.html#a84a8fa5156fe7bc7291f0e5595fc8496" />
       <keyword name="X" id="GridPoint::X" ref="classGridPoint.html#aec208dc2466c9317733b5f7878f4e5bc" />
@@ -934,7 +1058,12 @@
       <keyword name="IncreaseActionPotentialWithCharge" id="AbstractNeurer::IncreaseActionPotentialWithCharge" ref="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57" />
       <keyword name="IntegratedCurrentInPeriod" id="AbstractNeurer::IntegratedCurrentInPeriod" ref="classAbstractNeurer.html#a639009654cd733d7c578a44033281608" />
       <keyword name="LeakingPeriod_Set" id="AbstractNeurer::LeakingPeriod_Set" ref="classAbstractNeurer.html#ae1dc44dcf013c9ba654ac16811a506de" />
+      <keyword name="MembranePotentialContribution_Add" id="AbstractNeurer::MembranePotentialContribution_Add" ref="classAbstractNeurer.html#a1860a5c56e3ba7846501c8126137c139" />
+      <keyword name="MembraneSynapticContribution_Add" id="AbstractNeurer::MembraneSynapticContribution_Add" ref="classAbstractNeurer.html#ad013ed948f3b3fc8a3b50dc3e4f726ba" />
       <keyword name="NeurerCondensatorCapacity_Get" id="AbstractNeurer::NeurerCondensatorCapacity_Get" ref="classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143" />
+      <keyword name="NeurerStateBit_Get" id="AbstractNeurer::NeurerStateBit_Get" ref="classAbstractNeurer.html#a3b2e3413fc96cc99f5254c6c647dc58f" />
+      <keyword name="NeurerStateBit_Set" id="AbstractNeurer::NeurerStateBit_Set" ref="classAbstractNeurer.html#ac6c620eb0bba9d86a9ff9bd6e79c81ff" />
+      <keyword name="Reset_method" id="AbstractNeurer::Reset_method" ref="classAbstractNeurer.html#a481ae50b444297144a39a6b02a310a3b" />
       <keyword name="Spiking_method" id="AbstractNeurer::Spiking_method" ref="classAbstractNeurer.html#a0e65a3450f24d1de0a32b0d7bf0787c3" />
       <keyword name="AllocatedBit_Get" id="scHThread::AllocatedBit_Get" ref="classscHThread.html#a968ed0ba7b3cd0325e0674b61dc0cd9d" />
       <keyword name="AllocatedBit_Set" id="scHThread::AllocatedBit_Set" ref="classscHThread.html#aea88babc97c0e87af8a4f6a75dd340f4" />
@@ -972,9 +1101,12 @@
       <keyword name="NEXT_method" id="scHThread::NEXT_method" ref="classscHThread.html#a6d00bcbade6817681286a567de9e2969" />
       <keyword name="m_Axons" id="AbstractNeurer::m_Axons" ref="classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e" />
       <keyword name="m_Synapses" id="AbstractNeurer::m_Synapses" ref="classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb" />
+      <keyword name="mActionPotentialBegin" id="AbstractNeurer::mActionPotentialBegin" ref="classAbstractNeurer.html#a251dd0db0afc36703d98fed745a28328" />
       <keyword name="mAmplitudeFactor" id="AbstractNeurer::mAmplitudeFactor" ref="classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084" />
+      <keyword name="mMembranePotential" id="AbstractNeurer::mMembranePotential" ref="classAbstractNeurer.html#aab436dfb5835d1c08c47f2c575a050a3" />
+      <keyword name="mMembranePotentialOffset" id="AbstractNeurer::mMembranePotentialOffset" ref="classAbstractNeurer.html#a6a11a12591221b3883aeb94f43dd3740" />
       <keyword name="mNoOfSynapticPoints" id="AbstractNeurer::mNoOfSynapticPoints" ref="classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08" />
-      <keyword name="mOperatingState" id="AbstractNeurer::mOperatingState" ref="classAbstractNeurer.html#af1dc8a4cfee4e96d6724768ca11763ab" />
+      <keyword name="mOperatingState" id="AbstractNeurer::mOperatingState" ref="classAbstractNeurer.html#a4db9ae463d65f12ff551850130b5b8f1" />
       <keyword name="mSpikeAmplitude" id="AbstractNeurer::mSpikeAmplitude" ref="classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2" />
       <keyword name="mSpikeIndex" id="AbstractNeurer::mSpikeIndex" ref="classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779" />
       <keyword name="mSpikeTime" id="AbstractNeurer::mSpikeTime" ref="classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3" />
@@ -1039,7 +1171,6 @@
       <keyword name="IsNeighborOf" id="GridPoint::IsNeighborOf" ref="classGridPoint.html#a9539267de255431eb03e6557c8facb56" />
       <keyword name="IsTheSameAs" id="GridPoint::IsTheSameAs" ref="classGridPoint.html#a9fd08b588865c71768bf4dad745c425e" />
       <keyword name="StringOfClusterAddressName_Get" id="GridPoint::StringOfClusterAddressName_Get" ref="classGridPoint.html#a0c6f9a6f7f665051311a977b5bf5a866" />
-      <keyword name="StringOfProxy_Get" id="GridPoint::StringOfProxy_Get" ref="classGridPoint.html#a105be972d6e08be65c0f195bb23cc29d" />
       <keyword name="StringOfThread_Get" id="GridPoint::StringOfThread_Get" ref="classGridPoint.html#a7c6b79ffa1a5a1296ca65bfcc3920669" />
       <keyword name="EVENT_CORE" id="AbstractCore::EVENT_CORE" ref="classAbstractCore.html#a050c039b12e2e6691f8b1ab5d2fa1edb" />
       <keyword name="mClusterAddress" id="GridPoint::mClusterAddress" ref="classGridPoint.html#a84a8fa5156fe7bc7291f0e5595fc8496" />
@@ -1168,7 +1299,6 @@
       <keyword name="IsNeighborOf" id="GridPoint::IsNeighborOf" ref="classGridPoint.html#a9539267de255431eb03e6557c8facb56" />
       <keyword name="IsTheSameAs" id="GridPoint::IsTheSameAs" ref="classGridPoint.html#a9fd08b588865c71768bf4dad745c425e" />
       <keyword name="StringOfClusterAddressName_Get" id="GridPoint::StringOfClusterAddressName_Get" ref="classGridPoint.html#a0c6f9a6f7f665051311a977b5bf5a866" />
-      <keyword name="StringOfProxy_Get" id="GridPoint::StringOfProxy_Get" ref="classGridPoint.html#a105be972d6e08be65c0f195bb23cc29d" />
       <keyword name="StringOfThread_Get" id="GridPoint::StringOfThread_Get" ref="classGridPoint.html#a7c6b79ffa1a5a1296ca65bfcc3920669" />
       <keyword name="mClusterAddress" id="GridPoint::mClusterAddress" ref="classGridPoint.html#a84a8fa5156fe7bc7291f0e5595fc8496" />
       <keyword name="X" id="GridPoint::X" ref="classGridPoint.html#aec208dc2466c9317733b5f7878f4e5bc" />
@@ -1277,7 +1407,6 @@
       <keyword name="IsNeighborOf" id="GridPoint::IsNeighborOf" ref="classGridPoint.html#a9539267de255431eb03e6557c8facb56" />
       <keyword name="IsTheSameAs" id="GridPoint::IsTheSameAs" ref="classGridPoint.html#a9fd08b588865c71768bf4dad745c425e" />
       <keyword name="StringOfClusterAddressName_Get" id="GridPoint::StringOfClusterAddressName_Get" ref="classGridPoint.html#a0c6f9a6f7f665051311a977b5bf5a866" />
-      <keyword name="StringOfProxy_Get" id="GridPoint::StringOfProxy_Get" ref="classGridPoint.html#a105be972d6e08be65c0f195bb23cc29d" />
       <keyword name="StringOfThread_Get" id="GridPoint::StringOfThread_Get" ref="classGridPoint.html#a7c6b79ffa1a5a1296ca65bfcc3920669" />
       <keyword name="CreateMessageTo" id="scGridPoint::CreateMessageTo" ref="classscGridPoint.html#ac08741d121bc23d737a74147ae5540de" />
       <keyword name="ReceiveMessage_thread" id="scIGPMessage_if::ReceiveMessage_thread" ref="classscIGPMessage__if.html#a17306a807b424f62d0ab3330373a880e" />
@@ -1606,8 +1735,9 @@
       <file>Y86Processor_8h.html</file>
       <file>Y86ProcessorSimulator_8h.html</file>
       <file>TAC_BASIC_MAIN_PAGE.html</file>
-      <file>TAC_BASIC_TECHNICAL_PAGE.html</file>
-      <file>TAC_BASIC_TECHNICAL_Addressing_PAGE.html</file>
+      <file>TAC_BASIC_TECHNICAL_Cooperation_Page.html</file>
+      <file>TAC_BASIC_TECHNICAL_Operation_PAGE.html</file>
+      <file>TAC_BASIC_TECHNICAL_Beakdown_PAGE.html</file>
       <file>HexagonalCluster.png</file>
       <file>Hexagona2.png</file>
       <file>ClusterAddressing.png</file>
@@ -1617,11 +1747,16 @@
       <file>TAC_GENERAL_MAIN_PAGE.html</file>
       <file>TAC_GENERAL_PROJECTS_PAGE.html</file>
       <file>TAC_GEN_USER_SETTINGS_PAGE.html</file>
+      <file>TAC_GEN_TECHNICAL_OPERATION_PAGE.html</file>
       <file>TAC_GEN_THEORY_PAGE.html</file>
       <file>TAC_GEN_THEORY_COMPUTATIONAL_PAGE.html</file>
+      <file>TAC_GEN_THEORY_PARADIGM_PAGE.html</file>
       <file>TAC_GEN_WORKING_PAGE.html</file>
       <file>NEURER_MAIN_PAGE.html</file>
       <file>NEURER_USER_GUIDE_SETTINGS_PAGE.html</file>
+      <file>TAC_NEURER_TECHNICAL_PAGE.html</file>
+      <file>TAC_NEURER_TECHNICAL_OPERATION_PAGE.html</file>
+      <file>Figure_Koch_14_8.png</file>
       <file>TAC_NEURER_THEORY_PAGE.html</file>
       <file>TAC_NEURER_THEORY_POTENTIAL_PAGE.html</file>
       <file>EquipotentialSurfacesElectric.jpg</file>
@@ -1634,9 +1769,8 @@
       <file>Figure_21_07_04a.jpg</file>
       <file>TAC_NEURER_USER_PAGE.html</file>
       <file>TAC_NEURER_USER_WORKING_PAGE.html</file>
-      <file>TimeAwareComputing.html</file>
       <file>GLOSSARY.html</file>
-      <file>GettingStarted.html</file>
+      <file>VisitorStatistics.html</file>
       <file>ReleaseNotes.html</file>
       <file>citelist.html</file>
       <file>group__TAC__NEURER.html</file>

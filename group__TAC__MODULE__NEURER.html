@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TAC  V0.0.4 @ 2021.03.25: Source of package NEURER</title>
+<title>TAC  V0.0.4 @ 2021.04.03: SOURCES: package NEURER</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -42,7 +42,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="TAC_Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="https://jvegh@bitbucket.org/jvegh/timeawarecomputingsimulator">TAC  V0.0.4 @ 2021.03.25</a>
+   <div id="projectname"><a href="https://jvegh@bitbucket.org/jvegh/timeawarecomputingsimulator">TAC  V0.0.4 @ 2021.04.03</a>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('group__TAC__MODULE__NEURER.html',''); 
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">Source of package NEURER<div class="ingroups"><a class="el" href="group__TAC__MODULE__SOURCES.html">The simulation source files</a></div></div>  </div>
+<div class="title">SOURCES: package NEURER<div class="ingroups"><a class="el" href="group__TAC__MODULE__SOURCES.html">SOURCES: The simulation source files</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -124,45 +124,47 @@ Files</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractNeurer.html">AbstractNeurer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classAbstractNeurer.html" title="The AbstractNeurer class The base class is the scHThread, i.e. HW thread functionality....">AbstractNeurer</a> class The base class is the <a class="el" href="classscHThread.html" title="The scHThread class.">scHThread</a>, i.e. HW thread functionality. The neurers are kentaurs: half-part cores, with non-specialized core-functionality and half-part neuron-specific functionality Given that an <a class="el" href="classAbstractNeurer.html" title="The AbstractNeurer class The base class is the scHThread, i.e. HW thread functionality....">AbstractNeurer</a> is subclassed from <a class="el" href="classAbstractCore.html" title="The abstract base class (i.e. must not be instantiated) of concrete processors, implementing their ge...">AbstractCore</a>, it has its associated inter-gridpoint communication facilities and communicates autonomously with its immediate neighbors and cluster members.  <a href="classAbstractNeurer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gac364bf045e76c4cdcf747de0a1a5c5b4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TAC__MODULE__NEURER.html#gac364bf045e76c4cdcf747de0a1a5c5b4">NeurerOperatingBit_t</a> { <br />
-&#160;&#160;<a class="el" href="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a3edc835cd5f4f8e86da0e42ed1e81fbc">nos_Resting</a>, 
-<a class="el" href="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4ab72ef3b2c8b4de41c9a6fdedb8026e1a">nos_Triggering</a>, 
-<a class="el" href="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a718d6b65c4d9b2a76657f264efc7e0d8">nos_Charging</a>
-, <a class="el" href="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4afb649e30c5f5e5ee426289a70ae2699b">nos_Refracting</a>, 
+<tr class="memitem:gaaebd9daf17b8a980819e7fa4d0b3dac7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TAC__MODULE__NEURER.html#gaaebd9daf17b8a980819e7fa4d0b3dac7">NeurerOperatingBit_t</a> { <br />
+&#160;&#160;<a class="el" href="group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7a50872beb694daecd0484a93338ed671a">nsb_Resting</a>, 
+<a class="el" href="group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7af0142354f33caf703091e9fd1f228855">nsb_Triggering</a>, 
+<a class="el" href="group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7ac05c354f16ed760eab63e8c6b37dc633">nsb_Charging</a>
+, <a class="el" href="group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7ab505833e10fd33cde7416b5f4dd7d82b">nsb_Firing</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a88e2029a36a63e3af2dc95ff16d98090">nos_Max</a>
+&#160;&#160;<a class="el" href="group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7a0328d05f0fbd2a61688cf103aeb2bb6b">nsb_Max</a>
 <br />
  }</td></tr>
-<tr class="separator:gac364bf045e76c4cdcf747de0a1a5c5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:gaaebd9daf17b8a980819e7fa4d0b3dac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">the names of the bits in the bitset for operating the neurer  <a href="group__TAC__MODULE__NEURER.html#gaaebd9daf17b8a980819e7fa4d0b3dac7">More...</a><br /></td></tr>
+<tr class="separator:gaaebd9daf17b8a980819e7fa4d0b3dac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gac364bf045e76c4cdcf747de0a1a5c5b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac364bf045e76c4cdcf747de0a1a5c5b4">&#9670;&nbsp;</a></span>NeurerOperatingBit_t</h2>
+<a id="gaaebd9daf17b8a980819e7fa4d0b3dac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaebd9daf17b8a980819e7fa4d0b3dac7">&#9670;&nbsp;</a></span>NeurerOperatingBit_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__TAC__MODULE__NEURER.html#gac364bf045e76c4cdcf747de0a1a5c5b4">NeurerOperatingBit_t</a></td>
+          <td class="memname">enum typedef <a class="el" href="group__TAC__MODULE__NEURER.html#gaaebd9daf17b8a980819e7fa4d0b3dac7">NeurerOperatingBit_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>the names of the bits in the bitset for operating the neurer </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac364bf045e76c4cdcf747de0a1a5c5b4a3edc835cd5f4f8e86da0e42ed1e81fbc"></a>nos_Resting&#160;</td><td class="fielddoc"><p>Set if neurer is resting. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaebd9daf17b8a980819e7fa4d0b3dac7a50872beb694daecd0484a93338ed671a"></a>nsb_Resting&#160;</td><td class="fielddoc"><p>Set if neurer is resting. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac364bf045e76c4cdcf747de0a1a5c5b4ab72ef3b2c8b4de41c9a6fdedb8026e1a"></a>nos_Triggering&#160;</td><td class="fielddoc"><p>Set if neurer is attempting to reach membrane's threshold. </p>
+<tr><td class="fieldname"><a id="ggaaebd9daf17b8a980819e7fa4d0b3dac7af0142354f33caf703091e9fd1f228855"></a>nsb_Triggering&#160;</td><td class="fielddoc"><p>Set if neurer is attempting to reach membrane's threshold. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac364bf045e76c4cdcf747de0a1a5c5b4a718d6b65c4d9b2a76657f264efc7e0d8"></a>nos_Charging&#160;</td><td class="fielddoc"><p>Set if neurer is charging up its membrane to prepare firing. </p>
+<tr><td class="fieldname"><a id="ggaaebd9daf17b8a980819e7fa4d0b3dac7ac05c354f16ed760eab63e8c6b37dc633"></a>nsb_Charging&#160;</td><td class="fielddoc"><p>Set if neurer is charging up its membrane to prepare firing. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac364bf045e76c4cdcf747de0a1a5c5b4afb649e30c5f5e5ee426289a70ae2699b"></a>nos_Refracting&#160;</td><td class="fielddoc"><p>Set if neurer' membrane is in course of discharging. </p>
-<p>Set it neurer is still in the refractory period </p>
+<tr><td class="fieldname"><a id="ggaaebd9daf17b8a980819e7fa4d0b3dac7ab505833e10fd33cde7416b5f4dd7d82b"></a>nsb_Firing&#160;</td><td class="fielddoc"><p>Set if neurer' membrane is in course of discharging. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac364bf045e76c4cdcf747de0a1a5c5b4a88e2029a36a63e3af2dc95ff16d98090"></a>nos_Max&#160;</td><td class="fielddoc"><p>The max number of bits in the set. </p>
+<tr><td class="fieldname"><a id="ggaaebd9daf17b8a980819e7fa4d0b3dac7a0328d05f0fbd2a61688cf103aeb2bb6b"></a>nsb_Max&#160;</td><td class="fielddoc"><p>Set if neurer' membrane is in course of firing. </p>
+<p>The max number of bits in the set </p>
 </td></tr>
 </table>
 
@@ -173,7 +175,7 @@ Enumerations</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 26 2021 19:47:55 for TAC  V0.0.4 @ 2021.03.25 by
+    <li class="footer">Generated on Sat Apr 3 2021 20:09:13 for TAC  V0.0.4 @ 2021.04.03 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

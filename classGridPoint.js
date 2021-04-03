@@ -10,7 +10,6 @@ var classGridPoint =
     [ "IsNeighborOf", "classGridPoint.html#a9539267de255431eb03e6557c8facb56", null ],
     [ "IsTheSameAs", "classGridPoint.html#a9fd08b588865c71768bf4dad745c425e", null ],
     [ "StringOfClusterAddressName_Get", "classGridPoint.html#a0c6f9a6f7f665051311a977b5bf5a866", null ],
-    [ "StringOfProxy_Get", "classGridPoint.html#a105be972d6e08be65c0f195bb23cc29d", null ],
     [ "StringOfThread_Get", "classGridPoint.html#a7c6b79ffa1a5a1296ca65bfcc3920669", null ],
     [ "mClusterAddress", "classGridPoint.html#a84a8fa5156fe7bc7291f0e5595fc8496", null ],
     [ "X", "classGridPoint.html#aec208dc2466c9317733b5f7878f4e5bc", null ],

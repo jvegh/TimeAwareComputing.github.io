@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TAC  V0.0.4 @ 2021.03.25: NeurerConfig.h Source File</title>
+<title>TAC  V0.0.4 @ 2021.04.03: NeurerConfig.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -42,7 +42,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="TAC_Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="https://jvegh@bitbucket.org/jvegh/timeawarecomputingsimulator">TAC  V0.0.4 @ 2021.03.25</a>
+   <div id="projectname"><a href="https://jvegh@bitbucket.org/jvegh/timeawarecomputingsimulator">TAC  V0.0.4 @ 2021.04.03</a>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -109,71 +109,86 @@ $(document).ready(function(){initNavTree('NeurerConfig_8h_source.html',''); init
 <div class="contents">
 <a href="NeurerConfig_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The configured options and settings for SystemC developments</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Will be used to configure Main_File/include/Config.h in all subdirs</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span><span class="comment">// Take over basic configuration</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ProcConfig_8h.html">ProcConfig.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span><span class="comment">// The user-configurable part</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Define if want to simulate biological neurons</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// List names of .ini files</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#undef  INI_FILES</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define INI_FILES &quot;Simulator Neurons&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// List keywords legal in &#39;Simulator.ini&#39;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#undef  INI_SIMULATOR_KEYWORDS</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define INI_SIMULATOR_KEYWORDS &quot;Version&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// List</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define INI_NEURON_KEYWORDS &quot;Version&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// For the biology, redefine time resolution and clock rate</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// Resolution of time  and clock frequency</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#undef SCTIME_RESOLUTION</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define SCTIME_RESOLUTION 10,sc_core::SC_US</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define NEURER_LEAKING_TIME 10</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// Gates operating time</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//#define SCTIME_GATE sc_time(20,sc_core::SC_PS)</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// Frequency of the system clock</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#undef SCTIME_CLOCKTIME</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define SCTIME_CLOCKTIME sc_time(100,sc_core::SC_US)</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// In many operations, THOUSAND is used to calculate</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// making multiply/divide, it is much faster to use 2^n value; the difference is only 2%</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// If it matters, change it to 1000</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define THOUSAND 1024</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// Cellular constants assumed</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// http://www.columbia.edu/cu/biology/courses/w3004/Lecture5.pdf</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//#define SPECIFIC_RESISTANCE_TIMES_CM2 2000 // Ohm/cm^2</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//#define SPECIFIC_RESISTANCE_TIMES_u2 2e11  // Ohm/u^2</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//#define SPECIFIC_CAPACITANCE_PRO_CM2 1e-6 // F/cm^2</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//#define SPECIFIC_CAPACITANCE_PRO_u2 1e-14  // F/u^2</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//#define NEURON_AREA 25 // u^2</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//#define RC_TIME SPECIFIC_RESISTANCE_TIMES_u2*SPECIFIC_CAPACITANCE_PRO_u2 = 2ms</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// So, the actual values used here are</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define SPECIFIC_RESISTANCE_TIMES_u2 5e11  // Ohm/u^2</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#define SPECIFIC_CAPACITANCE_PRO_u2 4e-14  // F/u^2</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#define NEURON_CURRENT_UNIT 1e-12 // pA</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#define NEURON_VOLTAGE_UNIT 1e-6 // uV</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#define NEURON_TIME_UNIT 1e-6 // us</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define NEURON_RC_CONSTANT SPECIFIC_RESISTANCE_TIMES_u2*SPECIFIC_CAPACITANCE_PRO_u2 // 20 msec</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#define NEURON_RESISTANCE_MOHM NEURON_AREA*SPECIFIC_RESISTANCE_PRO_u2*1e-6 //MOhm</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define SPECIFIC_CAPACITANCE_PRO_CM2 1e-6 // F/cm^2</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define SYNAPTIC_CURRENT_CRITICAL 30000 // in 1e-12A = pA</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define NEURON_CURRENT_INTEGRATION_STEP_MIN 500 // in usec</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define BIOLOGICAL_NEURON true</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#if BIOLOGICAL_NEURON</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">    #define USE_INDIVIDUAL_RESTING_POTENTIAL false   // If to use individual resting potential neurons</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    #define RESTING_POTENTIAL -70000    // The value of resting potential, in uV</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    #define MEMBRANE_POTENTIAL_TOLERANCE 1000 // The value is within tolerance level to resting potential</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">    #define MEMBRANE_THRESHOLD  RESTING_POTENTIAL + 20000;  //Threshold is at -50 mV</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif // of BIOLOGICAL_NEURON</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// !!</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Do not edit below this line until you know waht you are doing</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// !!</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// Take over basic configuration</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ProcConfig_8h.html">ProcConfig.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// List names of .ini files</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#undef  INI_FILES</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define INI_FILES &quot;Simulator Neurons&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// List keywords legal in &#39;Simulator.ini&#39;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#undef  INI_SIMULATOR_KEYWORDS</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define INI_SIMULATOR_KEYWORDS &quot;Version&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// List</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define INI_NEURON_KEYWORDS &quot;Version&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// For the biology, redefine time resolution and clock rate</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// Resolution of time  and clock frequency</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#undef SCTIME_RESOLUTION</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define SCTIME_RESOLUTION 10,sc_core::SC_US</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define NEURER_LEAKING_TIME 10</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// Gates operating time</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//#define SCTIME_GATE sc_time(20,sc_core::SC_PS)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// Frequency of the system clock</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#undef SCTIME_CLOCKTIME</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define SCTIME_CLOCKTIME sc_time(100,sc_core::SC_US)</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// In many operations, THOUSAND is used to calculate</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// making multiply/divide, it is much faster to use 2^n value; the difference is only 2%</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">// If it matters, change it to 1000</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#define THOUSAND 1024</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">// Cellular constants assumed</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// http://www.columbia.edu/cu/biology/courses/w3004/Lecture5.pdf</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">//#define SPECIFIC_RESISTANCE_TIMES_CM2 2000 // Ohm/cm^2</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">//#define SPECIFIC_RESISTANCE_TIMES_u2 2e11  // Ohm/u^2</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//#define SPECIFIC_CAPACITANCE_PRO_CM2 1e-6 // F/cm^2</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//#define SPECIFIC_CAPACITANCE_PRO_u2 1e-14  // F/u^2</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">//#define RC_TIME SPECIFIC_RESISTANCE_TIMES_u2*SPECIFIC_CAPACITANCE_PRO_u2 //</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// With these constants, the oscillation time is cca 2 ms</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//#define NEURON_CAPACITANCE NEURON_AREA*SPECIFIC_CAPACITANCE_PRO_u2</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//#define NEURON_RESISTANCE SPECIFIC_RESISTANCE_TIMES_u2/NEURON_AREA</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//#define RC NEURON_RESISTANCE*NEURON_CAPACITANCE</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">//#define NEURON_AREA 25 // u^2</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">//#define RC_TIME SPECIFIC_RESISTANCE_TIMES_u2*SPECIFIC_CAPACITANCE_PRO_u2 = 2ms</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// So, the actual values used here are</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#define SPECIFIC_RESISTANCE_TIMES_u2 5e11  // Ohm/u^2</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#define SPECIFIC_CAPACITANCE_PRO_u2 4e-14  // F/u^2</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#define NEURON_CURRENT_UNIT 1e-12 // pA</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#define NEURON_VOLTAGE_UNIT 1e-6 // uV</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#define NEURON_TIME_UNIT 1e-6 // us</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#define NEURON_RC_CONSTANT SPECIFIC_RESISTANCE_TIMES_u2*SPECIFIC_CAPACITANCE_PRO_u2 // 20 msec</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">// Operational characteristics</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#define  SC_NEURER_ID_TYPE SC_CORE_ID_TYPE </span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#define MAX_NUMBER_OF_NEURERS CORE_GRID_SIZE_X*CORE_GRID_SIZE_Y*MAX_HTHREADS</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#define NEURON_RESISTANCE_MOHM NEURON_AREA*SPECIFIC_RESISTANCE_PRO_u2*1e-6 //MOhm</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#define SPECIFIC_CAPACITANCE_PRO_CM2 1e-6 // F/cm^2</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#define SYNAPTIC_CURRENT_CRITICAL 30000 // in 1e-12A = pA</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#define NEURON_CURRENT_INTEGRATION_STEP_MIN 500 // in usec</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//#define SPECIFIC_CAPACITANCE_PRO_u2 1e-14  // F/u^2</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//#define RC_TIME SPECIFIC_RESISTANCE_TIMES_u2*SPECIFIC_CAPACITANCE_PRO_u2 //</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// With these constants, the oscillation time is cca 2 ms</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//#define NEURON_CAPACITANCE NEURON_AREA*SPECIFIC_CAPACITANCE_PRO_u2</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//#define NEURON_RESISTANCE SPECIFIC_RESISTANCE_TIMES_u2/NEURON_AREA</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//#define RC NEURON_RESISTANCE*NEURON_CAPACITANCE</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">// Operational characteristics</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#define  SC_NEURER_ID_TYPE SC_CORE_ID_TYPE </span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#define MAX_NUMBER_OF_NEURERS CORE_GRID_SIZE_X*CORE_GRID_SIZE_Y*MAX_HTHREADS</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aProcConfig_8h_html"><div class="ttname"><a href="ProcConfig_8h.html">ProcConfig.h</a></div><div class="ttdoc">Configuration information for the EMPA processor.</div></div>
@@ -181,7 +196,7 @@ $(document).ready(function(){initNavTree('NeurerConfig_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e05d7e2b1ecd646af5bb94391405f3b5.html">modules</a></li><li class="navelem"><a class="el" href="dir_7be0a3fe48fd35cfcc1704e6e19161b4.html">NEURER</a></li><li class="navelem"><a class="el" href="dir_1f1f812f35fcbc75a32af3eac0b92e65.html">include</a></li><li class="navelem"><a class="el" href="NeurerConfig_8h.html">NeurerConfig.h</a></li>
-    <li class="footer">Generated on Fri Mar 26 2021 19:47:55 for TAC  V0.0.4 @ 2021.03.25 by
+    <li class="footer">Generated on Sat Apr 3 2021 20:09:13 for TAC  V0.0.4 @ 2021.04.03 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

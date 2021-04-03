@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['getting_20started_127',['Getting started',['../GettingStarted.html',1,'']]],
   ['gob_5fbufferchanged_128',['gob_BufferChanged',['../scGridEnumTypes_8h.html#a7ee7b9b596c728bb02e1279e7b892778afc077d65415204d369aee0f8883906e3',1,'scGridEnumTypes.h']]],
   ['gob_5fbuffersmonitored_129',['gob_BuffersMonitored',['../scGridEnumTypes_8h.html#a7ee7b9b596c728bb02e1279e7b892778a44ac80140f5180233a2617e21991ef59',1,'scGridEnumTypes.h']]],
   ['gob_5fcommunicationmonitored_130',['gob_CommunicationMonitored',['../scGridEnumTypes_8h.html#a7ee7b9b596c728bb02e1279e7b892778a952ebadd47689d124c4a23e9917176b5',1,'scGridEnumTypes.h']]],
@@ -30,5 +29,8 @@ var searchData=
   ['gridpointsignalport_5ft_154',['GridPointSignalPort_t',['../structGridPointSignalPort__t.html',1,'']]],
   ['gridpointstatusbit_5ft_155',['GridPointStatusBit_t',['../structGridPointStatusBit__t.html',1,'']]],
   ['gen_20theory_20guide_156',['GEN Theory Guide',['../TAC_GEN_THEORY_PAGE.html',1,'']]],
-  ['general_3a_20the_20non_2dpacket_20specific_20docs_157',['GENERAL: The non-packet specific docs',['../group__TAC__GENERAL.html',1,'']]]
+  ['general_3a_20the_20non_2dpacket_20specific_20docs_157',['GENERAL: The non-packet specific docs',['../group__TAC__GENERAL.html',1,'']]],
+  ['general_3a_20technical_20guide_20_26_20programming_158',['GENERAL: Technical guide &amp; programming',['../group__TAC__GENERAL__TECHNICAL.html',1,'']]],
+  ['general_3a_20theory_20guide_20_26_20background_159',['GENERAL: Theory guide &amp; background',['../group__TAC__GENERAL__THEORY.html',1,'']]],
+  ['general_3a_20user_27s_20guide_160',['GENERAL: User&apos;s guide',['../group__TAC__GENERAL__USER.html',1,'']]]
 ];

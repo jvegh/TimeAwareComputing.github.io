@@ -51,5 +51,81 @@ var group__TAC__MODULE__BASIC =
       [ "mGrid", "classAbstractTopology.html#a1d4d9c3e32e6fe9de7563977054cdfe1", null ],
       [ "mProgramCounter", "classAbstractTopology.html#ab81e8188f8bcd16de4f11a0ad73860d4", null ]
     ] ],
-    [ "ClusterBusRequest", "structClusterBusRequest.html", null ]
+    [ "ClusterBusRequest", "structClusterBusRequest.html", null ],
+    [ "CoreExecute_t", "structCoreExecute__t.html", [
+      [ "ExecutionTime", "structCoreExecute__t.html#a49bf842fea56d7a8a1fb91ba563097ad", null ],
+      [ "PC", "structCoreExecute__t.html#af1b4764575ecd5f3bd51daef2e023384", null ],
+      [ "Stage", "structCoreExecute__t.html#aabb37fd1e3fee478a68032beb88d8256", null ]
+    ] ],
+    [ "CoreFetch_t", "structCoreFetch__t.html", [
+      [ "DataBufferPosition", "structCoreFetch__t.html#ae0c39f3f5736ac8d1e13ebd08020dc86", null ],
+      [ "ExecutionTime", "structCoreFetch__t.html#a6e5e2ece26199ded1e010ac3c257de11", null ],
+      [ "InstBufferPosition", "structCoreFetch__t.html#a22cb44e714e00bee67c510dcc51e64c3", null ],
+      [ "NewPC", "structCoreFetch__t.html#ac087d6844375fc946c57f6c05a496b01", null ],
+      [ "PC", "structCoreFetch__t.html#ac677424e3d9330e300d8265b4de569f8", null ],
+      [ "Stage", "structCoreFetch__t.html#a37e1adad00319083bed609ebcd93d27f", null ],
+      [ "WaitTimeBegin", "structCoreFetch__t.html#af3856ecaff8ea7fb27fda5aab73e4cd0", null ]
+    ] ],
+    [ "CoreStage_t", "structCoreStage__t.html", [
+      [ "FunctCode", "structCoreStage__t.html#a799360e122fa3daf26e7806f16448c6b", null ],
+      [ "FunctCode7", "structCoreStage__t.html#a562f45407c4ae4bf55ba96dc464a04fb", null ],
+      [ "OpCode", "structCoreStage__t.html#a19eb0d25772193a370ab8e3fea2168a3", null ],
+      [ "RDest", "structCoreStage__t.html#aff2f8c607fd4af036ca5786c87f92e78", null ],
+      [ "RSource1", "structCoreStage__t.html#ac8e057b5a4cf9043f5d36b0944384526", null ],
+      [ "RSource2", "structCoreStage__t.html#ac10cf7ef94ac67ffad5cd8ce99fb5126", null ]
+    ] ],
+    [ "QTattributes_t", "structQTattributes__t.html", [
+      [ "ID", "structQTattributes__t.html#af681d8df3836129426809eeffcf43482", null ],
+      [ "Length", "structQTattributes__t.html#aa8b5212c51e7f5a0f954996623b77924", null ],
+      [ "Offset", "structQTattributes__t.html#a1dc1f77c1ab79a44dd130bf26a03cb49", null ]
+    ] ],
+    [ "scHThread", "classscHThread.html", [
+      [ "scHThread", "classscHThread.html#a89bc15c8264f102d765ae7533652cc82", null ],
+      [ "AllocatedBit_Get", "classscHThread.html#a968ed0ba7b3cd0325e0674b61dc0cd9d", null ],
+      [ "AllocatedBit_Set", "classscHThread.html#aea88babc97c0e87af8a4f6a75dd340f4", null ],
+      [ "AllocateFor", "classscHThread.html#aa43be3b2d08762ce7f2ca94406691d4a", null ],
+      [ "ClusterAddress_Get", "classscHThread.html#a81135eea598ba813d117427125dda9cf", null ],
+      [ "DataPositionInBuffer", "classscHThread.html#a60caf17622a9345b0b3a39a8d447bea5", null ],
+      [ "EXEC_method", "classscHThread.html#a3c2060e51419de3e48d15dc4449081ef", null ],
+      [ "FETCH_method", "classscHThread.html#aaaaf865dab0cdd40e5be8faec71f3c59", null ],
+      [ "FinishPrefetching", "classscHThread.html#a9cc1e87686887326c11ab689a1cf8d1d", null ],
+      [ "InstPositionInBuffer", "classscHThread.html#a1ba1052f4a3b67a6f8e8372874f1b45e", null ],
+      [ "IsTimedOut", "classscHThread.html#ac48f6cb0d99df9b328412d7c827db017", null ],
+      [ "NEXT_method", "classscHThread.html#a6d00bcbade6817681286a567de9e2969", null ],
+      [ "ObservedBit_Set", "classscHThread.html#a1b4a05d4d1b869e568c3447ca098f904", null ],
+      [ "PC_Affected_Set", "classscHThread.html#a8c2e0a964a6f28e46a44fce23f1a9643", null ],
+      [ "PreAllocatedBit_Get", "classscHThread.html#adbcf7c5ec89356a227dbfe89f5410bcd", null ],
+      [ "PreAllocatedBit_Set", "classscHThread.html#ad364e9cbce3dfd70fa8e6f2a881d0e72", null ],
+      [ "PreAllocateFor", "classscHThread.html#acab4326fa0e5e78305c33f923edbfd7a", null ],
+      [ "Reset", "classscHThread.html#a2069a58b21b874aacacb60d37607ac08", null ],
+      [ "StringOfClusterAddress_Get", "classscHThread.html#adf11bf937a23896a7a5c1a58e2575cd0", null ],
+      [ "StringOfName_Get", "classscHThread.html#a9c5df7cd8a2889ae154c550e73f4c4a8", null ],
+      [ "Timeout_Set", "classscHThread.html#a379ac68fc8435aa3df3490baa15b9f02", null ],
+      [ "EVENT_HTHREAD", "classscHThread.html#a8387442c16b1039cda920476cb1724fc", null ],
+      [ "EXEC", "classscHThread.html#a4fce7cd35f49f962dc0789aa236f5e64", null ],
+      [ "exec", "classscHThread.html#ad10eb6ce848f6df06fe145b14cd1c21f", null ],
+      [ "EXECUTED", "classscHThread.html#a0b7bfef26462fa1727622823f581b587", null ],
+      [ "FETCH", "classscHThread.html#a6d5caf9a8f47be54b3f46e69ec1f4b68", null ],
+      [ "fetch", "classscHThread.html#a8634bc77e0842bd4cb6eae8cacf2c084", null ],
+      [ "mInstrMemoryAddressEnd", "classscHThread.html#adc459464edc7d365b8eb7eb6d6df4019", null ],
+      [ "mInstrMemoryBuffer", "classscHThread.html#ab7c9b9bf134e5d20b6d29f8412680f8c", null ],
+      [ "mTimedOut", "classscHThread.html#ac58ef59a2d4092b9b6f77ecfc739ae49", null ],
+      [ "NEXT", "classscHThread.html#a7d1708631ea91b9df0e057683b2b0ab9", null ]
+    ] ],
+    [ "HThreadPreference_t", "group__TAC__MODULE__BASIC.html#ga04176e71c4344b3a7f3e8979ba4303a8", null ],
+    [ "ThreadOperatingBits_t", "group__TAC__MODULE__BASIC.html#ga21789b94a569e1adb04363e146301e57", [
+      [ "tob_Regime", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a6a0a10e04a1b0e58ccb0f7ce7892a0d1", null ],
+      [ "tob_Allocated", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57aad2b6177afcde2ee1bf3638b3c37e863", null ],
+      [ "tob_PreAllocated", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57ab1287d504ae1e1039334b2cd0ea472c6", null ],
+      [ "tob_Blocked", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a24a903f2c0dbc2297977294daf5c2bbe", null ],
+      [ "tob_MemoryExpected", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a2acd6435b8e892d53df0fd87169ced63", null ],
+      [ "tob_DataExpected", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a644510e7bd47e93c28c6c3ab61cd1d1d", null ],
+      [ "tob_FetchPending", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a808d686e1b20760fc2970cb5975fe953", null ],
+      [ "tob_FetchValid", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57af452e0fccef016bd36ee9d7059347934", null ],
+      [ "tob_ExecPending", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a436579d79a17e40990d1dcb9ab7a8f6c", null ],
+      [ "tob_MorphFetched", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57aefa733b6689d6f87887aaf012cd3f903", null ],
+      [ "tob_Morphing", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57ae6771689292d257a0f2cfbe452edcf25", null ],
+      [ "tob_PCAffected", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57aa94f14cc90077271eafec62fff5ebc87", null ],
+      [ "tob_Observed", "group__TAC__MODULE__BASIC.html#gga21789b94a569e1adb04363e146301e57a315d97e751ce5ef14a798cd94a87f5ee", null ]
+    ] ]
 ];

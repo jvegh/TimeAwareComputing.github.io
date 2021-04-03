@@ -2,6 +2,6 @@
 <area shape="rect" id="node1" title="The abstract base class (i.e. must not be instantiated) of concrete processors, implementing their ge..." alt="" coords="151,1151,399,1697"/>
 <area shape="rect" id="node5" href="$classNeurerCore.html" title="The base class (i.e. must not be instantiated) of neurer cores, implementing their general behavior." alt="" coords="192,1745,357,1881"/>
 <area shape="rect" id="node2" href="$classscGridPoint.html" title="This class implements the autonomous grid point functionality: it is a communicating GridPoint...." alt="" coords="161,424,388,1103"/>
-<area shape="rect" id="node3" href="$classGridPoint.html" title="This class handles the topological information for the modules. Provides a lot of math&#45;only utility f..." alt="" coords="5,42,272,339"/>
+<area shape="rect" id="node3" href="$classGridPoint.html" title="This class handles the topological information for the modules. Provides a lot of math&#45;only utility f..." alt="" coords="5,49,272,332"/>
 <area shape="rect" id="node4" href="$classscIGPMessage__if.html" title="This class communication interface for scIGPMessage communication for the autonous communication func..." alt="" coords="297,5,525,376"/>
 </map>

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['name_5fget_641',['Name_Get',['../classscGridPoint.html#a0446df86b4f8c06213cf667f6a0cc6a2',1,'scGridPoint']]],
-  ['neurercondensatorcapacity_5fget_642',['NeurerCondensatorCapacity_Get',['../classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143',1,'AbstractNeurer']]],
-  ['neurercore_643',['NeurerCore',['../classNeurerCore.html#a7057fc9cdf35db0709ff1ddfb4bc1d5a',1,'NeurerCore']]],
-  ['next_5fmethod_644',['NEXT_method',['../classscHThread.html#a6d00bcbade6817681286a567de9e2969',1,'scHThread']]]
+  ['membranepotentialcontribution_5fadd_652',['MembranePotentialContribution_Add',['../classAbstractNeurer.html#a1860a5c56e3ba7846501c8126137c139',1,'AbstractNeurer']]],
+  ['membranesynapticcontribution_5fadd_653',['MembraneSynapticContribution_Add',['../classAbstractNeurer.html#ad013ed948f3b3fc8a3b50dc3e4f726ba',1,'AbstractNeurer']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TAC  V0.0.4 @ 2021.03.25: scIGPMessage Class Reference</title>
+<title>TAC  V0.0.4 @ 2021.04.03: scIGPMessage Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -42,7 +42,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="TAC_Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="https://jvegh@bitbucket.org/jvegh/timeawarecomputingsimulator">TAC  V0.0.4 @ 2021.03.25</a>
+   <div id="projectname"><a href="https://jvegh@bitbucket.org/jvegh/timeawarecomputingsimulator">TAC  V0.0.4 @ 2021.04.03</a>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -135,7 +135,7 @@ Memory ('M') messages The memories are accessed anyhow through the inter-cluster
 <p>The memory read requests do have no extra (empty and obsolete) bytes for the requested contents. Rather, they set the size to 4, and <a class="el" href="structMessageFeatures__t.html#ad829bfcff7580d5abf7c0990582fa7c3">MessageFeatures_t::ReplyLength</a> delivers the reply length information to the memory, and the sent-back message has the corresponding length. This feature make a message CreateReadMessageReply obsolete: if the length is 4, it is a read message. </p><dl class="section see"><dt>See also</dt><dd>scClusterBusMemorySlow::CreateWriteMessage </dd>
 <dd>
 scClusterBusMemorySlow::CreateReadMessageReply</dd></dl>
-<p>Neural ('N') messages The messages are sent by <a class="el" href="classscHThread.html" title="The scHThread class.">scHThread</a> and received by <a class="el" href="classscHThread.html" title="The scHThread class.">scHThread</a>. More precisely, from <a class="el" href="classAbstractNeurer.html" title="The AbstractNeurer class The base class is the scHThread, i.e. HW thread functionality....">AbstractNeurer</a> to <a class="el" href="classAbstractNeurer.html" title="The AbstractNeurer class The base class is the scHThread, i.e. HW thread functionality....">AbstractNeurer</a>. The content depends on the message type Type 0 (a spike)</p><ul>
+<p>Neural ('N') messages The messages are sent by <a class="el" href="classscHThread.html" title="The scHThread class.">scHThread</a> and received by <a class="el" href="classscHThread.html" title="The scHThread class.">scHThread</a>. More precisely, from <a class="el" href="classAbstractNeurer.html">AbstractNeurer</a> to <a class="el" href="classAbstractNeurer.html">AbstractNeurer</a>. The content depends on the message type Type 0 (a spike)</p><ul>
 <li>[3] memory address of the <a class="el" href="classSpike.html" title="Handles spike tables for the neurons.">Spike</a> to be executed</li>
 <li>[4-] scale factors, TimeFact&lt;&lt;16 + AmplitudeFact</li>
 </ul>
@@ -308,7 +308,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classscIGPMessage.html">scIGPMessage</a></li>
-    <li class="footer">Generated on Fri Mar 26 2021 19:47:55 for TAC  V0.0.4 @ 2021.03.25 by
+    <li class="footer">Generated on Sat Apr 3 2021 20:09:13 for TAC  V0.0.4 @ 2021.04.03 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

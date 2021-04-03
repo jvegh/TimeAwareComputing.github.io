@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TAC  V0.0.4 @ 2021.03.25: Phases of computing</title>
+<title>TAC  V0.0.4 @ 2021.04.03: Phases of computing</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -42,7 +42,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="TAC_Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="https://jvegh@bitbucket.org/jvegh/timeawarecomputingsimulator">TAC  V0.0.4 @ 2021.03.25</a>
+   <div id="projectname"><a href="https://jvegh@bitbucket.org/jvegh/timeawarecomputingsimulator">TAC  V0.0.4 @ 2021.04.03</a>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -107,14 +107,27 @@ $(document).ready(function(){initNavTree('TAC_GEN_THEORY_COMPUTATIONAL_PAGE.html
 <div class="title">Phases of computing </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>My </p>
+<div class="textblock"><p>The computing process in handled here as proposed by von Neumann: it is a set of well-defined and well synchronized events and processes Two possible operating mode: single shot/continuous. Computing unit has internal state/no internal state</p>
+<ul>
+<li>The operating unit is idle (no activity) Signal: Start delivery</li>
+<li>Process: Delivery to the input section &ndash; Nofification type: one operand arrived (single shot) &ndash; Notification type: all operands arrived (continuous) Signal : Start computing</li>
+<li>Process: the operating unit is making its computations &ndash; Mode continuous: Operation restarted when delivery signals &ndash; Mode single shot: Do not disturb until computation finished (delivery signal neglected) &ndash; Notification: computation is finished Signal: start delivery and recovery</li>
+<li>Process: Result delivery Result latched and delivery to output section initiated If has internal states, delivery signal neglected Signal: ready to operate</li>
+<li>The result is delivered to the output section &ndash; mode continuous: &ndash; Mode single shot: the result latched: no</li>
+<li>Mode: continuous/single shot</li>
+<li>State: the computing unit is ready to perform a new computation (signal)</li>
+<li>State: The unit is ready to accept input (signal)</li>
+<li>State: One operand changed (signal)</li>
+<li>State: Computing has started (signalled)</li>
+<li>State: Computing finished (result in latch) </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 26 2021 19:47:55 for TAC  V0.0.4 @ 2021.03.25 by
+    <li class="footer">Generated on Sat Apr 3 2021 20:09:13 for TAC  V0.0.4 @ 2021.04.03 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

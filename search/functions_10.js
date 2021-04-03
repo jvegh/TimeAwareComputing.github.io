@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['_7eabstractcore_695',['~AbstractCore',['../classAbstractCore.html#ad8556cc77b404cf79dcbacc969a2dca7',1,'AbstractCore']]],
-  ['_7eneurercore_696',['~NeurerCore',['../classNeurerCore.html#a03032b41af295e345acd398806026d39',1,'NeurerCore']]]
+  ['write_709',['write',['../classscMemoryMessageFIFO.html#ae83d255fb27dfa8782c2f87fa6373a0d',1,'scMemoryMessageFIFO']]]
 ];

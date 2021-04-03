@@ -6,7 +6,12 @@ var group__TAC__MODULE__NEURER =
       [ "IncreaseActionPotentialWithCharge", "classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57", null ],
       [ "IntegratedCurrentInPeriod", "classAbstractNeurer.html#a639009654cd733d7c578a44033281608", null ],
       [ "LeakingPeriod_Set", "classAbstractNeurer.html#ae1dc44dcf013c9ba654ac16811a506de", null ],
+      [ "MembranePotentialContribution_Add", "classAbstractNeurer.html#a1860a5c56e3ba7846501c8126137c139", null ],
+      [ "MembraneSynapticContribution_Add", "classAbstractNeurer.html#ad013ed948f3b3fc8a3b50dc3e4f726ba", null ],
       [ "NeurerCondensatorCapacity_Get", "classAbstractNeurer.html#a96115fc9b9dfdec4bb98831e9bc90143", null ],
+      [ "NeurerStateBit_Get", "classAbstractNeurer.html#a3b2e3413fc96cc99f5254c6c647dc58f", null ],
+      [ "NeurerStateBit_Set", "classAbstractNeurer.html#ac6c620eb0bba9d86a9ff9bd6e79c81ff", null ],
+      [ "Reset_method", "classAbstractNeurer.html#a481ae50b444297144a39a6b02a310a3b", null ],
       [ "Spiking_method", "classAbstractNeurer.html#a0e65a3450f24d1de0a32b0d7bf0787c3", null ],
       [ "Charge", "classAbstractNeurer.html#afe80eda06810364976905420e278c0b7", null ],
       [ "Discharge", "classAbstractNeurer.html#ab5dcf8352310b61c9ad5501c64d3e1d2", null ],
@@ -14,9 +19,12 @@ var group__TAC__MODULE__NEURER =
       [ "Leaking", "classAbstractNeurer.html#aaa39cbb4edf5f4ddabe0b43e1a852e9b", null ],
       [ "m_Axons", "classAbstractNeurer.html#a7f77bf1f0b47d89418c0c9725b89d93e", null ],
       [ "m_Synapses", "classAbstractNeurer.html#a72af19d1cfd13c0bfe4630aca37653cb", null ],
+      [ "mActionPotentialBegin", "classAbstractNeurer.html#a251dd0db0afc36703d98fed745a28328", null ],
       [ "mAmplitudeFactor", "classAbstractNeurer.html#ac4707cfeef6f8b17a61a1c769791b084", null ],
+      [ "mMembranePotential", "classAbstractNeurer.html#aab436dfb5835d1c08c47f2c575a050a3", null ],
+      [ "mMembranePotentialOffset", "classAbstractNeurer.html#a6a11a12591221b3883aeb94f43dd3740", null ],
       [ "mNoOfSynapticPoints", "classAbstractNeurer.html#aa947d93ab095d2a9fc5b7498c39a2a08", null ],
-      [ "mOperatingState", "classAbstractNeurer.html#af1dc8a4cfee4e96d6724768ca11763ab", null ],
+      [ "mOperatingState", "classAbstractNeurer.html#a4db9ae463d65f12ff551850130b5b8f1", null ],
       [ "mSpikeAmplitude", "classAbstractNeurer.html#a6e9ea265c7ea4a1d001d04fb442f89d2", null ],
       [ "mSpikeIndex", "classAbstractNeurer.html#a90c552c5d760c1855492bcf033aca779", null ],
       [ "mSpikeTime", "classAbstractNeurer.html#a1362da7adafefd58ce445ddda24e79a3", null ],
@@ -27,11 +35,11 @@ var group__TAC__MODULE__NEURER =
       [ "Spiking", "classAbstractNeurer.html#a951cf756fb7e2851e83d7c50bdd674c1", null ],
       [ "Trigger", "classAbstractNeurer.html#a31ea19a6f020ec2b1fac3bf5adc3e094", null ]
     ] ],
-    [ "NeurerOperatingBit_t", "group__TAC__MODULE__NEURER.html#gac364bf045e76c4cdcf747de0a1a5c5b4", [
-      [ "nos_Resting", "group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a3edc835cd5f4f8e86da0e42ed1e81fbc", null ],
-      [ "nos_Triggering", "group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4ab72ef3b2c8b4de41c9a6fdedb8026e1a", null ],
-      [ "nos_Charging", "group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a718d6b65c4d9b2a76657f264efc7e0d8", null ],
-      [ "nos_Refracting", "group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4afb649e30c5f5e5ee426289a70ae2699b", null ],
-      [ "nos_Max", "group__TAC__MODULE__NEURER.html#ggac364bf045e76c4cdcf747de0a1a5c5b4a88e2029a36a63e3af2dc95ff16d98090", null ]
+    [ "NeurerOperatingBit_t", "group__TAC__MODULE__NEURER.html#gaaebd9daf17b8a980819e7fa4d0b3dac7", [
+      [ "nsb_Resting", "group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7a50872beb694daecd0484a93338ed671a", null ],
+      [ "nsb_Triggering", "group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7af0142354f33caf703091e9fd1f228855", null ],
+      [ "nsb_Charging", "group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7ac05c354f16ed760eab63e8c6b37dc633", null ],
+      [ "nsb_Firing", "group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7ab505833e10fd33cde7416b5f4dd7d82b", null ],
+      [ "nsb_Max", "group__TAC__MODULE__NEURER.html#ggaaebd9daf17b8a980819e7fa4d0b3dac7a0328d05f0fbd2a61688cf103aeb2bb6b", null ]
     ] ]
 ];
