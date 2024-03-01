@@ -5,9 +5,9 @@
   <filterSection>
     <filterAttribute>doxygen</filterAttribute>
     <toc>
-      <section title="TAC  V0.0.4 @ 2021.04.03" ref="index.html">
+      <section title="TAC  V0.0.4 @ 2021.04.07" ref="index.html">
         <section title="Overview" ref="index.html" />
-        <section title="Getting started" ref="@ref GettingStarted" />
+        <section title="Getting started" ref="GettingStarted.html" />
         <section title="Chapters" ref="modules.html">
           <section title="NEURER Neural-related modules" ref="group__TAC__NEURER.html">
             <section title="NEURER: User&apos;s guide" ref="group__TAC__NEURER__USER.html" />
@@ -184,6 +184,7 @@
             <section title="SOURCES: package NEURER" ref="group__TAC__MODULE__NEURER.html">
               <section title="AbstractNeurer.h" ref="AbstractNeurer_8h.html" />
               <section title="AbstractNeurer" ref="classAbstractNeurer.html">
+                <section title="ActionPotential_method" ref="classAbstractNeurer.html#aa4c054c4fe76ea6027c31460b1c12d64" />
                 <section title="FindSynapseFrom" ref="classAbstractNeurer.html#aa75a1e9168a30f53a20424f26256bf23" />
                 <section title="IncreaseActionPotentialWithCharge" ref="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57" />
                 <section title="IntegratedCurrentInPeriod" ref="classAbstractNeurer.html#a639009654cd733d7c578a44033281608" />
@@ -249,6 +250,7 @@
             <section title="EVENT_CORE" ref="classAbstractCore.html#a050c039b12e2e6691f8b1ab5d2fa1edb" />
           </section>
           <section title="AbstractNeurer" ref="classAbstractNeurer.html">
+            <section title="ActionPotential_method" ref="classAbstractNeurer.html#aa4c054c4fe76ea6027c31460b1c12d64" />
             <section title="FindSynapseFrom" ref="classAbstractNeurer.html#aa75a1e9168a30f53a20424f26256bf23" />
             <section title="IncreaseActionPotentialWithCharge" ref="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57" />
             <section title="IntegratedCurrentInPeriod" ref="classAbstractNeurer.html#a639009654cd733d7c578a44033281608" />
@@ -313,6 +315,7 @@
             <section title="mGrid" ref="classAbstractTopology.html#a1d4d9c3e32e6fe9de7563977054cdfe1" />
             <section title="mProgramCounter" ref="classAbstractTopology.html#ab81e8188f8bcd16de4f11a0ad73860d4" />
           </section>
+          <section title="ActionPotential" ref="classActionPotential.html" />
           <section title="ClusterAddress_t" ref="structClusterAddress__t.html">
             <section title="Card" ref="structClusterAddress__t.html#a3a36c2a2d1b0596abfa128e4b1499781" />
             <section title="Cluster" ref="structClusterAddress__t.html#a81cb9858407f9b2f289332a8c766dde7" />
@@ -635,7 +638,6 @@
         </section>
         <section title="Cited references" ref="citelist.html" />
         <section title="Glossary" ref="GLOSSARY.html" />
-        <section title="Visitor Statistic" ref="VisitorStatistics.html" />
       </section>
     </toc>
     <keywords>
@@ -705,12 +707,13 @@
       <keyword name="How to configure ScQtSimNeurer through its settings files" id="How to configure ScQtSimNeurer through its settings files" ref="NEURER_USER_GUIDE_SETTINGS_PAGE.html" />
       <keyword name="NEURER Technical Guide" id="NEURER Technical Guide" ref="TAC_NEURER_TECHNICAL_PAGE.html" />
       <keyword name="How time-aware neuronal simulation works" id="How time-aware neuronal simulation works" ref="TAC_NEURER_TECHNICAL_OPERATION_PAGE.html" />
+      <keyword name="Support material, constant and samples" id="Support material, constant and samples" ref="TAC_NEURER_TECHNICAL_SUPPORT_PAGE.html" />
       <keyword name="NEURER Theory Guide" id="NEURER Theory Guide" ref="TAC_NEURER_THEORY_PAGE.html" />
       <keyword name="Potential in the neuronal communication" id="Potential in the neuronal communication" ref="TAC_NEURER_THEORY_POTENTIAL_PAGE.html" />
       <keyword name="NEURER User&apos;s Guide" id="NEURER User&apos;s Guide" ref="TAC_NEURER_USER_PAGE.html" />
       <keyword name="NEURER User&apos;s Guide: how to work with neurer" id="NEURER User&apos;s Guide: how to work with neurer" ref="TAC_NEURER_USER_WORKING_PAGE.html" />
       <keyword name="GLOSSARY" id="GLOSSARY" ref="GLOSSARY.html" />
-      <keyword name="Visitor statistics" id="Visitor statistics" ref="VisitorStatistics.html" />
+      <keyword name="Getting started with TAC simulators" id="Getting started with TAC simulators" ref="GettingStarted.html" />
       <keyword name="Release notes and porting" id="Release notes and porting" ref="ReleaseNotes.html" />
       <keyword name="Bibliography" id="Bibliography" ref="citelist.html" />
       <keyword name="NEURER Neural-related modules" id="NEURER Neural-related modules" ref="group__TAC__NEURER.html" />
@@ -827,6 +830,7 @@
       <keyword name="mBusPriority" id="scIGPMessage_if::mBusPriority" ref="classscIGPMessage__if.html#aedee6a0de4c60c95f7291aec02d505d9" />
       <keyword name="msProcessor" id="scIGPMessage_if::msProcessor" ref="classscIGPMessage__if.html#aa9dbc5ab1298964f204450a0f3a761e7" />
       <keyword name="AbstractNeurer" id="AbstractNeurer" ref="classAbstractNeurer.html" />
+      <keyword name="ActionPotential_method" id="AbstractNeurer::ActionPotential_method" ref="classAbstractNeurer.html#aa4c054c4fe76ea6027c31460b1c12d64" />
       <keyword name="FindSynapseFrom" id="AbstractNeurer::FindSynapseFrom" ref="classAbstractNeurer.html#aa75a1e9168a30f53a20424f26256bf23" />
       <keyword name="IncreaseActionPotentialWithCharge" id="AbstractNeurer::IncreaseActionPotentialWithCharge" ref="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57" />
       <keyword name="IntegratedCurrentInPeriod" id="AbstractNeurer::IntegratedCurrentInPeriod" ref="classAbstractNeurer.html#a639009654cd733d7c578a44033281608" />
@@ -956,6 +960,7 @@
       <keyword name="mClusters" id="AbstractTopology::mClusters" ref="classAbstractTopology.html#a2d0e8aa846d14f3f9f7fba17d429fc4f" />
       <keyword name="mGrid" id="AbstractTopology::mGrid" ref="classAbstractTopology.html#a1d4d9c3e32e6fe9de7563977054cdfe1" />
       <keyword name="mProgramCounter" id="AbstractTopology::mProgramCounter" ref="classAbstractTopology.html#ab81e8188f8bcd16de4f11a0ad73860d4" />
+      <keyword name="ActionPotential" id="ActionPotential" ref="classActionPotential.html" />
       <keyword name="ClusterAddress_t" id="ClusterAddress_t" ref="structClusterAddress__t.html" />
       <keyword name="Card" id="ClusterAddress_t::Card" ref="structClusterAddress__t.html#a3a36c2a2d1b0596abfa128e4b1499781" />
       <keyword name="Cluster" id="ClusterAddress_t::Cluster" ref="structClusterAddress__t.html#a81cb9858407f9b2f289332a8c766dde7" />
@@ -1054,6 +1059,7 @@
       <keyword name="Param" id="MetaEvent_Transfer_Type::Param" ref="structMetaEvent__Transfer__Type.html#a8edbeaa2790cb7ae76b70df34e92365f" />
       <keyword name="PC" id="MetaEvent_Transfer_Type::PC" ref="structMetaEvent__Transfer__Type.html#aa8ec13c62690c91a6b2f8f080cd4585a" />
       <keyword name="Neurer" id="Neurer" ref="classNeurer.html" />
+      <keyword name="ActionPotential_method" id="AbstractNeurer::ActionPotential_method" ref="classAbstractNeurer.html#aa4c054c4fe76ea6027c31460b1c12d64" />
       <keyword name="FindSynapseFrom" id="AbstractNeurer::FindSynapseFrom" ref="classAbstractNeurer.html#aa75a1e9168a30f53a20424f26256bf23" />
       <keyword name="IncreaseActionPotentialWithCharge" id="AbstractNeurer::IncreaseActionPotentialWithCharge" ref="classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57" />
       <keyword name="IntegratedCurrentInPeriod" id="AbstractNeurer::IntegratedCurrentInPeriod" ref="classAbstractNeurer.html#a639009654cd733d7c578a44033281608" />
@@ -1643,6 +1649,7 @@
       <file>AbstractNeurerConnection_8h_source.html</file>
       <file>AbstractProcessor_8h_source.html</file>
       <file>AbstractTopology_8h_source.html</file>
+      <file>ActionPotential_8h_source.html</file>
       <file>BasicConfig_8h_source.html</file>
       <file>ClusterBusRequest_8h_source.html</file>
       <file>ClusterBusTypes_8h_source.html</file>
@@ -1694,6 +1701,7 @@
       <file>AbstractNeurerConnection_8h.html</file>
       <file>AbstractProcessor_8h.html</file>
       <file>AbstractTopology_8h.html</file>
+      <file>ActionPotential_8h.html</file>
       <file>BasicConfig_8h.html</file>
       <file>ClusterBusRequest_8h.html</file>
       <file>ClusterBusTypes_8h.html</file>
@@ -1757,6 +1765,8 @@
       <file>TAC_NEURER_TECHNICAL_PAGE.html</file>
       <file>TAC_NEURER_TECHNICAL_OPERATION_PAGE.html</file>
       <file>Figure_Koch_14_8.png</file>
+      <file>TAC_NEURER_TECHNICAL_SUPPORT_PAGE.html</file>
+      <file>ActionPotentialSample.png</file>
       <file>TAC_NEURER_THEORY_PAGE.html</file>
       <file>TAC_NEURER_THEORY_POTENTIAL_PAGE.html</file>
       <file>EquipotentialSurfacesElectric.jpg</file>
@@ -1770,7 +1780,7 @@
       <file>TAC_NEURER_USER_PAGE.html</file>
       <file>TAC_NEURER_USER_WORKING_PAGE.html</file>
       <file>GLOSSARY.html</file>
-      <file>VisitorStatistics.html</file>
+      <file>GettingStarted.html</file>
       <file>ReleaseNotes.html</file>
       <file>citelist.html</file>
       <file>group__TAC__NEURER.html</file>
@@ -1810,6 +1820,8 @@
       <file>classAbstractTopology__inherit__graph.png</file>
       <file>classAbstractTopology__inherit__graph.eps</file>
       <file>classAbstractTopology-members.html</file>
+      <file>classActionPotential.html</file>
+      <file>classActionPotential-members.html</file>
       <file>structClusterAddress__t.html</file>
       <file>structClusterAddress__t-members.html</file>
       <file>structClusterBusRequest.html</file>

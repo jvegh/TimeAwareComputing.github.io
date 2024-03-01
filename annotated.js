@@ -4,6 +4,7 @@ var annotated =
     [ "AbstractNeurer", "classAbstractNeurer.html", "classAbstractNeurer" ],
     [ "AbstractProcessor", "classAbstractProcessor.html", "classAbstractProcessor" ],
     [ "AbstractTopology", "classAbstractTopology.html", "classAbstractTopology" ],
+    [ "ActionPotential", "classActionPotential.html", null ],
     [ "ClusterAddress_t", "structClusterAddress__t.html", "structClusterAddress__t" ],
     [ "ClusterBusRequest", "structClusterBusRequest.html", null ],
     [ "CoreExecute_t", "structCoreExecute__t.html", "structCoreExecute__t" ],

@@ -1,5 +1,5 @@
 <map id="scHThread" name="scHThread">
 <area shape="rect" id="node1" title="The scHThread class." alt="" coords="29,5,253,611"/>
-<area shape="rect" id="node2" href="$classAbstractNeurer.html" title=" " alt="" coords="5,659,277,1279"/>
-<area shape="rect" id="node3" href="$classNeurer.html" title="The Neurer class. The class implements the neurer functionality, closer to the neurons...." alt="" coords="59,1327,224,1463"/>
+<area shape="rect" id="node2" href="$classAbstractNeurer.html" title=" " alt="" coords="5,659,277,1293"/>
+<area shape="rect" id="node3" href="$classNeurer.html" title="The Neurer class. The class implements the neurer functionality, closer to the neurons...." alt="" coords="59,1341,224,1477"/>
 </map>

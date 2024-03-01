@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TAC  V0.0.4 @ 2021.04.03: Main Page</title>
+<title>TAC  V0.0.4 @ 2021.04.07: Main Page</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -42,7 +42,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="TAC_Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="https://jvegh@bitbucket.org/jvegh/timeawarecomputingsimulator">TAC  V0.0.4 @ 2021.04.03</a>
+   <div id="projectname"><a href="https://jvegh@bitbucket.org/jvegh/timeawarecomputingsimulator">TAC  V0.0.4 @ 2021.04.07</a>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -78,7 +78,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
+<!-- Default Statcounter code for TimeAwareComputing
+https://timeawarecomputing.github.io/ -->
+<script type="text/javascript">
+var sc_project=12506963;
+var sc_invisible=0;
+var sc_security="4d279618";
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Visitor counter"
+href="https://www.statcounter.hu/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12506963/0/4d279618/0/" alt="Visitor counter"></a></div></noscript>
+<!-- End of Statcounter Code -->
+  <div id="splitbar" style="-moz-user-select:none;"
        class="ui-resizable-handle">
   </div>
 </div>
@@ -103,15 +117,13 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div class="PageDoc"><div class="contents">
-<div class="textblock"><p>This is the documentation for both the term <a class="el" href="TAC_GEN_THEORY_PARADIGM_PAGE.html">time-aware computing </a> and the simulators using <a class="el" href="GLOSSARY.html#GLOSSARY_TAC">TAC</a>. Here <em>computing</em> is handled in a broader sense: information processing <em>in any implementation</em>. It covers conventional computing, biomorphic computing, computing relating, among others, (the technology of) artificial intelligence, and biological computing. The computing objects use both their inputs and their internal state to calculate their output. The time-aware computing means to consider that <em>both computing itself and delivering data to and from the computing object need time</em>; <em>the inputs, output and the internal states all have temporal behavior</em>. Furthermore that those operations must by synchronized (and in this way they block each other). We show that taking into account that temporal dependence explicitly, leads to considerable differences in their behavior as opposed with the behavior expected based on the time-unaware description.</p>
-<p>Here you find its scientific background, the way of technical utilization (programming <a class="el" href="GLOSSARY.html#GLOSSARY_API">API</a>, User's Guide with examples how to use the systems, etc.). Figure <a class="el" href="index.html#Fig_GraphicAbstract">Fig_GraphicAbstract</a> provides a picturesque overview on the effects of time-aware computing; from left to right: the theory of TAC; its effect on large-scale technological computing; explaining the information storage method and learning ability in biological computing systems. You can <a href="TAC-doc.tgz">download</a> this documentation as a tgz archive for offline reading.</p>
-<p><b>Warning:</b>Please consider that this development is a one-man undertaking, and it shall develop together with its documentation. There are pre-developed code fragments and docs, but it needs time to put them in a consistent state, especially that also development and testing is needed. Please come back later and see if there is something new.</p>
-<p><br  />
+<div class="textblock"><p>This is the documentation for both the term <a class="el" href="TAC_GEN_THEORY_PARADIGM_PAGE.html">time-aware computing </a> and the simulators using <a class="el" href="GLOSSARY.html#GLOSSARY_TAC">TAC</a>. Here <em>computing</em> is handled in a broader sense: information processing <em>in any implementation</em>. It covers conventional computing, biomorphic computing, computing relating, among others, (the technology of) artificial intelligence, and biological computing. The computing objects use both their inputs and their internal state to calculate their output. The time-aware computing means to consider that <em>computing means both processing the available data and delivering data to and from the computing object</em>. Furthermore that those operations must by synchronized (and in this way they block each other); and that not only that those processes need time, but <em>the inputs, output and the internal states all have their temporal behavior</em>. We show that taking into account that temporal dependence explicitly, leads to considerable differences in their behavior as opposed with the behavior expected based on the time-unaware description.</p>
+<p>Here you find its scientific background, the way of technical utilization (programming <a class="el" href="GLOSSARY.html#GLOSSARY_API">API</a>, User's Guide with examples how to use the systems, etc.). Figure <a class="el" href="index.html#Fig_GraphicAbstract">Fig_GraphicAbstract</a> provides a picturesque overview on the effects of time-aware computing; from left to right: the theory of TAC; its effect on large-scale technological computing; explaining the information storage method and learning ability in biological computing systems. You can <a href="TAC-doc.tgz">download</a> this documentation as a tgz archive for offline reading. <br  />
  </p><div class="fallacy"> <a class="anchor" id="Fig_GraphicAbstract"></a><div class="image">
 <img src="GraphicAbstract.png" alt="" width="620px"/>
 <div class="caption">
 Graphic abstract on time-aware computing and its implementation-dependent effects </div></div>
-  </div><p>For a first contact with TAC, the best place is to have a look at the <a class="el" href="">getting started </a> page that show you how to write and compile your first program with TAC.</p>
+  </div><p>For a first contact with TAC, the best place is to have a look at the <a class="el" href="GettingStarted.html">getting started </a> page that show you how to write and compile your first program with TAC.</p>
 <p>You're already an TAC user? Here is a <a class="el" href="ReleaseNotes.html">Release notes and porting guide </a> to help porting your application.</p>
 <p>The <b>main</b> <b>documentation</b> is organized into <em>chapters</em> covering different domains of features. They are themselves composed of <em>user</em> <em>manual</em> pages describing the different features in a comprehensive way, and <em>reference</em> pages that gives you access to the API documentation through the related <em>modules</em> and <em>classes</em>. Sometimes you may need our <a class="el" href="GLOSSARY.html">glossary </a> or the search engine.</p>
 <p>The major chapters are:</p><ul>
@@ -128,25 +140,13 @@ Graphic abstract on time-aware computing and its implementation-dependent effect
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 3 2021 20:09:13 for TAC  V0.0.4 @ 2021.04.03 by
+    <li class="footer">   Visitor <a title="Visitor counter"
+href="https://www.statcounter.hu/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12506963/0/4d279618/0/" alt="Visitor counter"></a>
+     Generated on Wed Apr 7 2021 15:24:23 for TAC  V0.0.4 @ 2021.04.07 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
 </div>
-<!-- Default Statcounter code for TimeAwareComputing
-https://timeawarecomputing.github.io/ -->
-<script type="text/javascript">
-var sc_project=12506963;
-var sc_invisible=0;
-var sc_security="4d279618";
-var scJsHost = "https://";
-document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="Visitor counter"
-href="https://www.statcounter.hu/" target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/12506963/0/4d279618/0/" alt="Visitor counter"></a></div></noscript>
-<!-- End of Statcounter Code -->
-<a href="https://statcounter.com/p12506963/?guest=1">Visitor statistic</a>
 </body>
 </html>

@@ -22,21 +22,21 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "TAC  V0.0.4 @ 2021.04.03", "index.html", [
+  [ "TAC  V0.0.4 @ 2021.04.07", "index.html", [
     [ "Overview", "index.html", null ],
-    [ "Getting started", "@ref GettingStarted", null ],
+    [ "Getting started", "GettingStarted.html", null ],
     [ "Chapters", "modules.html", "modules" ],
     [ "Class List", "annotated.html", "annotated" ],
     [ "Cited references", "citelist.html", null ],
     [ "Glossary", "GLOSSARY.html", null ],
-    [ "Visitor Statistic", "VisitorStatistics.html", null ]
+    [ "Visitor Statistic", "^https://statcounter.com/p12506963/?guest=1", null ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"@ref GettingStarted",
-"classscProcessor.html#adf2e477de1ddb6be3770ae08719ca8c2"
+"GLOSSARY.html",
+"classscProcessor.html#acba174df18057de60ae42bd8bcdd3538"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

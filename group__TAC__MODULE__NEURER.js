@@ -2,6 +2,7 @@ var group__TAC__MODULE__NEURER =
 [
     [ "AbstractNeurer.h", "AbstractNeurer_8h.html", null ],
     [ "AbstractNeurer", "classAbstractNeurer.html", [
+      [ "ActionPotential_method", "classAbstractNeurer.html#aa4c054c4fe76ea6027c31460b1c12d64", null ],
       [ "FindSynapseFrom", "classAbstractNeurer.html#aa75a1e9168a30f53a20424f26256bf23", null ],
       [ "IncreaseActionPotentialWithCharge", "classAbstractNeurer.html#ac0db7695ed1b3ac912813650bb15ba57", null ],
       [ "IntegratedCurrentInPeriod", "classAbstractNeurer.html#a639009654cd733d7c578a44033281608", null ],
